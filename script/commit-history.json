@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8022dbaf57bec993419dd02c550d0b4ae483c873",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T03:04:11.000Z",
       "message": "feat: agregar formulario de registro de objetos y vista de catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/8022dbaf57bec993419dd02c550d0b4ae483c873"
     },
     "stats": {
       "total": 361,
@@ -321,5 +321,24 @@
     "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:29:37.000Z",
+      "message": "Feat: failed category test",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 81.08,
+    "test_count": 15,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

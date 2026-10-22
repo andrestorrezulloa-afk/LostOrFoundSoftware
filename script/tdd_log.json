@@ -376,9 +376,39 @@
     "testId": 16
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8022dbaf57bec993419dd02c550d0b4ae483c873",
     "commitName": "feat: agregar formulario de registro de objetos y vista de catalogo",
     "commitTimestamp": 1792638253355,
     "testId": 16
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 4,
+    "numTotalTests": 14,
+    "timestamp": 1792646800272,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1792646836494,
+    "success": true,
+    "testId": 17
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792646934117,
+    "success": false,
+    "testId": 17
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: failed category test",
+    "commitTimestamp": 1792646978375,
+    "testId": 17
   }
 ]
