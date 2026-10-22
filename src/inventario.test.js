@@ -48,4 +48,16 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(res.mensaje).toEqual("El nombre y la categoria son obligatorios");
     expect(inventario.obtenerCatalogo().length).toEqual(0);
   });
+
+
+  it("no deberia guardar y deberia mostrar mensaje claro si falta la categoria", () => {
+    const inventario = new InventarioObjetos();
+    const res = inventario.registrarObjeto({
+      nombre: "Carnet universitario",
+      categoria: "",
+    });
+    expect(res.exito).toEqual(false);
+    expect(res.mensaje).toEqual("El nombre y la categoria son obligatorios");
+    expect(inventario.obtenerCatalogo().length).toEqual(0);
+  });
 });

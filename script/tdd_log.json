@@ -310,9 +310,39 @@
     "testId": 13
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2b18725c61c1478ded0b9259a69eb791fc1cca32",
     "commitName": "feat: validar que el nombre del objeto sea obligatorio antes de guardar",
     "commitTimestamp": 1792637987458,
     "testId": 13
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1792638016672,
+    "success": false,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 1,
+    "numTotalTests": 13,
+    "timestamp": 1792638029429,
+    "success": false,
+    "testId": 14
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 0,
+    "numTotalTests": 13,
+    "timestamp": 1792638052336,
+    "success": true,
+    "testId": 14
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: exigir categoria obligatoria para registrar objeto encontrado",
+    "commitTimestamp": 1792638059705,
+    "testId": 14
   }
 ]
