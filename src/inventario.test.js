@@ -60,4 +60,10 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(res.mensaje).toEqual("El nombre y la categoria son obligatorios");
     expect(inventario.obtenerCatalogo().length).toEqual(0);
   });
+
+  it("no deberia permitir ver la opcion de publicar a estudiantes sin sesion de personal", () => {
+    const inventario = new InventarioObjetos();
+    expect(inventario.puedePublicar(false)).toEqual(false);
+    expect(inventario.puedePublicar(true)).toEqual(true);
+  });
 });

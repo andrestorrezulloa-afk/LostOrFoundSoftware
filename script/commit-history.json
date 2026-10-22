@@ -266,12 +266,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "a156aa8af562988558a7eac55ac4a2e5562650e8",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T03:00:58.000Z",
       "message": "feat: exigir categoria obligatoria para registrar objeto encontrado",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/a156aa8af562988558a7eac55ac4a2e5562650e8"
     },
     "stats": {
       "total": 23,
@@ -281,6 +281,25 @@
     },
     "coverage": 80.56,
     "test_count": 13,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T03:01:47.000Z",
+      "message": "feat: ocultar opcion de publicar objetos para estudiantes sin sesion",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 81.08,
+    "test_count": 14,
     "failed_tests": 0,
     "conclusion": "success"
   }

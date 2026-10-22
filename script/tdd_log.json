@@ -340,9 +340,31 @@
     "testId": 14
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a156aa8af562988558a7eac55ac4a2e5562650e8",
     "commitName": "feat: exigir categoria obligatoria para registrar objeto encontrado",
     "commitTimestamp": 1792638059705,
     "testId": 14
+  },
+  {
+    "numPassedTests": 13,
+    "failedTests": 1,
+    "numTotalTests": 14,
+    "timestamp": 1792638083727,
+    "success": false,
+    "testId": 15
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1792638103646,
+    "success": true,
+    "testId": 15
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ocultar opcion de publicar objetos para estudiantes sin sesion",
+    "commitTimestamp": 1792638108876,
+    "testId": 15
   }
 ]

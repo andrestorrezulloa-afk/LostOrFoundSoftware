@@ -57,6 +57,10 @@ class InventarioObjetos {
     this.objetos.push(nuevoObjeto);
     return { exito: true, mensaje: "Objeto registrado exitosamente", objeto: nuevoObjeto };
   }
+
+  puedePublicar(tieneSesionPersonal) {
+    return Boolean(tieneSesionPersonal);
+  }
 }
 
 export default InventarioObjetos;
