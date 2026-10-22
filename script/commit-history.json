@@ -380,17 +380,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "1a587b7581c1f73eec5572249927b22aff9c00ac",
     "author": "unknown",
     "commit": {
       "date": "2026-10-22T05:49:38.000Z",
       "message": "Feat: filters now return every object if none is selected",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/1a587b7581c1f73eec5572249927b22aff9c00ac"
     },
     "stats": {
       "total": 4,
       "additions": 3,
       "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 84.09,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:55:16.000Z",
+      "message": "Feat: UI implementation for filters",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 88,
+      "deletions": 3,
       "date": "2026-10-22"
     },
     "coverage": 84.09,
