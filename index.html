@@ -51,6 +51,14 @@
           <h2>Crear Cuenta de Personal</h2>
           <form id="registro-form">
             <div class="form-group">
+              <label for="reg-nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="reg-nombre"
+                placeholder="Ana Perez"
+              />
+            </div>
+            <div class="form-group">
               <label for="reg-correo">Correo institucional</label>
               <input
                 type="email"
@@ -96,18 +104,6 @@
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
       </header>
       <main class="contenido-principal">
-        <div class="filtros-catalogo">
-          <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
-          <select id="filtro-categoria-estudiante">
-            <option value="">Todas</option>
-            <option value="Llaves">Llaves</option>
-            <option value="Electrónicos">Electrónicos</option>
-            <option value="Documentos">Documentos</option>
-            <option value="Ropa">Ropa</option>
-            <option value="Útiles">Útiles</option>
-            <option value="Otros">Otros</option>
-          </select>
-        </div>
         <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
       </main>
     </section>
@@ -148,6 +144,16 @@
             </div>
 
             <div class="form-group">
+              <label for="obj-lugar">Lugar donde se encontró *</label>
+              <input
+                type="text"
+                id="obj-lugar"
+                placeholder="Ej. Bloque C, aula 204"
+                required
+              />
+            </div>
+
+            <div class="form-group">
               <label for="obj-descripcion">Descripción (opcional)</label>
               <textarea
                 id="obj-descripcion"
@@ -170,18 +176,6 @@
         
         <div class="seccion-catalogo">
           <h2>Catálogo de Objetos Publicados</h2>
-          <div class="filtros-catalogo filtros-catalogo-staff">
-            <label for="filtro-categoria-staff">Filtrar por categoría</label>
-            <select id="filtro-categoria-staff">
-              <option value="">Todas</option>
-              <option value="Llaves">Llaves</option>
-              <option value="Electrónicos">Electrónicos</option>
-              <option value="Documentos">Documentos</option>
-              <option value="Ropa">Ropa</option>
-              <option value="Útiles">Útiles</option>
-              <option value="Otros">Otros</option>
-            </select>
-          </div>
           <div id="lista-catalogo-staff" class="catalogo-grid"></div>
         </div>
       </main>

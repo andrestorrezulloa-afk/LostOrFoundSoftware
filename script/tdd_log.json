@@ -592,9 +592,23 @@
     "testId": 24
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3fdd5c2465f12074e66a69d596389131787127ff",
     "commitName": "feat: guardar el administrador que registro el objeto",
     "commitTimestamp": 1792649581764,
     "testId": 24
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649697751,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar nombre, lugar y administrador en la interfaz",
+    "commitTimestamp": 1792649706753,
+    "testId": 25
   }
 ]
