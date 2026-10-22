@@ -482,9 +482,23 @@
     "testId": 19
   },
   {
-    "commitId": "HEAD",
+    "commitId": "11a340f8bf2e094f63af9aa7a356baba8221ab3c",
     "commitName": "Test now demands filters return all objects if no filter is selected",
     "commitTimestamp": 1792647688804,
     "testId": 19
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1792648146759,
+    "success": true,
+    "testId": 20
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: filters now return every object if none is selected",
+    "commitTimestamp": 1792648181923,
+    "testId": 20
   }
 ]
