@@ -59,4 +59,13 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect(auth.obtenerEstadoPanel()).toEqual("Acceso denegado: debe iniciar sesion");
   });
 
+  it("deberia guardar el nombre del administrador y devolver el usuario actual sin password", () => {
+    const auth = new SistemaAuth();
+    auth.registrar("admin@ucb.edu.bo", "123456", "Ana Perez");
+    auth.iniciarSesion("admin@ucb.edu.bo", "123456");
+    expect(auth.obtenerUsuarioActual()).toEqual({
+      correo: "admin@ucb.edu.bo",
+      nombre: "Ana Perez",
+    });
+  });
 });

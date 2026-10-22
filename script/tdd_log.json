@@ -510,9 +510,39 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1ba7ee967669eb0848add26c0ec97441aa440ef9",
     "commitName": "Feat: UI implementation for filters",
     "commitTimestamp": 1792648517456,
     "testId": 21
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1792649381495,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1792649398067,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1792649413027,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar nombre del administrador y exponer usuario actual",
+    "commitTimestamp": 1792649439380,
+    "testId": 22
   }
 ]
