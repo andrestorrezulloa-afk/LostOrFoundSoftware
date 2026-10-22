@@ -178,9 +178,23 @@
     "testId": 7
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e80ec8a89b7288b256016f83ff838d56edcbd1db",
     "commitName": "feat: implementar cierre de sesion y bloqueo del panel",
     "commitTimestamp": 1792631920683,
     "testId": 7
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792632554159,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar vista de autenticacion y presenter modular",
+    "commitTimestamp": 1792632556996,
+    "testId": 8
   }
 ]
