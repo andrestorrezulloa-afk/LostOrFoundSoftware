@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html xml:lang="es">
+<html lang="es">
   <head>
-    <title>Sumador</title>
+    <meta charset="UTF-8" />
+    <title>Bienestar Estudiantil - Objetos Perdidos</title>
   </head>
   <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
-    </form>
-    <div id="resultado-div"></div>
+    <h1>Bienestar Estudiantil</h1>
+
+    <!--Pantalla de Autenticacion-->
+    <div id="mensaje-sistema"></div>
+    <div id="estado-acceso">Acceso denegado: debe iniciar sesion</div>
+
+    <section id="seccion-auth">
+      <h2>Crear Cuenta</h2>
+      <form id="registro-form">
+        <input type="email" id="reg-correo" placeholder="Correo institucional" />
+        <input type="password" id="reg-password" placeholder="Contrasena" />
+        <button type="submit" id="btn-registrar">Crear cuenta</button>
+      </form>
+
+      <h2>Iniciar Sesion</h2>
+      <form id="login-form">
+        <input type="email" id="login-correo" placeholder="Correo institucional" />
+        <input type="password" id="login-password" placeholder="Contrasena" />
+        <button type="submit" id="btn-login">Iniciar sesion</button>
+      </form>
+    </section>
+
 
     <script type="module" src="./src/presenter.js"></script>
   </body>

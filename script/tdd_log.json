@@ -1,0 +1,200 @@
+[
+  {
+    "numPassedTests": 0,
+    "failedTests": 0,
+    "numTotalTests": 0,
+    "timestamp": 1792631381346,
+    "success": false,
+    "testId": 0
+  },
+  {
+    "numPassedTests": 0,
+    "failedTests": 1,
+    "numTotalTests": 1,
+    "timestamp": 1792631458168,
+    "success": false,
+    "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 0,
+    "numTotalTests": 1,
+    "timestamp": 1792631478644,
+    "success": true,
+    "testId": 0
+  },
+  {
+    "commitId": "94e939c1a52a5e8af725ce1caa688c56e6889854",
+    "commitName": "feat: registrar cuenta con correo valido y contrasena",
+    "commitTimestamp": 1792631511655,
+    "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1792631534092,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1792631573641,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "212f9e2f7c5b9f779d42e51b7ec6d9c3c374ebed",
+    "commitName": "feat: devolver mensaje de confirmacion al registrar cuenta",
+    "commitTimestamp": 1792631583526,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1792631619889,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1792631636748,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "6532f51cff5a192a96a2c64f3c0ca43f16598b91",
+    "commitName": "feat: validar formato de correo y contrasena no vacia en registro",
+    "commitTimestamp": 1792631647752,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1792631666993,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1792631681543,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "41878aa2a5a8919ea7d1bd257ddc694fff24e23c",
+    "commitName": "feat: rechazar registro de correo duplicado con mensaje claro",
+    "commitTimestamp": 1792631706988,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1792631733431,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1792631756208,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "1c638bfcceaf9cbd3be1c4e122030cfcfab60d1f",
+    "commitName": "feat: iniciar sesion con credenciales correctas y acceder al panel",
+    "commitTimestamp": 1792631768988,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1792631787007,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1792631810166,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "9a86535d9e33181d3a55d666315f7023f72473b4",
+    "commitName": "feat: validar credenciales incorrectas y bloquear acceso al panel",
+    "commitTimestamp": 1792631818640,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1792631839378,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1792631873765,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "06e88b9e06e8368143b51cbf18c3fd0494b994ac",
+    "commitName": "feat: restringir acceso al panel cuando no hay sesion iniciada",
+    "commitTimestamp": 1792631881122,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1792631899946,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792631911134,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "e80ec8a89b7288b256016f83ff838d56edcbd1db",
+    "commitName": "feat: implementar cierre de sesion y bloqueo del panel",
+    "commitTimestamp": 1792631920683,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792632554159,
+    "success": true,
+    "testId": 8
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar vista de autenticacion y presenter modular",
+    "commitTimestamp": 1792632556996,
+    "testId": 8
+  }
+]

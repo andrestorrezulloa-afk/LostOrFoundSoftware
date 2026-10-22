@@ -1,0 +1,173 @@
+[
+  {
+    "sha": "94e939c1a52a5e8af725ce1caa688c56e6889854",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:11:49.000Z",
+      "message": "feat: registrar cuenta con correo valido y contrasena",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/94e939c1a52a5e8af725ce1caa688c56e6889854"
+    },
+    "stats": {
+      "total": 30,
+      "additions": 16,
+      "deletions": 14,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 1,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "212f9e2f7c5b9f779d42e51b7ec6d9c3c374ebed",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:13:01.000Z",
+      "message": "feat: devolver mensaje de confirmacion al registrar cuenta",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/212f9e2f7c5b9f779d42e51b7ec6d9c3c374ebed"
+    },
+    "stats": {
+      "total": 9,
+      "additions": 8,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 2,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "6532f51cff5a192a96a2c64f3c0ca43f16598b91",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:14:06.000Z",
+      "message": "feat: validar formato de correo y contrasena no vacia en registro",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/6532f51cff5a192a96a2c64f3c0ca43f16598b91"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 11,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "41878aa2a5a8919ea7d1bd257ddc694fff24e23c",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:15:05.000Z",
+      "message": "feat: rechazar registro de correo duplicado con mensaje claro",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/41878aa2a5a8919ea7d1bd257ddc694fff24e23c"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "1c638bfcceaf9cbd3be1c4e122030cfcfab60d1f",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:16:07.000Z",
+      "message": "feat: iniciar sesion con credenciales correctas y acceder al panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/1c638bfcceaf9cbd3be1c4e122030cfcfab60d1f"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 5,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9a86535d9e33181d3a55d666315f7023f72473b4",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:16:57.000Z",
+      "message": "feat: validar credenciales incorrectas y bloquear acceso al panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/9a86535d9e33181d3a55d666315f7023f72473b4"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 19,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "06e88b9e06e8368143b51cbf18c3fd0494b994ac",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:17:59.000Z",
+      "message": "feat: restringir acceso al panel cuando no hay sesion iniciada",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/06e88b9e06e8368143b51cbf18c3fd0494b994ac"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.24,
+    "test_count": 7,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e80ec8a89b7288b256016f83ff838d56edcbd1db",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:18:39.000Z",
+      "message": "feat: implementar cierre de sesion y bloqueo del panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e80ec8a89b7288b256016f83ff838d56edcbd1db"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.45,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:29:15.000Z",
+      "message": "feat: agregar vista de autenticacion y presenter modular",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 109,
+      "additions": 83,
+      "deletions": 26,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.45,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  }
+]
