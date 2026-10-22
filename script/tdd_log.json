@@ -192,9 +192,23 @@
     "testId": 8
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4fa6101bdaeb170a1c5e346c18582d6c400c8552",
     "commitName": "feat: agregar vista de autenticacion y presenter modular",
     "commitTimestamp": 1792632556996,
     "testId": 8
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792634189661,
+    "success": true,
+    "testId": 9
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: agregar estilos css y navegacion entre login, registro y panel",
+    "commitTimestamp": 1792634258843,
+    "testId": 9
   }
 ]

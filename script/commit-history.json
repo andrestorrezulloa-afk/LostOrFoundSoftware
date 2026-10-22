@@ -152,17 +152,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4fa6101bdaeb170a1c5e346c18582d6c400c8552",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T01:29:15.000Z",
       "message": "feat: agregar vista de autenticacion y presenter modular",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4fa6101bdaeb170a1c5e346c18582d6c400c8552"
     },
     "stats": {
       "total": 109,
       "additions": 83,
       "deletions": 26,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.45,
+    "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:57:37.000Z",
+      "message": "refactor: agregar estilos css y navegacion entre login, registro y panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 370,
+      "additions": 338,
+      "deletions": 32,
       "date": "2026-10-22"
     },
     "coverage": 95.45,
