@@ -3,5 +3,6 @@ export default function listar(filtros = {}) {
   const categoria = filtros && filtros.categoria;
 
   
+
   return objetos.filter((objeto) => objeto.categoria === categoria);
 }

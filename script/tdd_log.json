@@ -452,9 +452,39 @@
     "testId": 18
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ee0a40370eb266dfb6d62601ec8348f20a5823de",
     "commitName": "Feat: filters now work with specific categories",
     "commitTimestamp": 1792647345690,
     "testId": 18
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1792647530331,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 1,
+    "numTotalTests": 16,
+    "timestamp": 1792647579215,
+    "success": false,
+    "testId": 19
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1792647619019,
+    "success": true,
+    "testId": 19
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Test now demands filters return all objects if no filter is selected",
+    "commitTimestamp": 1792647688804,
+    "testId": 19
   }
 ]
