@@ -57,6 +57,8 @@ class InventarioObjetos {
       categoria: datos.categoria.trim(),
       descripcion: datos.descripcion ? datos.descripcion.trim() : "",
       foto: datos.foto || "",
+      lugarEncontrado: datos.lugarEncontrado ? datos.lugarEncontrado.trim() : "",
+      registradoPor: datos.registradoPor || null,
       estado: "Disponible",
       fechaRegistro: new Date().toLocaleString(),
     };

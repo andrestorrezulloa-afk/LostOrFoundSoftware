@@ -51,6 +51,14 @@
           <h2>Crear Cuenta de Personal</h2>
           <form id="registro-form">
             <div class="form-group">
+              <label for="reg-nombre">Nombre completo</label>
+              <input
+                type="text"
+                id="reg-nombre"
+                placeholder="Ana Perez"
+              />
+            </div>
+            <div class="form-group">
               <label for="reg-correo">Correo institucional</label>
               <input
                 type="email"
@@ -145,6 +153,16 @@
                 <option value="Útiles">Útiles</option>
                 <option value="Otros">Otros</option>
               </select>
+            </div>
+
+            <div class="form-group">
+              <label for="obj-lugar">Lugar donde se encontró *</label>
+              <input
+                type="text"
+                id="obj-lugar"
+                placeholder="Ej. Bloque C, aula 204"
+                required
+              />
             </div>
 
             <div class="form-group">

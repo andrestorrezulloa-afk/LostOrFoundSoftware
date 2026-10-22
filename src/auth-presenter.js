@@ -8,6 +8,7 @@ const vistaRegistro = document.querySelector("#vista-registro");
 const panelGestion = document.querySelector("#panel-gestion");
 
 const regForm = document.querySelector("#registro-form");
+const regNombre = document.querySelector("#reg-nombre");
 const regCorreo = document.querySelector("#reg-correo");
 const regPassword = document.querySelector("#reg-password");
 
@@ -77,7 +78,7 @@ if (btnIrALogin) {
 if (regForm) {
   regForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    const res = auth.registrar(regCorreo.value.trim(), regPassword.value);
+    const res = auth.registrar(regCorreo.value.trim(), regPassword.value, regNombre.value.trim());
     if (res.exito) {
       regForm.reset();
       irAVistaLogin(false); 
@@ -112,3 +113,5 @@ if (btnLogout) {
     mostrarMensaje("Sesión cerrada correctamente", true);
   });
 }
+
+export default auth;

@@ -510,9 +510,127 @@
     "testId": 21
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1ba7ee967669eb0848add26c0ec97441aa440ef9",
     "commitName": "Feat: UI implementation for filters",
     "commitTimestamp": 1792648517456,
     "testId": 21
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 0,
+    "numTotalTests": 16,
+    "timestamp": 1792649381495,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 16,
+    "failedTests": 1,
+    "numTotalTests": 17,
+    "timestamp": 1792649398067,
+    "success": false,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 17,
+    "failedTests": 0,
+    "numTotalTests": 17,
+    "timestamp": 1792649413027,
+    "success": true,
+    "testId": 22
+  },
+  {
+    "commitId": "c4679f0cbd93b60e03e3356ae6f9f0f717a82483",
+    "commitName": "feat: guardar nombre del administrador y exponer usuario actual",
+    "commitTimestamp": 1792649439380,
+    "testId": 22
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1792649476334,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1792649511066,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1792649524951,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "b8c9e522c60d9d053bc9d4f77cde8545f094d5eb",
+    "commitName": "feat: guardar lugar donde se encontro el objeto",
+    "commitTimestamp": 1792649535916,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1792649557140,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649572216,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "3fdd5c2465f12074e66a69d596389131787127ff",
+    "commitName": "feat: guardar el administrador que registro el objeto",
+    "commitTimestamp": 1792649581764,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649697751,
+    "success": true,
+    "testId": 25
+  },
+  {
+    "commitId": "42b700af3d5ff3905c4c962624405d591d19c4fa",
+    "commitName": "feat: conectar nombre, lugar y administrador en la interfaz",
+    "commitTimestamp": 1792649706753,
+    "testId": 25
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649783091,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649922061,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Fix: small problem with filter UI",
+    "commitTimestamp": 1792650066279,
+    "testId": 26
   }
 ]

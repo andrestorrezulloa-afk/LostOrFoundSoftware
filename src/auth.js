@@ -4,7 +4,7 @@ class SistemaAuth {
     this.usuarioActual = null;
   }
 
-  registrar(correo, password) {
+  registrar(correo, password, nombre) {
     if (!correo || !correo.includes("@") || !password) {
       return { exito: false, mensaje: "Correo o contrasena invalidos" };
     }
@@ -12,7 +12,7 @@ class SistemaAuth {
     if (existe) {
       return { exito: false, mensaje: "El correo ya esta registrado" };
     }
-    this.usuarios.push({ correo, password });
+    this.usuarios.push({ correo, password, nombre: nombre || "" });
     return { exito: true, mensaje: "Cuenta creada exitosamente" };
   }
 
@@ -41,6 +41,16 @@ class SistemaAuth {
 
   cerrarSesion() {
     this.usuarioActual = null;
+  }
+
+  obtenerUsuarioActual() {
+    if (!this.usuarioActual) {
+      return null;
+    }
+    return {
+      correo: this.usuarioActual.correo,
+      nombre: this.usuarioActual.nombre || "",
+    };
   }
 }
 

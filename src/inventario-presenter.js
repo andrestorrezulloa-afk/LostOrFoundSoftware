@@ -1,10 +1,12 @@
 import InventarioObjetos from "./inventario.js";
+import auth from "./auth-presenter.js";
 
 const inventario = new InventarioObjetos();
 
 const formObjeto = document.querySelector("#form-registrar-objeto");
 const objNombre = document.querySelector("#obj-nombre");
 const objCategoria = document.querySelector("#obj-categoria");
+const objLugar = document.querySelector("#obj-lugar");
 const objDescripcion = document.querySelector("#obj-descripcion");
 const objFoto = document.querySelector("#obj-foto");
 const mensajeObjeto = document.querySelector("#mensaje-objeto");
@@ -102,6 +104,8 @@ if (formObjeto) {
       categoria: objCategoria.value,
       descripcion: objDescripcion.value,
       foto: fotoBase64,
+      lugarEncontrado: objLugar.value,
+      registradoPor: auth.obtenerUsuarioActual(),
     });
 
     if (res.exito) {
