@@ -323,12 +323,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "da02dd2e22a9ac49325c106e6d6f19c758476503",
     "author": "unknown",
     "commit": {
       "date": "2026-10-22T05:29:37.000Z",
       "message": "Feat: failed category test",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/da02dd2e22a9ac49325c106e6d6f19c758476503"
     },
     "stats": {
       "total": 13,
@@ -340,5 +340,24 @@
     "test_count": 15,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:35:44.000Z",
+      "message": "Feat: filters now work with specific categories",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 83.33,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

@@ -1,3 +1,5 @@
+import InventarioObjetos from "./inventario.js";
+
 describe("HU-02: Listar objetos registrados", () => {
   it("deberia listar solo los objetos de la categoria indicada", () => {
     const inventario = new InventarioObjetos();

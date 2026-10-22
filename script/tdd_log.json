@@ -406,9 +406,55 @@
     "testId": 17
   },
   {
-    "commitId": "HEAD",
+    "commitId": "da02dd2e22a9ac49325c106e6d6f19c758476503",
     "commitName": "Feat: failed category test",
     "commitTimestamp": 1792646978375,
     "testId": 17
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792647076718,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 1,
+    "numTotalTests": 15,
+    "timestamp": 1792647257695,
+    "success": false,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1792647276959,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1792647297454,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "numPassedTests": 15,
+    "failedTests": 0,
+    "numTotalTests": 15,
+    "timestamp": 1792647312437,
+    "success": true,
+    "testId": 18
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Feat: filters now work with specific categories",
+    "commitTimestamp": 1792647345690,
+    "testId": 18
   }
 ]
