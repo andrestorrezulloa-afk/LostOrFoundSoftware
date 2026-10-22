@@ -28,4 +28,12 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect(segundoIntento.mensaje).toEqual("El correo ya esta registrado");
   });
 
+  it("deberia iniciar sesion y dar acceso al panel con credenciales correctas", () => {
+    const auth = new SistemaAuth();
+    auth.registrar("admin@ucb.edu.bo", "123456");
+    const login = auth.iniciarSesion("admin@ucb.edu.bo", "123456");
+    expect(login.exito).toEqual(true);
+    expect( auth.puedeAccederAlPanel() ).toEqual(true);
+  });
+
 });

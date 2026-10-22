@@ -57,12 +57,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "41878aa2a5a8919ea7d1bd257ddc694fff24e23c",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T01:15:05.000Z",
       "message": "feat: rechazar registro de correo duplicado con mensaje claro",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/41878aa2a5a8919ea7d1bd257ddc694fff24e23c"
     },
     "stats": {
       "total": 17,
@@ -72,6 +72,25 @@
     },
     "coverage": 100,
     "test_count": 4,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:16:07.000Z",
+      "message": "feat: iniciar sesion con credenciales correctas y acceder al panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 5,
     "failed_tests": 0,
     "conclusion": "success"
   }

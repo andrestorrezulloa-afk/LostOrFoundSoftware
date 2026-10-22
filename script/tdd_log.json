@@ -90,9 +90,31 @@
     "testId": 3
   },
   {
-    "commitId": "HEAD",
+    "commitId": "41878aa2a5a8919ea7d1bd257ddc694fff24e23c",
     "commitName": "feat: rechazar registro de correo duplicado con mensaje claro",
     "commitTimestamp": 1792631706988,
     "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 1,
+    "numTotalTests": 5,
+    "timestamp": 1792631733431,
+    "success": false,
+    "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 0,
+    "numTotalTests": 5,
+    "timestamp": 1792631756208,
+    "success": true,
+    "testId": 4
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: iniciar sesion con credenciales correctas y acceder al panel",
+    "commitTimestamp": 1792631768988,
+    "testId": 4
   }
 ]
