@@ -475,17 +475,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "42b700af3d5ff3905c4c962624405d591d19c4fa",
     "author": "unknown",
     "commit": {
       "date": "2026-10-22T06:15:05.000Z",
       "message": "feat: conectar nombre, lugar y administrador en la interfaz",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/42b700af3d5ff3905c4c962624405d591d19c4fa"
     },
     "stats": {
       "total": 87,
       "additions": 29,
       "deletions": 58,
+      "date": "2026-10-22"
+    },
+    "coverage": 85.11,
+    "test_count": 20,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T06:21:05.000Z",
+      "message": "Fix: small problem with filter UI",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 56,
+      "deletions": 2,
       "date": "2026-10-22"
     },
     "coverage": 85.11,

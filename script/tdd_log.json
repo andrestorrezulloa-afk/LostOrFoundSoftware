@@ -606,9 +606,31 @@
     "testId": 25
   },
   {
-    "commitId": "HEAD",
+    "commitId": "42b700af3d5ff3905c4c962624405d591d19c4fa",
     "commitName": "feat: conectar nombre, lugar y administrador en la interfaz",
     "commitTimestamp": 1792649706753,
     "testId": 25
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649783091,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649922061,
+    "success": true,
+    "testId": 26
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "Fix: small problem with filter UI",
+    "commitTimestamp": 1792650066279,
+    "testId": 26
   }
 ]
