@@ -228,9 +228,39 @@
     "testId": 10
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f0f5929a0084396a34972a403bd3fa5a5747db44",
     "commitName": "feat: registrar objeto encontrado con nombre y categoria",
     "commitTimestamp": 1792637741620,
     "testId": 10
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1792637767729,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 1,
+    "numTotalTests": 10,
+    "timestamp": 1792637819040,
+    "success": false,
+    "testId": 11
+  },
+  {
+    "numPassedTests": 10,
+    "failedTests": 0,
+    "numTotalTests": 10,
+    "timestamp": 1792637832627,
+    "success": true,
+    "testId": 11
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar objeto en el catalogo con id unico y estado Disponible",
+    "commitTimestamp": 1792637843586,
+    "testId": 11
   }
 ]
