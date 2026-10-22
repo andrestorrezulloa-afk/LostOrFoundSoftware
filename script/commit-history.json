@@ -418,12 +418,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c4679f0cbd93b60e03e3356ae6f9f0f717a82483",
     "author": "unknown",
     "commit": {
       "date": "2026-10-22T06:10:38.000Z",
       "message": "feat: guardar nombre del administrador y exponer usuario actual",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/c4679f0cbd93b60e03e3356ae6f9f0f717a82483"
     },
     "stats": {
       "total": 23,
@@ -433,6 +433,25 @@
     },
     "coverage": 82.98,
     "test_count": 17,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T06:12:14.000Z",
+      "message": "feat: guardar lugar donde se encontro el objeto",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 85.11,
+    "test_count": 19,
     "failed_tests": 0,
     "conclusion": "success"
   }

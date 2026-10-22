@@ -68,4 +68,9 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
       nombre: "Ana Perez",
     });
   });
+
+  it("deberia devolver null si no hay sesion iniciada", () => {
+    const auth = new SistemaAuth();
+    expect(auth.obtenerUsuarioActual()).toEqual(null);
+  });
 });

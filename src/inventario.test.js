@@ -66,4 +66,15 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(inventario.puedePublicar(false)).toEqual(false);
     expect(inventario.puedePublicar(true)).toEqual(true);
   });
+
+  it("deberia guardar el lugar donde se encontro el objeto", () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({
+      nombre: "Mochila negra",
+      categoria: "Utiles",
+      lugarEncontrado: "Bloque C, aula 204",
+    });
+    const objeto = inventario.obtenerCatalogo()[0];
+    expect(objeto.lugarEncontrado).toEqual("Bloque C, aula 204");
+  });
 });

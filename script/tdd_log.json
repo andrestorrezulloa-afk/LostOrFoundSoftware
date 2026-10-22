@@ -540,9 +540,39 @@
     "testId": 22
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c4679f0cbd93b60e03e3356ae6f9f0f717a82483",
     "commitName": "feat: guardar nombre del administrador y exponer usuario actual",
     "commitTimestamp": 1792649439380,
     "testId": 22
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 0,
+    "numTotalTests": 18,
+    "timestamp": 1792649476334,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 18,
+    "failedTests": 1,
+    "numTotalTests": 19,
+    "timestamp": 1792649511066,
+    "success": false,
+    "testId": 23
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 0,
+    "numTotalTests": 19,
+    "timestamp": 1792649524951,
+    "success": true,
+    "testId": 23
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar lugar donde se encontro el objeto",
+    "commitTimestamp": 1792649535916,
+    "testId": 23
   }
 ]
