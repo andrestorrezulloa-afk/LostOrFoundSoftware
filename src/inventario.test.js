@@ -23,4 +23,18 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(catalogo[0].categoria).toEqual("Electronicos");
     expect(catalogo[0].estado).toEqual("Disponible");
   });
+
+  it("deberia guardar descripcion, foto opcional y generar fechaRegistro automatica", () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({
+      nombre: "Mochila negra",
+      categoria: "Utiles",
+      descripcion: "Encontrada en el bloque C",
+      foto: "data:image/png;base64,ejemplo",
+    });
+    const objeto = inventario.obtenerCatalogo()[0];
+    expect(objeto.descripcion).toEqual("Encontrada en el bloque C");
+    expect(objeto.foto).toEqual("data:image/png;base64,ejemplo");
+    expect(Boolean(objeto.fechaRegistro)).toEqual(true);
+  });
 });

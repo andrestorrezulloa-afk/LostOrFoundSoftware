@@ -209,12 +209,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4d9b2949057c6751765cf700b299bcccb630461a",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T02:57:21.000Z",
       "message": "feat: guardar objeto en el catalogo con id unico y estado Disponible",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4d9b2949057c6751765cf700b299bcccb630461a"
     },
     "stats": {
       "total": 32,
@@ -224,6 +224,25 @@
     },
     "coverage": 96.43,
     "test_count": 10,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T02:58:17.000Z",
+      "message": "feat: agregar descripcion, foto opcional y fecha de registro automatica",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 87.1,
+    "test_count": 11,
     "failed_tests": 0,
     "conclusion": "success"
   }

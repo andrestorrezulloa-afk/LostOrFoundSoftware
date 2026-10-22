@@ -258,9 +258,31 @@
     "testId": 11
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4d9b2949057c6751765cf700b299bcccb630461a",
     "commitName": "feat: guardar objeto en el catalogo con id unico y estado Disponible",
     "commitTimestamp": 1792637843586,
     "testId": 11
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 3,
+    "numTotalTests": 11,
+    "timestamp": 1792637880098,
+    "success": false,
+    "testId": 12
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 0,
+    "numTotalTests": 11,
+    "timestamp": 1792637891777,
+    "success": true,
+    "testId": 12
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar descripcion, foto opcional y fecha de registro automatica",
+    "commitTimestamp": 1792637899067,
+    "testId": 12
   }
 ]
