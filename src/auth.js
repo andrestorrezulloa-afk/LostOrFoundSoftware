@@ -1,6 +1,7 @@
 class SistemaAuth {
   constructor() {
     this.usuarios = [];
+    this.usuarioActual = null;
   }
 
   registrar(correo, password) {
@@ -16,11 +17,19 @@ class SistemaAuth {
   }
 
   iniciarSesion(correo, password) {
+    const usuario = this.usuarios.find(
+      (u) => u.correo === correo && u.password === password
+    );
+    if (!usuario) {
+      this.usuarioActual = null;
+      return { exito: false, mensaje: "Credenciales incorrectas" };
+    }
+    this.usuarioActual = usuario;
     return { exito: true, mensaje: "Sesion iniciada" };
   }
 
   puedeAccederAlPanel() {
-    return true;
+    return this.usuarioActual !== null;
   }
 }
 

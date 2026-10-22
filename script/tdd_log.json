@@ -112,9 +112,31 @@
     "testId": 4
   },
   {
-    "commitId": "HEAD",
+    "commitId": "1c638bfcceaf9cbd3be1c4e122030cfcfab60d1f",
     "commitName": "feat: iniciar sesion con credenciales correctas y acceder al panel",
     "commitTimestamp": 1792631768988,
     "testId": 4
+  },
+  {
+    "numPassedTests": 5,
+    "failedTests": 1,
+    "numTotalTests": 6,
+    "timestamp": 1792631787007,
+    "success": false,
+    "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 0,
+    "numTotalTests": 6,
+    "timestamp": 1792631810166,
+    "success": true,
+    "testId": 5
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar credenciales incorrectas y bloquear acceso al panel",
+    "commitTimestamp": 1792631818640,
+    "testId": 5
   }
 ]

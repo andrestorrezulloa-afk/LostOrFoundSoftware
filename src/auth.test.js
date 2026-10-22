@@ -36,4 +36,13 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect( auth.puedeAccederAlPanel() ).toEqual(true);
   });
 
+  it("deberia mostrar error y negar acceso con credenciales incorrectas", () => {
+    const auth = new SistemaAuth();
+    auth.registrar("admin@ucb.edu.bo", "123456");
+    const login = auth.iniciarSesion("admin@ucb.edu.bo", "claveErronea");
+    expect(login.exito).toEqual(false);
+    expect(login.mensaje).toEqual("Credenciales incorrectas");
+    expect(auth.puedeAccederAlPanel()).toEqual(false);
+  });
+
 });
