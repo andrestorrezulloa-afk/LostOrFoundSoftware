@@ -228,12 +228,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "61944224ae0f5bd3860ae7ff488b72ec9cd20049",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T02:58:17.000Z",
       "message": "feat: agregar descripcion, foto opcional y fecha de registro automatica",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/61944224ae0f5bd3860ae7ff488b72ec9cd20049"
     },
     "stats": {
       "total": 28,
@@ -243,6 +243,25 @@
     },
     "coverage": 87.1,
     "test_count": 11,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T02:59:45.000Z",
+      "message": "feat: validar que el nombre del objeto sea obligatorio antes de guardar",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 31,
+      "additions": 31,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 80.56,
+    "test_count": 12,
     "failed_tests": 0,
     "conclusion": "success"
   }

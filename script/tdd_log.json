@@ -280,9 +280,39 @@
     "testId": 12
   },
   {
-    "commitId": "HEAD",
+    "commitId": "61944224ae0f5bd3860ae7ff488b72ec9cd20049",
     "commitName": "feat: agregar descripcion, foto opcional y fecha de registro automatica",
     "commitTimestamp": 1792637899067,
     "testId": 12
+  },
+  {
+    "numPassedTests": 11,
+    "failedTests": 1,
+    "numTotalTests": 12,
+    "timestamp": 1792637926019,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 3,
+    "numTotalTests": 12,
+    "timestamp": 1792637966214,
+    "success": false,
+    "testId": 13
+  },
+  {
+    "numPassedTests": 12,
+    "failedTests": 0,
+    "numTotalTests": 12,
+    "timestamp": 1792637976633,
+    "success": true,
+    "testId": 13
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar que el nombre del objeto sea obligatorio antes de guardar",
+    "commitTimestamp": 1792637987458,
+    "testId": 13
   }
 ]

@@ -37,4 +37,15 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(objeto.foto).toEqual("data:image/png;base64,ejemplo");
     expect(Boolean(objeto.fechaRegistro)).toEqual(true);
   });
+
+  it("no deberia guardar y deberia mostrar mensaje claro si falta el nombre", () => {
+    const inventario = new InventarioObjetos();
+    const res = inventario.registrarObjeto({
+      nombre: "",
+      categoria: "Llaves",
+    });
+    expect(res.exito).toEqual(false);
+    expect(res.mensaje).toEqual("El nombre y la categoria son obligatorios");
+    expect(inventario.obtenerCatalogo().length).toEqual(0);
+  });
 });
