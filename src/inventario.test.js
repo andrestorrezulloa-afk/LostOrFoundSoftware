@@ -49,7 +49,6 @@ describe("HU-01: Registrar objeto encontrado", () => {
     expect(inventario.obtenerCatalogo().length).toEqual(0);
   });
 
-
   it("no deberia guardar y deberia mostrar mensaje claro si falta la categoria", () => {
     const inventario = new InventarioObjetos();
     const res = inventario.registrarObjeto({
@@ -76,5 +75,19 @@ describe("HU-01: Registrar objeto encontrado", () => {
     });
     const objeto = inventario.obtenerCatalogo()[0];
     expect(objeto.lugarEncontrado).toEqual("Bloque C, aula 204");
+  });
+
+  it("deberia guardar quien registro el objeto", () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({
+      nombre: "Casio",
+      categoria: "Electronicos",
+      registradoPor: { correo: "admin@ucb.edu.bo", nombre: "Ana Perez" },
+    });
+    const objeto = inventario.obtenerCatalogo()[0];
+    expect(objeto.registradoPor).toEqual({
+      correo: "admin@ucb.edu.bo",
+      nombre: "Ana Perez",
+    });
   });
 });

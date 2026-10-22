@@ -570,9 +570,31 @@
     "testId": 23
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b8c9e522c60d9d053bc9d4f77cde8545f094d5eb",
     "commitName": "feat: guardar lugar donde se encontro el objeto",
     "commitTimestamp": 1792649535916,
     "testId": 23
+  },
+  {
+    "numPassedTests": 19,
+    "failedTests": 1,
+    "numTotalTests": 20,
+    "timestamp": 1792649557140,
+    "success": false,
+    "testId": 24
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792649572216,
+    "success": true,
+    "testId": 24
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: guardar el administrador que registro el objeto",
+    "commitTimestamp": 1792649581764,
+    "testId": 24
   }
 ]
