@@ -50,4 +50,13 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect(auth.obtenerEstadoPanel()).toEqual("Acceso denegado: debe iniciar sesion");
   });
 
+  it("deberia terminar la sesion al cerrar sesion y bloquear el panel", () => {
+    const auth = new SistemaAuth();
+    auth.registrar("admin@ucb.edu.bo", "123456");
+    auth.iniciarSesion("admin@ucb.edu.bo", "123456");
+    auth.cerrarSesion();
+    expect(auth.puedeAccederAlPanel()).toEqual(false);
+    expect(auth.obtenerEstadoPanel()).toEqual("Acceso denegado: debe iniciar sesion");
+  });
+
 });

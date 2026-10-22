@@ -38,6 +38,10 @@ class SistemaAuth {
     }
     return "Bienvenido al Panel de Gestion de Objetos";
   }
+
+  cerrarSesion() {
+    this.usuarioActual = null;
+  }
 }
 
 export default SistemaAuth;

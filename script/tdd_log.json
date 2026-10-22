@@ -156,9 +156,31 @@
     "testId": 6
   },
   {
-    "commitId": "HEAD",
+    "commitId": "06e88b9e06e8368143b51cbf18c3fd0494b994ac",
     "commitName": "feat: restringir acceso al panel cuando no hay sesion iniciada",
     "commitTimestamp": 1792631881122,
     "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 1,
+    "numTotalTests": 8,
+    "timestamp": 1792631899946,
+    "success": false,
+    "testId": 7
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 0,
+    "numTotalTests": 8,
+    "timestamp": 1792631911134,
+    "success": true,
+    "testId": 7
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: implementar cierre de sesion y bloqueo del panel",
+    "commitTimestamp": 1792631920683,
+    "testId": 7
   }
 ]
