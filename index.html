@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-  <!-- autenticacion pantalla-->
     <section id="seccion-auth" class="auth-wrapper">
       <div class="auth-card">
         <h1>Bienestar Estudiantil</h1>
@@ -16,7 +15,7 @@
         <div id="mensaje-sistema" class="mensaje"></div>
 
         <div id="vista-login">
-          <h2>Iniciar Sesión</h2>
+          <h2>Iniciar Sesión (Personal)</h2>
           <form id="login-form">
             <div class="form-group">
               <label for="login-correo">Correo institucional</label>
@@ -47,6 +46,7 @@
           </div>
         </div>
 
+      
         <div id="vista-registro" style="display: none;">
           <h2>Crear Cuenta de Personal</h2>
           <form id="registro-form">
@@ -78,22 +78,89 @@
             </button>
           </div>
         </div>
+
+        <hr class="divider" />
+        <button type="button" id="btn-ver-catalogo-publico" class="btn-secondary">
+          Soy Estudiante: Ver Catálogo de Objetos
+        </button>
       </div>
     </section>
 
-    
     <div id="estado-acceso" style="display: none;">
       Acceso denegado: debe iniciar sesion
     </div>
 
-    <!-- pantalla de gestion -->
+    <section id="vista-estudiante" class="panel-container" style="display: none;">
+      <header class="topbar">
+        <span class="topbar-title">Catálogo Público de Objetos Encontrados (Estudiantes)</span>
+        <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
+      </header>
+      <main class="contenido-principal">
+        <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
+      </main>
+    </section>
+
     <section id="panel-gestion" class="panel-container" style="display: none;">
       <header class="topbar">
+        <span class="topbar-title">Panel de Gestión - Bienestar Estudiantil</span>
         <button id="btn-logout" class="btn-logout">Cerrar sesión</button>
       </header>
 
-      <!-- area limpia para agregar las demas pantallas -->
-      <main id="contenido-objetos" class="contenido-principal"></main>
+      <main id="contenido-objetos" class="contenido-principal layout-gestion">
+       
+        <div class="card-formulario">
+          <h2>Registrar Objeto Encontrado</h2>
+          <div id="mensaje-objeto" class="mensaje"></div>
+
+          <form id="form-registrar-objeto">
+            <div class="form-group">
+              <label for="obj-nombre">Nombre del objeto *</label>
+              <input
+                type="text"
+                id="obj-nombre"
+                placeholder="Ej. Calculadora científica Casio"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="obj-categoria">Categoría *</label>
+              <select id="obj-categoria">
+                <option value="">-- Selecciona una categoría --</option>
+                <option value="Llaves">Llaves</option>
+                <option value="Electrónicos">Electrónicos</option>
+                <option value="Documentos">Documentos</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Útiles">Útiles</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="obj-descripcion">Descripción (opcional)</label>
+              <textarea
+                id="obj-descripcion"
+                rows="3"
+                placeholder="Detalles como color, marca o lugar donde se encontró..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="obj-foto">Foto del objeto (opcional)</label>
+              <input type="file" id="obj-foto" accept="image/*" />
+            </div>
+
+            <button type="submit" id="btn-guardar-objeto" class="btn-primary">
+              Publicar en el catálogo
+            </button>
+          </form>
+        </div>
+
+        
+        <div class="seccion-catalogo">
+          <h2>Catálogo de Objetos Publicados</h2>
+          <div id="lista-catalogo-staff" class="catalogo-grid"></div>
+        </div>
+      </main>
     </section>
 
     <script type="module" src="./src/presenter.js"></script>

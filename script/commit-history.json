@@ -285,17 +285,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6026e17726d1ee0b62f05d17a9d8d4ce88825155",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T03:01:47.000Z",
       "message": "feat: ocultar opcion de publicar objetos para estudiantes sin sesion",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/6026e17726d1ee0b62f05d17a9d8d4ce88825155"
     },
     "stats": {
       "total": 10,
       "additions": 10,
       "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 81.08,
+    "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T03:04:11.000Z",
+      "message": "feat: agregar formulario de registro de objetos y vista de catalogo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 361,
+      "additions": 354,
+      "deletions": 7,
       "date": "2026-10-22"
     },
     "coverage": 81.08,

@@ -362,9 +362,23 @@
     "testId": 15
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6026e17726d1ee0b62f05d17a9d8d4ce88825155",
     "commitName": "feat: ocultar opcion de publicar objetos para estudiantes sin sesion",
     "commitTimestamp": 1792638108876,
     "testId": 15
+  },
+  {
+    "numPassedTests": 14,
+    "failedTests": 0,
+    "numTotalTests": 14,
+    "timestamp": 1792638243109,
+    "success": true,
+    "testId": 16
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: agregar formulario de registro de objetos y vista de catalogo",
+    "commitTimestamp": 1792638253355,
+    "testId": 16
   }
 ]

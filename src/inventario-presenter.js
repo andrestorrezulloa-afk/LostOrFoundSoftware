@@ -1,0 +1,114 @@
+import InventarioObjetos from "./inventario.js";
+
+const inventario = new InventarioObjetos();
+
+const formObjeto = document.querySelector("#form-registrar-objeto");
+const objNombre = document.querySelector("#obj-nombre");
+const objCategoria = document.querySelector("#obj-categoria");
+const objDescripcion = document.querySelector("#obj-descripcion");
+const objFoto = document.querySelector("#obj-foto");
+const mensajeObjeto = document.querySelector("#mensaje-objeto");
+
+const listaCatalogoStaff = document.querySelector("#lista-catalogo-staff");
+const listaCatalogoEstudiante = document.querySelector("#lista-catalogo-estudiante");
+
+const btnVerCatalogoPublico = document.querySelector("#btn-ver-catalogo-publico");
+const btnVolverLogin = document.querySelector("#btn-volver-login");
+const seccionAuth = document.querySelector("#seccion-auth");
+const vistaEstudiante = document.querySelector("#vista-estudiante");
+
+function mostrarMensajeObjeto(texto, esExito) {
+  if (!mensajeObjeto) return;
+  if (!texto) {
+    mensajeObjeto.className = "mensaje";
+    mensajeObjeto.innerHTML = "";
+    return;
+  }
+  mensajeObjeto.innerHTML = texto;
+  mensajeObjeto.className = esExito ? "mensaje exito" : "mensaje error";
+}
+
+function crearTarjetaObjetoHTML(obj) {
+  const imagenHTML = obj.foto
+    ? `<img src="${obj.foto}" alt="${obj.nombre}" class="objeto-img" />`
+    : `<div class="objeto-sin-img">Sin foto</div>`;
+
+  return `
+    <article class="objeto-card">
+      ${imagenHTML}
+      <div class="objeto-body">
+        <div class="objeto-header">
+          <span class="badge-categoria">${obj.categoria}</span>
+          <span class="badge-estado">${obj.estado}</span>
+        </div>
+        <h3 class="objeto-titulo">${obj.nombre}</h3>
+        <p class="objeto-desc">${obj.descripcion || "Sin descripción adicional."}</p>
+        <small class="objeto-fecha">Registrado: ${obj.fechaRegistro}</small>
+      </div>
+    </article>
+  `;
+}
+
+function renderizarCatalogos() {
+  const objetos = inventario.obtenerCatalogo();
+  const html =
+    objetos.length === 0
+      ? `<p class="catalogo-vacio">Aún no hay objetos registrados en el catálogo.</p>`
+      : objetos.map(crearTarjetaObjetoHTML).join("");
+
+  if (listaCatalogoStaff) listaCatalogoStaff.innerHTML = html;
+  if (listaCatalogoEstudiante) listaCatalogoEstudiante.innerHTML = html;
+}
+
+function leerArchivoComoBase64(archivo) {
+  return new Promise((resolve) => {
+    if (!archivo) {
+      resolve("");
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (e) => resolve(e.target.result);
+    reader.onerror = () => resolve("");
+    reader.readAsDataURL(archivo);
+  });
+}
+
+if (formObjeto) {
+  formObjeto.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const archivoFoto = objFoto.files && objFoto.files[0] ? objFoto.files[0] : null;
+    const fotoBase64 = await leerArchivoComoBase64(archivoFoto);
+
+    const res = inventario.registrarObjeto({
+      nombre: objNombre.value,
+      categoria: objCategoria.value,
+      descripcion: objDescripcion.value,
+      foto: fotoBase64,
+    });
+
+    if (res.exito) {
+      formObjeto.reset();
+      mostrarMensajeObjeto(res.mensaje, true);
+      renderizarCatalogos();
+    } else {
+      mostrarMensajeObjeto(res.mensaje, false);
+    }
+  });
+}
+
+if (btnVerCatalogoPublico) {
+  btnVerCatalogoPublico.addEventListener("click", () => {
+    renderizarCatalogos();
+    seccionAuth.style.display = "none";
+    vistaEstudiante.style.display = "block";
+  });
+}
+
+if (btnVolverLogin) {
+  btnVolverLogin.addEventListener("click", () => {
+    vistaEstudiante.style.display = "none";
+    seccionAuth.style.display = "flex";
+  });
+}
+
+renderizarCatalogos();
