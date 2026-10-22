@@ -31,6 +31,13 @@ class SistemaAuth {
   puedeAccederAlPanel() {
     return this.usuarioActual !== null;
   }
+
+  obtenerEstadoPanel() {
+    if (!this.puedeAccederAlPanel()) {
+      return "Acceso denegado: debe iniciar sesion";
+    }
+    return "Bienvenido al Panel de Gestion de Objetos";
+  }
 }
 
 export default SistemaAuth;

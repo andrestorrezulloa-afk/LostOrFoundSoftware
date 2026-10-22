@@ -95,12 +95,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9a86535d9e33181d3a55d666315f7023f72473b4",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T01:16:57.000Z",
       "message": "feat: validar credenciales incorrectas y bloquear acceso al panel",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/9a86535d9e33181d3a55d666315f7023f72473b4"
     },
     "stats": {
       "total": 20,
@@ -110,6 +110,25 @@
     },
     "coverage": 100,
     "test_count": 6,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:17:59.000Z",
+      "message": "feat: restringir acceso al panel cuando no hay sesion iniciada",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.24,
+    "test_count": 7,
     "failed_tests": 0,
     "conclusion": "success"
   }

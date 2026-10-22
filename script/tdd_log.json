@@ -134,9 +134,31 @@
     "testId": 5
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9a86535d9e33181d3a55d666315f7023f72473b4",
     "commitName": "feat: validar credenciales incorrectas y bloquear acceso al panel",
     "commitTimestamp": 1792631818640,
     "testId": 5
+  },
+  {
+    "numPassedTests": 6,
+    "failedTests": 1,
+    "numTotalTests": 7,
+    "timestamp": 1792631839378,
+    "success": false,
+    "testId": 6
+  },
+  {
+    "numPassedTests": 7,
+    "failedTests": 0,
+    "numTotalTests": 7,
+    "timestamp": 1792631873765,
+    "success": true,
+    "testId": 6
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: restringir acceso al panel cuando no hay sesion iniciada",
+    "commitTimestamp": 1792631881122,
+    "testId": 6
   }
 ]

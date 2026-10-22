@@ -45,4 +45,9 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect(auth.puedeAccederAlPanel()).toEqual(false);
   });
 
+  it("no deberia permitir acceso al panel si no se ha iniciado sesion", () => {
+    const auth = new SistemaAuth();
+    expect(auth.obtenerEstadoPanel()).toEqual("Acceso denegado: debe iniciar sesion");
+  });
+
 });
