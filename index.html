@@ -2,31 +2,166 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienestar Estudiantil - Objetos Perdidos</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <h1>Bienestar Estudiantil</h1>
+    <section id="seccion-auth" class="auth-wrapper">
+      <div class="auth-card">
+        <h1>Bienestar Estudiantil</h1>
+        <p class="auth-subtitle">Administración de Objetos Perdidos</p>
 
-    <!--Pantalla de Autenticacion-->
-    <div id="mensaje-sistema"></div>
-    <div id="estado-acceso">Acceso denegado: debe iniciar sesion</div>
+        <div id="mensaje-sistema" class="mensaje"></div>
 
-    <section id="seccion-auth">
-      <h2>Crear Cuenta</h2>
-      <form id="registro-form">
-        <input type="email" id="reg-correo" placeholder="Correo institucional" />
-        <input type="password" id="reg-password" placeholder="Contrasena" />
-        <button type="submit" id="btn-registrar">Crear cuenta</button>
-      </form>
+        <div id="vista-login">
+          <h2>Iniciar Sesión (Personal)</h2>
+          <form id="login-form">
+            <div class="form-group">
+              <label for="login-correo">Correo institucional</label>
+              <input
+                type="email"
+                id="login-correo"
+                placeholder="ejemplo@ucb.edu.bo"
+              />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Contraseña</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Ingresa tu contraseña"
+              />
+            </div>
+            <button type="submit" id="btn-login" class="btn-primary">
+              Iniciar sesión
+            </button>
+          </form>
 
-      <h2>Iniciar Sesion</h2>
-      <form id="login-form">
-        <input type="email" id="login-correo" placeholder="Correo institucional" />
-        <input type="password" id="login-password" placeholder="Contrasena" />
-        <button type="submit" id="btn-login">Iniciar sesion</button>
-      </form>
+          <div class="switch-view">
+            ¿No tienes una cuenta?
+            <button type="button" id="ir-a-registro" class="btn-link">
+              Crear cuenta
+            </button>
+          </div>
+        </div>
+
+      
+        <div id="vista-registro" style="display: none;">
+          <h2>Crear Cuenta de Personal</h2>
+          <form id="registro-form">
+            <div class="form-group">
+              <label for="reg-correo">Correo institucional</label>
+              <input
+                type="email"
+                id="reg-correo"
+                placeholder="ejemplo@ucb.edu.bo"
+              />
+            </div>
+            <div class="form-group">
+              <label for="reg-password">Contraseña</label>
+              <input
+                type="password"
+                id="reg-password"
+                placeholder="Crea una contraseña"
+              />
+            </div>
+            <button type="submit" id="btn-registrar" class="btn-primary">
+              Crear cuenta
+            </button>
+          </form>
+
+          <div class="switch-view">
+            ¿Ya tienes una cuenta?
+            <button type="button" id="ir-a-login" class="btn-link">
+              Iniciar sesión
+            </button>
+          </div>
+        </div>
+
+        <hr class="divider" />
+        <button type="button" id="btn-ver-catalogo-publico" class="btn-secondary">
+          Soy Estudiante: Ver Catálogo de Objetos
+        </button>
+      </div>
     </section>
 
+    <div id="estado-acceso" style="display: none;">
+      Acceso denegado: debe iniciar sesion
+    </div>
+
+    <section id="vista-estudiante" class="panel-container" style="display: none;">
+      <header class="topbar">
+        <span class="topbar-title">Catálogo Público de Objetos Encontrados (Estudiantes)</span>
+        <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
+      </header>
+      <main class="contenido-principal">
+        <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
+      </main>
+    </section>
+
+    <section id="panel-gestion" class="panel-container" style="display: none;">
+      <header class="topbar">
+        <span class="topbar-title">Panel de Gestión - Bienestar Estudiantil</span>
+        <button id="btn-logout" class="btn-logout">Cerrar sesión</button>
+      </header>
+
+      <main id="contenido-objetos" class="contenido-principal layout-gestion">
+       
+        <div class="card-formulario">
+          <h2>Registrar Objeto Encontrado</h2>
+          <div id="mensaje-objeto" class="mensaje"></div>
+
+          <form id="form-registrar-objeto">
+            <div class="form-group">
+              <label for="obj-nombre">Nombre del objeto *</label>
+              <input
+                type="text"
+                id="obj-nombre"
+                placeholder="Ej. Calculadora científica Casio"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="obj-categoria">Categoría *</label>
+              <select id="obj-categoria">
+                <option value="">-- Selecciona una categoría --</option>
+                <option value="Llaves">Llaves</option>
+                <option value="Electrónicos">Electrónicos</option>
+                <option value="Documentos">Documentos</option>
+                <option value="Ropa">Ropa</option>
+                <option value="Útiles">Útiles</option>
+                <option value="Otros">Otros</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="obj-descripcion">Descripción (opcional)</label>
+              <textarea
+                id="obj-descripcion"
+                rows="3"
+                placeholder="Detalles como color, marca o lugar donde se encontró..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="obj-foto">Foto del objeto (opcional)</label>
+              <input type="file" id="obj-foto" accept="image/*" />
+            </div>
+
+            <button type="submit" id="btn-guardar-objeto" class="btn-primary">
+              Publicar en el catálogo
+            </button>
+          </form>
+        </div>
+
+        
+        <div class="seccion-catalogo">
+          <h2>Catálogo de Objetos Publicados</h2>
+          <div id="lista-catalogo-staff" class="catalogo-grid"></div>
+        </div>
+      </main>
+    </section>
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
