@@ -206,9 +206,31 @@
     "testId": 9
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cd55338f58d34bcce537e160c3e657bdd681900b",
     "commitName": "refactor: agregar estilos css y navegacion entre login, registro y panel",
     "commitTimestamp": 1792634258843,
     "testId": 9
+  },
+  {
+    "numPassedTests": 8,
+    "failedTests": 1,
+    "numTotalTests": 9,
+    "timestamp": 1792637719255,
+    "success": false,
+    "testId": 10
+  },
+  {
+    "numPassedTests": 9,
+    "failedTests": 0,
+    "numTotalTests": 9,
+    "timestamp": 1792637736198,
+    "success": true,
+    "testId": 10
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: registrar objeto encontrado con nombre y categoria",
+    "commitTimestamp": 1792637741620,
+    "testId": 10
   }
 ]

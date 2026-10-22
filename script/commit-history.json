@@ -171,12 +171,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cd55338f58d34bcce537e160c3e657bdd681900b",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T01:57:37.000Z",
       "message": "refactor: agregar estilos css y navegacion entre login, registro y panel",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/cd55338f58d34bcce537e160c3e657bdd681900b"
     },
     "stats": {
       "total": 370,
@@ -186,6 +186,25 @@
     },
     "coverage": 95.45,
     "test_count": 8,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T02:55:40.000Z",
+      "message": "feat: registrar objeto encontrado con nombre y categoria",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 95.65,
+    "test_count": 9,
     "failed_tests": 0,
     "conclusion": "success"
   }
