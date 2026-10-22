@@ -1,6 +1,6 @@
 class SistemaAuth {
   registrar(correo, password) {
-    return { exito: true };
+    return { exito: true, mensaje: "Cuenta creada exitosamente" };
   }
 }
 

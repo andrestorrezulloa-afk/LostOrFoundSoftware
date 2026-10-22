@@ -6,4 +6,11 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     const resultado = auth.registrar("admin@ucb.edu.bo", "123456");
     expect(resultado.exito).toEqual(true);
   });
+
+  it("deberia devolver mensaje de exito al crear la cuenta", () => {
+    const auth = new SistemaAuth();
+    const resultado = auth.registrar("admin@ucb.edu.bo", "123456");
+    expect(resultado.mensaje).toEqual("Cuenta creada exitosamente");
+  });
+  
 });

@@ -24,9 +24,31 @@
     "testId": 0
   },
   {
-    "commitId": "HEAD",
+    "commitId": "94e939c1a52a5e8af725ce1caa688c56e6889854",
     "commitName": "feat: registrar cuenta con correo valido y contrasena",
     "commitTimestamp": 1792631511655,
     "testId": 0
+  },
+  {
+    "numPassedTests": 1,
+    "failedTests": 1,
+    "numTotalTests": 2,
+    "timestamp": 1792631534092,
+    "success": false,
+    "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 0,
+    "numTotalTests": 2,
+    "timestamp": 1792631573641,
+    "success": true,
+    "testId": 1
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: devolver mensaje de confirmacion al registrar cuenta",
+    "commitTimestamp": 1792631583526,
+    "testId": 1
   }
 ]
