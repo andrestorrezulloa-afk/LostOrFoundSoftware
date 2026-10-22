@@ -46,9 +46,31 @@
     "testId": 1
   },
   {
-    "commitId": "HEAD",
+    "commitId": "212f9e2f7c5b9f779d42e51b7ec6d9c3c374ebed",
     "commitName": "feat: devolver mensaje de confirmacion al registrar cuenta",
     "commitTimestamp": 1792631583526,
     "testId": 1
+  },
+  {
+    "numPassedTests": 2,
+    "failedTests": 1,
+    "numTotalTests": 3,
+    "timestamp": 1792631619889,
+    "success": false,
+    "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 0,
+    "numTotalTests": 3,
+    "timestamp": 1792631636748,
+    "success": true,
+    "testId": 2
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: validar formato de correo y contrasena no vacia en registro",
+    "commitTimestamp": 1792631647752,
+    "testId": 2
   }
 ]

@@ -12,5 +12,12 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     const resultado = auth.registrar("admin@ucb.edu.bo", "123456");
     expect(resultado.mensaje).toEqual("Cuenta creada exitosamente");
   });
-  
+
+  it("no deberia registrar si el correo no es valido o falta contrasena", () => {
+    const auth = new SistemaAuth();
+    const resultado = auth.registrar("correoinvalido", "");
+    expect(resultado.exito).toEqual(false);
+    expect(resultado.mensaje).toEqual("Correo o contrasena invalidos");
+  });
+
 });
