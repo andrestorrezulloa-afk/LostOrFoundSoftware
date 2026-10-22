@@ -68,9 +68,31 @@
     "testId": 2
   },
   {
-    "commitId": "HEAD",
+    "commitId": "6532f51cff5a192a96a2c64f3c0ca43f16598b91",
     "commitName": "feat: validar formato de correo y contrasena no vacia en registro",
     "commitTimestamp": 1792631647752,
     "testId": 2
+  },
+  {
+    "numPassedTests": 3,
+    "failedTests": 1,
+    "numTotalTests": 4,
+    "timestamp": 1792631666993,
+    "success": false,
+    "testId": 3
+  },
+  {
+    "numPassedTests": 4,
+    "failedTests": 0,
+    "numTotalTests": 4,
+    "timestamp": 1792631681543,
+    "success": true,
+    "testId": 3
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: rechazar registro de correo duplicado con mensaje claro",
+    "commitTimestamp": 1792631706988,
+    "testId": 3
   }
 ]

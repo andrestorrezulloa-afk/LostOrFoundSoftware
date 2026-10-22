@@ -38,12 +38,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6532f51cff5a192a96a2c64f3c0ca43f16598b91",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T01:14:06.000Z",
       "message": "feat: validar formato de correo y contrasena no vacia en registro",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/6532f51cff5a192a96a2c64f3c0ca43f16598b91"
     },
     "stats": {
       "total": 12,
@@ -53,6 +53,25 @@
     },
     "coverage": 100,
     "test_count": 3,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-10-22T01:15:05.000Z",
+      "message": "feat: rechazar registro de correo duplicado con mensaje claro",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 100,
+    "test_count": 4,
     "failed_tests": 0,
     "conclusion": "success"
   }

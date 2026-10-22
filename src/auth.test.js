@@ -20,4 +20,12 @@ describe("Autenticacion de Bienestar Estudiantil", () => {
     expect(resultado.mensaje).toEqual("Correo o contrasena invalidos");
   });
 
+  it("no deberia permitir registrar un correo que ya existe", () => {
+    const auth = new SistemaAuth();
+    auth.registrar("admin@ucb.edu.bo", "123456");
+    const segundoIntento = auth.registrar("admin@ucb.edu.bo", "otraClave");
+    expect(segundoIntento.exito).toEqual(false);
+    expect(segundoIntento.mensaje).toEqual("El correo ya esta registrado");
+  });
+
 });
