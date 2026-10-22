@@ -96,6 +96,18 @@
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
       </header>
       <main class="contenido-principal">
+        <div class="filtros-catalogo">
+          <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
+          <select id="filtro-categoria-estudiante">
+            <option value="">Todas</option>
+            <option value="Llaves">Llaves</option>
+            <option value="Electrónicos">Electrónicos</option>
+            <option value="Documentos">Documentos</option>
+            <option value="Ropa">Ropa</option>
+            <option value="Útiles">Útiles</option>
+            <option value="Otros">Otros</option>
+          </select>
+        </div>
         <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
       </main>
     </section>
@@ -107,7 +119,7 @@
       </header>
 
       <main id="contenido-objetos" class="contenido-principal layout-gestion">
-       
+        
         <div class="card-formulario">
           <h2>Registrar Objeto Encontrado</h2>
           <div id="mensaje-objeto" class="mensaje"></div>
@@ -158,6 +170,18 @@
         
         <div class="seccion-catalogo">
           <h2>Catálogo de Objetos Publicados</h2>
+          <div class="filtros-catalogo filtros-catalogo-staff">
+            <label for="filtro-categoria-staff">Filtrar por categoría</label>
+            <select id="filtro-categoria-staff">
+              <option value="">Todas</option>
+              <option value="Llaves">Llaves</option>
+              <option value="Electrónicos">Electrónicos</option>
+              <option value="Documentos">Documentos</option>
+              <option value="Ropa">Ropa</option>
+              <option value="Útiles">Útiles</option>
+              <option value="Otros">Otros</option>
+            </select>
+          </div>
           <div id="lista-catalogo-staff" class="catalogo-grid"></div>
         </div>
       </main>

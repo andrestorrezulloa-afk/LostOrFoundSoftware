@@ -1,7 +1,13 @@
+import listar from './filter.js';
+
 class InventarioObjetos {
   constructor() {
     this.objetos = [];
     this.siguienteId = 1;
+  }
+
+  listar(filtros = {}) {
+    return listar.call(this, filtros);
   }
 
   registrarObjeto(datos) {

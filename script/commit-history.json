@@ -304,12 +304,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8022dbaf57bec993419dd02c550d0b4ae483c873",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-10-22T03:04:11.000Z",
       "message": "feat: agregar formulario de registro de objetos y vista de catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/8022dbaf57bec993419dd02c550d0b4ae483c873"
     },
     "stats": {
       "total": 361,
@@ -319,6 +319,101 @@
     },
     "coverage": 81.08,
     "test_count": 14,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "da02dd2e22a9ac49325c106e6d6f19c758476503",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:29:37.000Z",
+      "message": "Feat: failed category test",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/da02dd2e22a9ac49325c106e6d6f19c758476503"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 81.08,
+    "test_count": 15,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "ee0a40370eb266dfb6d62601ec8348f20a5823de",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:35:44.000Z",
+      "message": "Feat: filters now work with specific categories",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/ee0a40370eb266dfb6d62601ec8348f20a5823de"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 83.33,
+    "test_count": 15,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "11a340f8bf2e094f63af9aa7a356baba8221ab3c",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:41:27.000Z",
+      "message": "Test now demands filters return all objects if no filter is selected",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/11a340f8bf2e094f63af9aa7a356baba8221ab3c"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 8,
+      "deletions": 0,
+      "date": "2026-10-22"
+    },
+    "coverage": 83.33,
+    "test_count": 16,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "1a587b7581c1f73eec5572249927b22aff9c00ac",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:49:38.000Z",
+      "message": "Feat: filters now return every object if none is selected",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/1a587b7581c1f73eec5572249927b22aff9c00ac"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-10-22"
+    },
+    "coverage": 84.09,
+    "test_count": 16,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "unknown",
+    "commit": {
+      "date": "2026-10-22T05:55:16.000Z",
+      "message": "Feat: UI implementation for filters",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 91,
+      "additions": 88,
+      "deletions": 3,
+      "date": "2026-10-22"
+    },
+    "coverage": 84.09,
+    "test_count": 16,
     "failed_tests": 0,
     "conclusion": "success"
   }

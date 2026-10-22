@@ -17,6 +17,9 @@ const btnVolverLogin = document.querySelector("#btn-volver-login");
 const seccionAuth = document.querySelector("#seccion-auth");
 const vistaEstudiante = document.querySelector("#vista-estudiante");
 
+const filtroCategoriaEstudiante = document.querySelector("#filtro-categoria-estudiante");
+const filtroCategoriaStaff = document.querySelector("#filtro-categoria-staff");
+
 function mostrarMensajeObjeto(texto, esExito) {
   if (!mensajeObjeto) return;
   if (!texto) {
@@ -49,11 +52,26 @@ function crearTarjetaObjetoHTML(obj) {
   `;
 }
 
+function obtenerObjetosFiltrados() {
+  const categoriaEstudiante = filtroCategoriaEstudiante ? filtroCategoriaEstudiante.value : "";
+  const categoriaStaff = filtroCategoriaStaff ? filtroCategoriaStaff.value : "";
+
+  if (filtroCategoriaEstudiante && document.querySelector("#vista-estudiante")?.style.display !== "none") {
+    return inventario.listar({ categoria: categoriaEstudiante || undefined });
+  }
+
+  if (filtroCategoriaStaff) {
+    return inventario.listar({ categoria: categoriaStaff || undefined });
+  }
+
+  return inventario.listar();
+}
+
 function renderizarCatalogos() {
-  const objetos = inventario.obtenerCatalogo();
+  const objetos = obtenerObjetosFiltrados();
   const html =
     objetos.length === 0
-      ? `<p class="catalogo-vacio">Aún no hay objetos registrados en el catálogo.</p>`
+      ? `<p class="catalogo-vacio">No hay objetos para esta categoría.</p>`
       : objetos.map(crearTarjetaObjetoHTML).join("");
 
   if (listaCatalogoStaff) listaCatalogoStaff.innerHTML = html;
@@ -108,6 +126,18 @@ if (btnVolverLogin) {
   btnVolverLogin.addEventListener("click", () => {
     vistaEstudiante.style.display = "none";
     seccionAuth.style.display = "flex";
+  });
+}
+
+if (filtroCategoriaEstudiante) {
+  filtroCategoriaEstudiante.addEventListener("change", () => {
+    renderizarCatalogos();
+  });
+}
+
+if (filtroCategoriaStaff) {
+  filtroCategoriaStaff.addEventListener("change", () => {
+    renderizarCatalogos();
   });
 }
 
