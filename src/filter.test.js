@@ -46,4 +46,27 @@ describe('HU-02: Buscar objetos por nombre y categoría', () => {
     expect(inventario.listar({ nombre: 'lapiz' }).map((objeto) => objeto.nombre)).toEqual(['Lápiz']);
     expect(inventario.listar({ nombre: 'teléfono' }).map((objeto) => objeto.nombre)).toEqual(['Teléfono']);
   });
+
+  it('combina nombre y categoría mediante intersección y mantiene listar({ categoria })', () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({ nombre: 'Mochila negra', categoria: 'Accesorios' });
+    inventario.registrarObjeto({ nombre: 'Mochila azul', categoria: 'Ropa' });
+    inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Accesorios' });
+
+    expect(inventario.listar({ nombre: 'mochi', categoria: 'Accesorios' }).map((objeto) => objeto.nombre)).toEqual(['Mochila negra']);
+    expect(inventario.listar({ categoria: 'Accesorios' }).map((objeto) => objeto.nombre)).toEqual(['Mochila negra', 'Llavero']);
+    expect(inventario.listar({ nombre: 'inexistente' })).toEqual([]);
+    expect(inventario.listar({ nombre: 'mochi', categoria: 'Llaves' })).toEqual([]);
+  });
+
+  it('ignora nombres vacíos o espacios conservando el filtro de categoría', () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({ nombre: 'Mochila negra', categoria: 'Accesorios' });
+    inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves' });
+
+    expect(inventario.listar({ nombre: '' })).toHaveLength(2);
+    expect(inventario.listar({ nombre: '   ' })).toHaveLength(2);
+    expect(inventario.listar({ nombre: '   ', categoria: 'Llaves' }).map((objeto) => objeto.nombre)).toEqual(['Llavero']);
+    expect(inventario.listar({ nombre: ' mochi ' }).map((objeto) => objeto.nombre)).toEqual(['Mochila negra']);
+  });
 });

@@ -570,12 +570,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "b53f2cbac473ab8f22def5f7dd5617b58fc9e53b",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:55:39.000Z",
       "message": "feat(hu-02): ignorar tildes al buscar por nombre",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b53f2cbac473ab8f22def5f7dd5617b58fc9e53b"
     },
     "stats": {
       "total": 4,
@@ -587,5 +587,24 @@
     "test_count": 23,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:56:17.000Z",
+      "message": "test(hu-02): cubrir filtros combinados y búsqueda vacía",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2026-10-25"
+    },
+    "coverage": 86,
+    "test_count": 25,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

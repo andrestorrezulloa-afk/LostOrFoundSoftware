@@ -684,9 +684,23 @@
     "testId": 30
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b53f2cbac473ab8f22def5f7dd5617b58fc9e53b",
     "commitName": "feat(hu-02): ignorar tildes al buscar por nombre",
     "commitTimestamp": 1792972540462,
     "testId": 30
+  },
+  {
+    "numPassedTests": 24,
+    "failedTests": 1,
+    "numTotalTests": 25,
+    "timestamp": 1792972565711,
+    "success": false,
+    "testId": 31
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(hu-02): cubrir filtros combinados y búsqueda vacía",
+    "commitTimestamp": 1792972578224,
+    "testId": 31
   }
 ]
