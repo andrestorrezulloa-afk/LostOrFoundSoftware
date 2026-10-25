@@ -513,12 +513,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "054ee9c8a1a5f29523a405c872087a3d8c66c3c3",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:53:23.000Z",
       "message": "test(hu-02): definir búsqueda parcial por nombre",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/054ee9c8a1a5f29523a405c872087a3d8c66c3c3"
     },
     "stats": {
       "total": 13,
@@ -530,5 +530,24 @@
     "test_count": 21,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:54:34.000Z",
+      "message": "feat(hu-02): implementar búsqueda parcial por nombre",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 7,
+      "deletions": 3,
+      "date": "2026-10-25"
+    },
+    "coverage": 85.42,
+    "test_count": 21,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

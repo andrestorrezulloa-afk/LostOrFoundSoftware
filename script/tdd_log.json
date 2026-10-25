@@ -642,9 +642,23 @@
     "testId": 27
   },
   {
-    "commitId": "HEAD",
+    "commitId": "054ee9c8a1a5f29523a405c872087a3d8c66c3c3",
     "commitName": "test(hu-02): definir búsqueda parcial por nombre",
     "commitTimestamp": 1792972404785,
     "testId": 27
+  },
+  {
+    "numPassedTests": 21,
+    "failedTests": 0,
+    "numTotalTests": 21,
+    "timestamp": 1792972464339,
+    "success": true,
+    "testId": 28
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-02): implementar búsqueda parcial por nombre",
+    "commitTimestamp": 1792972475634,
+    "testId": 28
   }
 ]
