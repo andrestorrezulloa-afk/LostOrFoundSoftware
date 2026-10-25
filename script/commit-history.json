@@ -494,12 +494,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22d38965e9c6f575d1aef34bf0de3079a457884c",
     "author": "unknown",
     "commit": {
       "date": "2026-10-22T06:21:05.000Z",
       "message": "Fix: small problem with filter UI",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/22d38965e9c6f575d1aef34bf0de3079a457884c"
     },
     "stats": {
       "total": 58,
@@ -511,5 +511,24 @@
     "test_count": 20,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:53:23.000Z",
+      "message": "test(hu-02): definir búsqueda parcial por nombre",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-10-25"
+    },
+    "coverage": 85.11,
+    "test_count": 21,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

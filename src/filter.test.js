@@ -17,3 +17,14 @@ describe("HU-02: Listar objetos registrados", () => {
   expect(inventario.listar().length).toEqual(2);
 });
 });
+
+describe('HU-02: Buscar objetos por nombre y categoría', () => {
+  it('encuentra coincidencias parciales por nombre sin modificar el catálogo', () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({ nombre: 'Mochila negra', categoria: 'Accesorios' });
+    inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves' });
+
+    expect(inventario.listar({ nombre: 'mochi' }).map((objeto) => objeto.nombre)).toEqual(['Mochila negra']);
+    expect(inventario.obtenerCatalogo().map((objeto) => objeto.nombre)).toEqual(['Mochila negra', 'Llavero']);
+  });
+});

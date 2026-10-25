@@ -628,9 +628,23 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22d38965e9c6f575d1aef34bf0de3079a457884c",
     "commitName": "Fix: small problem with filter UI",
     "commitTimestamp": 1792650066279,
     "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 1,
+    "numTotalTests": 21,
+    "timestamp": 1792972384593,
+    "success": false,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(hu-02): definir búsqueda parcial por nombre",
+    "commitTimestamp": 1792972404785,
+    "testId": 27
   }
 ]
