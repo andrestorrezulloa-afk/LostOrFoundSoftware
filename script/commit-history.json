@@ -532,12 +532,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "dfb03225ba21eddc4003c0ffa56a83d3b502f272",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:54:34.000Z",
       "message": "feat(hu-02): implementar búsqueda parcial por nombre",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/dfb03225ba21eddc4003c0ffa56a83d3b502f272"
     },
     "stats": {
       "total": 10,
@@ -549,5 +549,24 @@
     "test_count": 21,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:55:08.000Z",
+      "message": "test(hu-02): cubrir mayúsculas y tildes en nombres",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-10-25"
+    },
+    "coverage": 85.42,
+    "test_count": 23,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

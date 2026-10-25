@@ -656,9 +656,23 @@
     "testId": 28
   },
   {
-    "commitId": "HEAD",
+    "commitId": "dfb03225ba21eddc4003c0ffa56a83d3b502f272",
     "commitName": "feat(hu-02): implementar búsqueda parcial por nombre",
     "commitTimestamp": 1792972475634,
     "testId": 28
+  },
+  {
+    "numPassedTests": 22,
+    "failedTests": 1,
+    "numTotalTests": 23,
+    "timestamp": 1792972498295,
+    "success": false,
+    "testId": 29
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(hu-02): cubrir mayúsculas y tildes en nombres",
+    "commitTimestamp": 1792972509364,
+    "testId": 29
   }
 ]
