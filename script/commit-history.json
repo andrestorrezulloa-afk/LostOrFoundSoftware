@@ -589,12 +589,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "332ad8abad1cc2ea517d74dc7080418bac298d8c",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:56:17.000Z",
       "message": "test(hu-02): cubrir filtros combinados y búsqueda vacía",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/332ad8abad1cc2ea517d74dc7080418bac298d8c"
     },
     "stats": {
       "total": 23,
@@ -606,5 +606,24 @@
     "test_count": 25,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:56:55.000Z",
+      "message": "feat(hu-02): ignorar nombres en blanco al combinar filtros",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 2,
+      "additions": 1,
+      "deletions": 1,
+      "date": "2026-10-25"
+    },
+    "coverage": 86,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

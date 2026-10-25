@@ -3,7 +3,7 @@ const normalizar = (texto) => texto.normalize('NFD').replace(/[\u0300-\u036f]/g,
 export default function listar(filtros = {}) {
   const objetos = this && Array.isArray(this.objetos) ? this.objetos : [];
   const categoria = filtros && filtros.categoria;
-  const nombre = filtros && filtros.nombre;
+  const nombre = filtros && filtros.nombre && filtros.nombre.trim();
 
   if (!categoria && !nombre) {
     return objetos;

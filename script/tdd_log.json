@@ -698,9 +698,23 @@
     "testId": 31
   },
   {
-    "commitId": "HEAD",
+    "commitId": "332ad8abad1cc2ea517d74dc7080418bac298d8c",
     "commitName": "test(hu-02): cubrir filtros combinados y búsqueda vacía",
     "commitTimestamp": 1792972578224,
     "testId": 31
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 0,
+    "numTotalTests": 25,
+    "timestamp": 1792972604656,
+    "success": true,
+    "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-02): ignorar nombres en blanco al combinar filtros",
+    "commitTimestamp": 1792972616143,
+    "testId": 32
   }
 ]
