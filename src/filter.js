@@ -1,3 +1,5 @@
+const normalizar = (texto) => texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
 export default function listar(filtros = {}) {
   const objetos = this && Array.isArray(this.objetos) ? this.objetos : [];
   const categoria = filtros && filtros.categoria;
@@ -9,6 +11,6 @@ export default function listar(filtros = {}) {
 
   return objetos.filter((objeto) =>
     (!categoria || objeto.categoria === categoria) &&
-    (!nombre || objeto.nombre.toLowerCase().includes(nombre.toLowerCase()))
+    (!nombre || normalizar(objeto.nombre).includes(normalizar(nombre)))
   );
 }

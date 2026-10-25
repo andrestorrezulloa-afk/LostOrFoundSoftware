@@ -551,12 +551,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "37579c85bf71f086690012dd2b5e6b2bf924f5a7",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:55:08.000Z",
       "message": "test(hu-02): cubrir mayúsculas y tildes en nombres",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/37579c85bf71f086690012dd2b5e6b2bf924f5a7"
     },
     "stats": {
       "total": 19,
@@ -568,5 +568,24 @@
     "test_count": 23,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:55:39.000Z",
+      "message": "feat(hu-02): ignorar tildes al buscar por nombre",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 3,
+      "deletions": 1,
+      "date": "2026-10-25"
+    },
+    "coverage": 86,
+    "test_count": 23,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

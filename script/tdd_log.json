@@ -670,9 +670,23 @@
     "testId": 29
   },
   {
-    "commitId": "HEAD",
+    "commitId": "37579c85bf71f086690012dd2b5e6b2bf924f5a7",
     "commitName": "test(hu-02): cubrir mayúsculas y tildes en nombres",
     "commitTimestamp": 1792972509364,
     "testId": 29
+  },
+  {
+    "numPassedTests": 23,
+    "failedTests": 0,
+    "numTotalTests": 23,
+    "timestamp": 1792972529620,
+    "success": true,
+    "testId": 30
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-02): ignorar tildes al buscar por nombre",
+    "commitTimestamp": 1792972540462,
+    "testId": 30
   }
 ]
