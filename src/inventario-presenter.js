@@ -21,6 +21,7 @@ const vistaEstudiante = document.querySelector("#vista-estudiante");
 
 const filtroCategoriaEstudiante = document.querySelector("#filtro-categoria-estudiante");
 const filtroCategoriaStaff = document.querySelector("#filtro-categoria-staff");
+const filtroNombreEstudiante = document.querySelector('#filtro-nombre-estudiante');
 
 function mostrarMensajeObjeto(texto, esExito) {
   if (!mensajeObjeto) return;
@@ -54,30 +55,23 @@ function crearTarjetaObjetoHTML(obj) {
   `;
 }
 
-function obtenerObjetosFiltrados() {
-  const categoriaEstudiante = filtroCategoriaEstudiante ? filtroCategoriaEstudiante.value : "";
-  const categoriaStaff = filtroCategoriaStaff ? filtroCategoriaStaff.value : "";
-
-  if (filtroCategoriaEstudiante && document.querySelector("#vista-estudiante")?.style.display !== "none") {
-    return inventario.listar({ categoria: categoriaEstudiante || undefined });
-  }
-
-  if (filtroCategoriaStaff) {
-    return inventario.listar({ categoria: categoriaStaff || undefined });
-  }
-
-  return inventario.listar();
-}
-
 function renderizarCatalogos() {
-  const objetos = obtenerObjetosFiltrados();
-  const html =
-    objetos.length === 0
-      ? `<p class="catalogo-vacio">No hay objetos para esta categoría.</p>`
-      : objetos.map(crearTarjetaObjetoHTML).join("");
+  if (listaCatalogoEstudiante) {
+    const objetos = inventario.listar({
+      nombre: filtroNombreEstudiante?.value,
+      categoria: filtroCategoriaEstudiante?.value,
+    });
+    listaCatalogoEstudiante.innerHTML = objetos.length === 0
+      ? '<p class="catalogo-vacio">No se encontraron objetos que coincidan con la búsqueda.</p>'
+      : objetos.map(crearTarjetaObjetoHTML).join('');
+  }
 
-  if (listaCatalogoStaff) listaCatalogoStaff.innerHTML = html;
-  if (listaCatalogoEstudiante) listaCatalogoEstudiante.innerHTML = html;
+  if (listaCatalogoStaff) {
+    const objetos = inventario.listar({ categoria: filtroCategoriaStaff?.value });
+    listaCatalogoStaff.innerHTML = objetos.length === 0
+      ? '<p class="catalogo-vacio">No hay objetos para esta categoría.</p>'
+      : objetos.map(crearTarjetaObjetoHTML).join('');
+  }
 }
 
 function leerArchivoComoBase64(archivo) {
@@ -135,6 +129,12 @@ if (btnVolverLogin) {
 
 if (filtroCategoriaEstudiante) {
   filtroCategoriaEstudiante.addEventListener("change", () => {
+    renderizarCatalogos();
+  });
+}
+
+if (filtroNombreEstudiante) {
+  filtroNombreEstudiante.addEventListener('input', () => {
     renderizarCatalogos();
   });
 }

@@ -375,3 +375,16 @@ body {
 .filtros-catalogo-staff {
   margin-top: 8px;
 }
+
+#vista-estudiante .filtros-catalogo {
+  flex-wrap: wrap;
+}
+
+#filtro-nombre-estudiante {
+  min-width: 180px;
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}

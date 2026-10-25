@@ -608,17 +608,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "b1f7198f08f2828a1516c429a06ef6b787174f08",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-25T23:56:55.000Z",
       "message": "feat(hu-02): ignorar nombres en blanco al combinar filtros",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b1f7198f08f2828a1516c429a06ef6b787174f08"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2026-10-25"
+    },
+    "coverage": 86,
+    "test_count": 25,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-25T23:57:50.000Z",
+      "message": "feat(hu-02): conectar búsqueda pública por nombre y categoría",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 63,
+      "additions": 39,
+      "deletions": 24,
       "date": "2026-10-25"
     },
     "coverage": 86,

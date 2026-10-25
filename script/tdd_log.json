@@ -712,9 +712,15 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b1f7198f08f2828a1516c429a06ef6b787174f08",
     "commitName": "feat(hu-02): ignorar nombres en blanco al combinar filtros",
     "commitTimestamp": 1792972616143,
     "testId": 32
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-02): conectar búsqueda pública por nombre y categoría",
+    "commitTimestamp": 1792972671517,
+    "testId": 33
   }
 ]
