@@ -718,9 +718,23 @@
     "testId": 32
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0e5a4c9f82c6cfaea5864e354a6d691e10bc6613",
     "commitName": "feat(hu-02): conectar búsqueda pública por nombre y categoría",
     "commitTimestamp": 1792972671517,
     "testId": 33
+  },
+  {
+    "numPassedTests": 25,
+    "failedTests": 1,
+    "numTotalTests": 26,
+    "timestamp": 1792973734816,
+    "success": false,
+    "testId": 34
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test(hu-03): definir consulta fallida de objeto por id",
+    "commitTimestamp": 1792973749101,
+    "testId": 34
   }
 ]

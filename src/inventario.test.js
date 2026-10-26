@@ -91,3 +91,28 @@ describe("HU-01: Registrar objeto encontrado", () => {
     });
   });
 });
+
+describe('HU-03: Ver detalle básico del objeto', () => {
+  it('recupera por id el objeto registrado con sus datos originales sin modificar el catálogo', () => {
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves' });
+    const objeto = inventario.registrarObjeto({
+      nombre: 'Mochila negra',
+      categoria: 'Útiles',
+      foto: 'data:image/png;base64,ejemplo',
+    }).objeto;
+    const contenidoOriginal = { ...objeto };
+
+    const detalle = inventario.obtenerObjetoPorId(objeto.id);
+
+    expect(detalle).toBe(objeto);
+    expect(detalle).toMatchObject({
+      foto: 'data:image/png;base64,ejemplo',
+      nombre: 'Mochila negra',
+      categoria: 'Útiles',
+      estado: 'Disponible',
+    });
+    expect(objeto).toEqual(contenidoOriginal);
+    expect(inventario.obtenerCatalogo()).toHaveLength(2);
+  });
+});
