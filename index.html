@@ -104,21 +104,35 @@
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
       </header>
       <main class="contenido-principal">
-        <div class="filtros-catalogo">
-          <label for="filtro-nombre-estudiante">Buscar por nombre</label>
-          <input type="search" id="filtro-nombre-estudiante" placeholder="Ej. Mochila" />
-          <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
-          <select id="filtro-categoria-estudiante">
-            <option value="">Todas</option>
-            <option value="Llaves">Llaves</option>
-            <option value="Electrónicos">Electrónicos</option>
-            <option value="Documentos">Documentos</option>
-            <option value="Ropa">Ropa</option>
-            <option value="Útiles">Útiles</option>
-            <option value="Otros">Otros</option>
-          </select>
+        <div id="catalogo-estudiante">
+          <div class="filtros-catalogo">
+            <label for="filtro-nombre-estudiante">Buscar por nombre</label>
+            <input type="search" id="filtro-nombre-estudiante" placeholder="Ej. Mochila" />
+            <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
+            <select id="filtro-categoria-estudiante">
+              <option value="">Todas</option>
+              <option value="Llaves">Llaves</option>
+              <option value="Electrónicos">Electrónicos</option>
+              <option value="Documentos">Documentos</option>
+              <option value="Ropa">Ropa</option>
+              <option value="Útiles">Útiles</option>
+              <option value="Otros">Otros</option>
+            </select>
+          </div>
+          <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
         </div>
-        <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
+        <section id="detalle-estudiante" class="detalle-objeto" aria-labelledby="detalle-nombre" hidden>
+          <button type="button" id="btn-volver-catalogo" class="btn-secondary-sm">Volver al catálogo</button>
+          <div class="detalle-contenido">
+            <img id="detalle-foto" class="detalle-foto" alt="" hidden />
+            <div id="detalle-sin-foto" class="objeto-sin-img" hidden>Sin foto</div>
+            <div>
+              <h2 id="detalle-nombre" tabindex="-1"></h2>
+              <p>Categoría: <span id="detalle-categoria"></span></p>
+              <p>Estado: <span id="detalle-estado"></span></p>
+            </div>
+          </div>
+        </section>
       </main>
     </section>
 

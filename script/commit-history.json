@@ -703,17 +703,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "d8bf455702c3a1d593aa3b4a13aa3b700df0b553",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-26T00:17:52.000Z",
       "message": "feat(hu-03): devolver null para id inexistente",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/d8bf455702c3a1d593aa3b4a13aa3b700df0b553"
     },
     "stats": {
       "total": 2,
       "additions": 1,
       "deletions": 1,
+      "date": "2026-10-26"
+    },
+    "coverage": 86.54,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-26T00:19:28.000Z",
+      "message": "feat(hu-03): integrar detalle público del objeto",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 219,
+      "additions": 180,
+      "deletions": 39,
       "date": "2026-10-26"
     },
     "coverage": 86.54,

@@ -13,6 +13,15 @@ const mensajeObjeto = document.querySelector("#mensaje-objeto");
 
 const listaCatalogoStaff = document.querySelector("#lista-catalogo-staff");
 const listaCatalogoEstudiante = document.querySelector("#lista-catalogo-estudiante");
+const catalogoEstudiante = document.querySelector('#catalogo-estudiante');
+const detalleEstudiante = document.querySelector('#detalle-estudiante');
+const detalleFoto = document.querySelector('#detalle-foto');
+const detalleSinFoto = document.querySelector('#detalle-sin-foto');
+const detalleNombre = document.querySelector('#detalle-nombre');
+const detalleCategoria = document.querySelector('#detalle-categoria');
+const detalleEstado = document.querySelector('#detalle-estado');
+const btnVolverCatalogo = document.querySelector('#btn-volver-catalogo');
+let origenDetalle = null;
 
 const btnVerCatalogoPublico = document.querySelector("#btn-ver-catalogo-publico");
 const btnVolverLogin = document.querySelector("#btn-volver-login");
@@ -34,25 +43,51 @@ function mostrarMensajeObjeto(texto, esExito) {
   mensajeObjeto.className = esExito ? "mensaje exito" : "mensaje error";
 }
 
-function crearTarjetaObjetoHTML(obj) {
-  const imagenHTML = obj.foto
-    ? `<img src="${obj.foto}" alt="${obj.nombre}" class="objeto-img" />`
-    : `<div class="objeto-sin-img">Sin foto</div>`;
+function crearElemento(etiqueta, clase, texto) {
+  const elemento = document.createElement(etiqueta);
+  elemento.className = clase;
+  elemento.textContent = texto;
+  return elemento;
+}
 
-  return `
-    <article class="objeto-card">
-      ${imagenHTML}
-      <div class="objeto-body">
-        <div class="objeto-header">
-          <span class="badge-categoria">${obj.categoria}</span>
-          <span class="badge-estado">${obj.estado}</span>
-        </div>
-        <h3 class="objeto-titulo">${obj.nombre}</h3>
-        <p class="objeto-desc">${obj.descripcion || "Sin descripción adicional."}</p>
-        <small class="objeto-fecha">Registrado: ${obj.fechaRegistro}</small>
-      </div>
-    </article>
-  `;
+function crearTarjetaObjeto(obj, esPublico) {
+  const tarjeta = crearElemento('article', 'objeto-card', '');
+  if (obj.foto) {
+    const imagen = crearElemento('img', 'objeto-img', '');
+    imagen.src = obj.foto;
+    imagen.alt = `Foto de ${obj.nombre}`;
+    tarjeta.append(imagen);
+  } else {
+    tarjeta.append(crearElemento('div', 'objeto-sin-img', 'Sin foto'));
+  }
+
+  const cuerpo = crearElemento('div', 'objeto-body', '');
+  const cabecera = crearElemento('div', 'objeto-header', '');
+  cabecera.append(
+    crearElemento('span', 'badge-categoria', obj.categoria),
+    crearElemento('span', 'badge-estado', obj.estado)
+  );
+  cuerpo.append(
+    cabecera,
+    crearElemento('h3', 'objeto-titulo', obj.nombre),
+    crearElemento('p', 'objeto-desc', obj.descripcion || 'Sin descripción adicional.'),
+    crearElemento('small', 'objeto-fecha', `Registrado: ${obj.fechaRegistro}`)
+  );
+  if (esPublico) {
+    const boton = crearElemento('button', 'btn-detalle', 'Ver detalle');
+    boton.type = 'button';
+    boton.dataset.objetoId = String(obj.id);
+    boton.setAttribute('aria-label', `Ver detalle de ${obj.nombre}`);
+    cuerpo.append(boton);
+  }
+  tarjeta.append(cuerpo);
+  return tarjeta;
+}
+
+function renderizarLista(lista, objetos, mensajeVacio, esPublico) {
+  lista.replaceChildren(...(objetos.length
+    ? objetos.map((objeto) => crearTarjetaObjeto(objeto, esPublico))
+    : [crearElemento('p', 'catalogo-vacio', mensajeVacio)]));
 }
 
 function renderizarCatalogos() {
@@ -61,17 +96,55 @@ function renderizarCatalogos() {
       nombre: filtroNombreEstudiante?.value,
       categoria: filtroCategoriaEstudiante?.value,
     });
-    listaCatalogoEstudiante.innerHTML = objetos.length === 0
-      ? '<p class="catalogo-vacio">No se encontraron objetos que coincidan con la búsqueda.</p>'
-      : objetos.map(crearTarjetaObjetoHTML).join('');
+    renderizarLista(listaCatalogoEstudiante, objetos, 'No se encontraron objetos que coincidan con la búsqueda.', true);
   }
 
   if (listaCatalogoStaff) {
     const objetos = inventario.listar({ categoria: filtroCategoriaStaff?.value });
-    listaCatalogoStaff.innerHTML = objetos.length === 0
-      ? '<p class="catalogo-vacio">No hay objetos para esta categoría.</p>'
-      : objetos.map(crearTarjetaObjetoHTML).join('');
+    renderizarLista(listaCatalogoStaff, objetos, 'No hay objetos para esta categoría.', false);
   }
+}
+
+function cerrarDetalle(restaurarFoco = true) {
+  detalleEstudiante.hidden = true;
+  catalogoEstudiante.hidden = false;
+  if (restaurarFoco) {
+    (origenDetalle?.isConnected ? origenDetalle : filtroNombreEstudiante)?.focus();
+  }
+  origenDetalle = null;
+}
+
+if (listaCatalogoEstudiante) {
+  listaCatalogoEstudiante.addEventListener('click', (event) => {
+    const boton = event.target.closest('button[data-objeto-id]');
+    if (!boton) {
+      return;
+    }
+    const objeto = inventario.obtenerObjetoPorId(Number(boton.dataset.objetoId));
+    if (!objeto) {
+      return;
+    }
+
+    detalleNombre.textContent = objeto.nombre;
+    detalleCategoria.textContent = objeto.categoria;
+    detalleEstado.textContent = objeto.estado;
+    detalleFoto.hidden = !objeto.foto;
+    detalleSinFoto.hidden = Boolean(objeto.foto);
+    if (objeto.foto) {
+      detalleFoto.src = objeto.foto;
+      detalleFoto.alt = `Foto de ${objeto.nombre}`;
+    } else {
+      detalleFoto.removeAttribute('src');
+    }
+    origenDetalle = boton;
+    catalogoEstudiante.hidden = true;
+    detalleEstudiante.hidden = false;
+    detalleNombre.focus();
+  });
+}
+
+if (btnVolverCatalogo) {
+  btnVolverCatalogo.addEventListener('click', () => cerrarDetalle());
 }
 
 function leerArchivoComoBase64(archivo) {
@@ -114,6 +187,9 @@ if (formObjeto) {
 
 if (btnVerCatalogoPublico) {
   btnVerCatalogoPublico.addEventListener("click", () => {
+    if (!detalleEstudiante.hidden) {
+      cerrarDetalle(false);
+    }
     renderizarCatalogos();
     seccionAuth.style.display = "none";
     vistaEstudiante.style.display = "block";
@@ -122,6 +198,9 @@ if (btnVerCatalogoPublico) {
 
 if (btnVolverLogin) {
   btnVolverLogin.addEventListener("click", () => {
+    if (!detalleEstudiante.hidden) {
+      cerrarDetalle(false);
+    }
     vistaEstudiante.style.display = "none";
     seccionAuth.style.display = "flex";
   });

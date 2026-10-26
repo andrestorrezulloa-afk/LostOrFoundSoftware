@@ -774,9 +774,15 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d8bf455702c3a1d593aa3b4a13aa3b700df0b553",
     "commitName": "feat(hu-03): devolver null para id inexistente",
     "commitTimestamp": 1792973873152,
     "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-03): integrar detalle público del objeto",
+    "commitTimestamp": 1792973969463,
+    "testId": 38
   }
 ]
