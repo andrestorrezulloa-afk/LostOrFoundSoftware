@@ -760,9 +760,23 @@
     "testId": 36
   },
   {
-    "commitId": "HEAD",
+    "commitId": "786f07760f9ebaf01eeb30f268853f7a32d7220e",
     "commitName": "test(hu-03): definir respuesta para id inexistente",
     "commitTimestamp": 1792973830589,
     "testId": 36
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 0,
+    "numTotalTests": 27,
+    "timestamp": 1792973850590,
+    "success": true,
+    "testId": 37
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat(hu-03): devolver null para id inexistente",
+    "commitTimestamp": 1792973873152,
+    "testId": 37
   }
 ]
