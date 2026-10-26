@@ -722,17 +722,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7df2a11efccf57abe8041d4195b7080339e8895b",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-26T00:19:28.000Z",
       "message": "feat(hu-03): integrar detalle público del objeto",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/7df2a11efccf57abe8041d4195b7080339e8895b"
     },
     "stats": {
       "total": 219,
       "additions": 180,
       "deletions": 39,
+      "date": "2026-10-26"
+    },
+    "coverage": 86.54,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-26T00:54:41.000Z",
+      "message": "fix(hu-03): mostrar lugar y descripcion en detalle de objeto",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 13,
+      "deletions": 1,
       "date": "2026-10-26"
     },
     "coverage": 86.54,

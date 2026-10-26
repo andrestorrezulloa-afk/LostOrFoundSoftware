@@ -780,9 +780,15 @@
     "testId": 37
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7df2a11efccf57abe8041d4195b7080339e8895b",
     "commitName": "feat(hu-03): integrar detalle público del objeto",
     "commitTimestamp": 1792973969463,
     "testId": 38
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix(hu-03): mostrar lugar y descripcion en detalle de objeto",
+    "commitTimestamp": 1792976082738,
+    "testId": 39
   }
 ]

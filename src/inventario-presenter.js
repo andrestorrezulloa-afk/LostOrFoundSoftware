@@ -19,6 +19,8 @@ const detalleFoto = document.querySelector('#detalle-foto');
 const detalleSinFoto = document.querySelector('#detalle-sin-foto');
 const detalleNombre = document.querySelector('#detalle-nombre');
 const detalleCategoria = document.querySelector('#detalle-categoria');
+const detalleLugar = document.querySelector('#detalle-lugar');
+const detalleDescripcion = document.querySelector('#detalle-descripcion');
 const detalleEstado = document.querySelector('#detalle-estado');
 const btnVolverCatalogo = document.querySelector('#btn-volver-catalogo');
 let origenDetalle = null;
@@ -127,6 +129,8 @@ if (listaCatalogoEstudiante) {
 
     detalleNombre.textContent = objeto.nombre;
     detalleCategoria.textContent = objeto.categoria;
+    detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Lugar no especificado';
+    detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
     detalleEstado.textContent = objeto.estado;
     detalleFoto.hidden = !objeto.foto;
     detalleSinFoto.hidden = Boolean(objeto.foto);
