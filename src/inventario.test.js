@@ -115,4 +115,14 @@ describe('HU-03: Ver detalle básico del objeto', () => {
     expect(objeto).toEqual(contenidoOriginal);
     expect(inventario.obtenerCatalogo()).toHaveLength(2);
   });
+
+  it('devuelve null cuando el id no existe, sin alterar los objetos', () => {
+    const inventario = new InventarioObjetos();
+    expect(inventario.obtenerObjetoPorId(1)).toBeNull();
+
+    const objeto = inventario.registrarObjeto({ nombre: 'Lápiz', categoria: 'Útiles' }).objeto;
+    expect(inventario.obtenerObjetoPorId(999)).toBeNull();
+    expect(inventario.obtenerObjetoPorId(String(objeto.id))).toBeNull();
+    expect(inventario.obtenerCatalogo()).toEqual([objeto]);
+  });
 });

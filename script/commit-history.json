@@ -665,12 +665,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "99560efa6a266dcbe1f5fc77d15b5cf078d2abbe",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-26T00:16:32.000Z",
       "message": "feat(hu-03): consultar objeto registrado por id",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/99560efa6a266dcbe1f5fc77d15b5cf078d2abbe"
     },
     "stats": {
       "total": 6,
@@ -682,5 +682,24 @@
     "test_count": 26,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-26T00:17:09.000Z",
+      "message": "test(hu-03): definir respuesta para id inexistente",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-10-26"
+    },
+    "coverage": 86.54,
+    "test_count": 27,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
