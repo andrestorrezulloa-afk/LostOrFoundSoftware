@@ -25,6 +25,10 @@ class InventarioObjetos {
     return this.objetos;
   }
 
+  obtenerObjetoPorId(id) {
+    return this.objetos.find((objeto) => objeto.id === id);
+  }
+
   registrarObjeto(datos) {
     const nuevoObjeto = {
       id: this.siguienteId++,

@@ -646,12 +646,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f93277ff82f665404dba3963a157be6e250dedb5",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-26T00:15:48.000Z",
       "message": "test(hu-03): definir consulta fallida de objeto por id",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f93277ff82f665404dba3963a157be6e250dedb5"
     },
     "stats": {
       "total": 27,
@@ -663,5 +663,24 @@
     "test_count": 26,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-10-26T00:16:32.000Z",
+      "message": "feat(hu-03): consultar objeto registrado por id",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-10-26"
+    },
+    "coverage": 86.54,
+    "test_count": 26,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
