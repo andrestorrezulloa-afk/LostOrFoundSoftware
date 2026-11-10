@@ -19,17 +19,12 @@ class InventarioObjetos {
   }
 
   registrarObjeto(datos) {
-    if (
-      !datos.nombre ||
-      !datos.nombre.trim() ||
-      !datos.categoria ||
-      !datos.categoria.trim()
-    ) {
+    if (!datos.nombre?.trim() || !datos.categoria?.trim()) {
       return {
         exito: false,
         mensaje: "El nombre y la categoria son obligatorios",
-      };
-    }
+    };
+  }
     const nuevoObjeto = {
       id: this.siguienteId++,
       nombre: datos.nombre.trim(),
