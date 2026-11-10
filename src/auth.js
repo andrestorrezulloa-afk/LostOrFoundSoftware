@@ -8,22 +8,31 @@ class SistemaAuth {
     if (!correo || !correo.includes("@") || !password) {
       return { exito: false, mensaje: "Correo o contrasena invalidos" };
     }
-    const existe = this.usuarios.find((u) => u.correo === correo);
-    if (existe) {
+
+    const usuarioExistente = this.usuarios.find(
+      (usuario) => usuario.correo === correo
+    );
+
+    if (usuarioExistente) {
       return { exito: false, mensaje: "El correo ya esta registrado" };
     }
+
     this.usuarios.push({ correo, password, nombre: nombre || "" });
     return { exito: true, mensaje: "Cuenta creada exitosamente" };
   }
 
   iniciarSesion(correo, password) {
     const usuario = this.usuarios.find(
-      (u) => u.correo === correo && u.password === password
+      (usuarioRegistrado) =>
+        usuarioRegistrado.correo === correo &&
+        usuarioRegistrado.password === password
     );
+
     if (!usuario) {
       this.usuarioActual = null;
       return { exito: false, mensaje: "Credenciales incorrectas" };
     }
+
     this.usuarioActual = usuario;
     return { exito: true, mensaje: "Sesion iniciada" };
   }
@@ -36,6 +45,7 @@ class SistemaAuth {
     if (!this.puedeAccederAlPanel()) {
       return "Acceso denegado: debe iniciar sesion";
     }
+
     return "Bienvenido al Panel de Gestion de Objetos";
   }
 
@@ -47,6 +57,7 @@ class SistemaAuth {
     if (!this.usuarioActual) {
       return null;
     }
+
     return {
       correo: this.usuarioActual.correo,
       nombre: this.usuarioActual.nombre || "",
