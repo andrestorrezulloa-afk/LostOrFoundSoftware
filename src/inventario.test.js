@@ -1,6 +1,6 @@
 import InventarioObjetos from "./inventario.js";
 
-describe("HU-01: Registrar objeto encontrado", () => {
+describe("Registrar objeto encontrado", () => {
   it("deberia registrar un objeto con nombre y categoria obligatorios", () => {
     const inventario = new InventarioObjetos();
     const res = inventario.registrarObjeto({
@@ -92,7 +92,7 @@ describe("HU-01: Registrar objeto encontrado", () => {
   });
 });
 
-describe('HU-03: Ver detalle básico del objeto', () => {
+describe('Ver detalle básico del objeto', () => {
   it('recupera por id el objeto registrado con sus datos originales sin modificar el catálogo', () => {
     const inventario = new InventarioObjetos();
     inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves' });

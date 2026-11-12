@@ -1,6 +1,6 @@
 import InventarioObjetos from "./inventario.js";
 
-describe("HU-02: Listar objetos registrados", () => {
+describe("Listar objetos registrados", () => {
   it("deberia listar solo los objetos de la categoria indicada", () => {
     const inventario = new InventarioObjetos();
     inventario.registrarObjeto({ nombre: "Llavero", categoria: "Llaves" });
@@ -18,7 +18,7 @@ describe("HU-02: Listar objetos registrados", () => {
 });
 });
 
-describe('HU-02: Buscar objetos por nombre y categoría', () => {
+describe('Buscar objetos por nombre y categoría', () => {
   it('encuentra coincidencias parciales por nombre sin modificar el catálogo', () => {
     const inventario = new InventarioObjetos();
     inventario.registrarObjeto({ nombre: 'Mochila negra', categoria: 'Accesorios' });

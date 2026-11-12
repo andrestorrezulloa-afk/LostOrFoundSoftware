@@ -786,9 +786,15 @@
     "testId": 38
   },
   {
-    "commitId": "HEAD",
+    "commitId": "df0828386a3c3391a710ea5ffaf2be9192a1a27c",
     "commitName": "fix(hu-03): mostrar lugar y descripcion en detalle de objeto",
     "commitTimestamp": 1792976082738,
     "testId": 39
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: se arreglo la descripcion de los test",
+    "commitTimestamp": 1794492541054,
+    "testId": 40
   }
 ]

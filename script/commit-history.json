@@ -741,12 +741,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "df0828386a3c3391a710ea5ffaf2be9192a1a27c",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-10-26T00:54:41.000Z",
       "message": "fix(hu-03): mostrar lugar y descripcion en detalle de objeto",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/df0828386a3c3391a710ea5ffaf2be9192a1a27c"
     },
     "stats": {
       "total": 14,
@@ -755,6 +755,25 @@
       "date": "2026-10-26"
     },
     "coverage": 86.54,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "andrestorrezulloa-afk",
+    "commit": {
+      "date": "2026-11-12T14:08:59.000Z",
+      "message": "fix: se arreglo la descripcion de los test",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 4,
+      "deletions": 4,
+      "date": "2026-11-12"
+    },
+    "coverage": 97.83,
     "test_count": 27,
     "failed_tests": 0,
     "conclusion": "success"
