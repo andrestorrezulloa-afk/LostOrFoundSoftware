@@ -19,41 +19,71 @@ class InventarioObjetos {
   }
 
   obtenerUltimoPosteo() {
-    return this.objetos.reduce((ultimo, objeto) => {
-      if (!ultimo) {
-        return objeto;
+    let ultimoPosteo = null;
+
+    for (const objeto of this.objetos) {
+      if (!ultimoPosteo || this.esMasReciente(objeto, ultimoPosteo)) {
+        ultimoPosteo = objeto;
       }
-      const fechaObjeto = Number.isFinite(objeto.fechaPublicacionTimestamp)
-        ? objeto.fechaPublicacionTimestamp : -Infinity;
-      const fechaUltimo = Number.isFinite(ultimo.fechaPublicacionTimestamp)
-        ? ultimo.fechaPublicacionTimestamp : -Infinity;
-      return fechaObjeto > fechaUltimo ||
-        (fechaObjeto === fechaUltimo && objeto.id > ultimo.id) ? objeto : ultimo;
-    }, null);
+    }
+
+    return ultimoPosteo;
+  }
+
+  esMasReciente(objeto, otroObjeto) {
+    const fechaObjeto = this.obtenerFechaPublicacion(objeto);
+    const fechaOtroObjeto = this.obtenerFechaPublicacion(otroObjeto);
+
+    // Si se publicaron al mismo tiempo, el último registrado tiene el ID mayor.
+    if (fechaObjeto === fechaOtroObjeto) {
+      return objeto.id > otroObjeto.id;
+    }
+
+    return fechaObjeto > fechaOtroObjeto;
+  }
+
+  obtenerFechaPublicacion(objeto) {
+    if (Number.isFinite(objeto.fechaPublicacionTimestamp)) {
+      return objeto.fechaPublicacionTimestamp;
+    }
+
+    // Sin una fecha válida, se considera anterior a cualquier objeto con fecha.
+    return -Infinity;
   }
 
   registrarObjeto(datos) {
-    if (!datos.nombre?.trim() || !datos.categoria?.trim()) {
+    if (!this.tieneDatosObligatorios(datos)) {
       return {
         exito: false,
-        mensaje: "El nombre y la categoria son obligatorios",
-    };
+        mensaje: 'El nombre y la categoria son obligatorios',
+      };
+    }
+
+    const nuevoObjeto = this.crearFichaObjeto(datos);
+    this.objetos.push(nuevoObjeto);
+
+    return { exito: true, mensaje: 'Objeto registrado exitosamente', objeto: nuevoObjeto };
   }
+
+  tieneDatosObligatorios(datos) {
+    return Boolean(datos.nombre?.trim() && datos.categoria?.trim());
+  }
+
+  crearFichaObjeto(datos) {
     const fechaPublicacion = new Date();
-    const nuevoObjeto = {
+
+    return {
       id: this.siguienteId++,
       nombre: datos.nombre.trim(),
       categoria: datos.categoria.trim(),
-      descripcion: datos.descripcion ? datos.descripcion.trim() : "",
-      foto: datos.foto || "",
-      lugarEncontrado: datos.lugarEncontrado ? datos.lugarEncontrado.trim() : "",
+      descripcion: datos.descripcion ? datos.descripcion.trim() : '',
+      foto: datos.foto || '',
+      lugarEncontrado: datos.lugarEncontrado ? datos.lugarEncontrado.trim() : '',
       registradoPor: datos.registradoPor || null,
-      estado: "Disponible",
+      estado: 'Disponible',
       fechaRegistro: fechaPublicacion.toLocaleString(),
       fechaPublicacionTimestamp: fechaPublicacion.getTime(),
     };
-    this.objetos.push(nuevoObjeto);
-    return { exito: true, mensaje: "Objeto registrado exitosamente", objeto: nuevoObjeto };
   }
 
   puedePublicar(tieneSesionPersonal) {

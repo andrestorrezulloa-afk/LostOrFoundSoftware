@@ -855,12 +855,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9eda175ee428c7483d31525be318551f8c4f1023",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-11-15T01:51:44.000Z",
       "message": "feature: mostrar banner del ultimo posteo en inicio",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/9eda175ee428c7483d31525be318551f8c4f1023"
     },
     "stats": {
       "total": 141,
@@ -869,6 +869,25 @@
       "date": "2026-11-15"
     },
     "coverage": 98.11,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-15T17:50:47.000Z",
+      "message": "refactor: simplificar la lectura del inventario de objetos perdidos",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 70,
+      "additions": 50,
+      "deletions": 20,
+      "date": "2026-11-15"
+    },
+    "coverage": 98.39,
     "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
