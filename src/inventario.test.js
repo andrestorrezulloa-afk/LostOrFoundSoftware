@@ -1,3 +1,4 @@
+/* global jest */
 import InventarioObjetos from "./model/inventario.js";
 
 describe("Registrar objeto encontrado", () => {
@@ -124,5 +125,51 @@ describe('Ver detalle básico del objeto', () => {
     expect(inventario.obtenerObjetoPorId(999)).toBeNull();
     expect(inventario.obtenerObjetoPorId(String(objeto.id))).toBeNull();
     expect(inventario.obtenerCatalogo()).toEqual([objeto]);
+  });
+});
+
+describe('Último posteo', () => {
+  it('elige por instante de publicación aunque el catálogo esté en otro orden', () => {
+    const inventario = new InventarioObjetos();
+    jest.useFakeTimers();
+    try {
+      jest.setSystemTime(new Date('2026-02-10T12:00:00Z'));
+      const reciente = inventario.registrarObjeto({ nombre: 'Mochila', categoria: 'Útiles' }).objeto;
+      jest.setSystemTime(new Date('2026-01-30T12:00:00Z'));
+      const antiguo = inventario.registrarObjeto({ nombre: 'Llaves', categoria: 'Llaves' }).objeto;
+      expect(reciente.fechaPublicacionTimestamp).toBe(Date.parse('2026-02-10T12:00:00Z'));
+      expect(antiguo.fechaPublicacionTimestamp).toBe(Date.parse('2026-01-30T12:00:00Z'));
+      expect(inventario.obtenerUltimoPosteo()).toBe(reciente);
+      expect(inventario.obtenerCatalogo()).toEqual([reciente, antiguo]);
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('devuelve null sin publicaciones y se actualiza al registrar otra más reciente', () => {
+    const inventario = new InventarioObjetos();
+    expect(inventario.obtenerUltimoPosteo()).toBeNull();
+    jest.useFakeTimers();
+    try {
+      jest.setSystemTime(new Date('2026-03-01T10:00:00Z'));
+      inventario.registrarObjeto({ nombre: 'Libro', categoria: 'Útiles' });
+      jest.setSystemTime(new Date('2026-03-02T10:00:00Z'));
+      const nuevo = inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves' }).objeto;
+      expect(inventario.obtenerUltimoPosteo()).toBe(nuevo);
+    } finally {
+      jest.useRealTimers();
+    }
+  });
+
+  it('resuelve empates por ID y trata registros antiguos sin timestamp de forma estable', () => {
+    const inventario = new InventarioObjetos();
+    const primero = inventario.registrarObjeto({ nombre: 'Uno', categoria: 'Otros' }).objeto;
+    const segundo = inventario.registrarObjeto({ nombre: 'Dos', categoria: 'Otros' }).objeto;
+    delete primero.fechaPublicacionTimestamp;
+    delete segundo.fechaPublicacionTimestamp;
+    expect(inventario.obtenerUltimoPosteo()).toBe(segundo);
+    primero.fechaPublicacionTimestamp = 1000;
+    segundo.fechaPublicacionTimestamp = 1000;
+    expect(inventario.obtenerUltimoPosteo()).toBe(segundo);
   });
 });

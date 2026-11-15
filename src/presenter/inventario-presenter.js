@@ -1,4 +1,4 @@
-import { renderizarLista } from '../view/catalogo-view.js';
+import { renderizarLista, renderizarBanner } from '../view/catalogo-view.js';
 import InventarioObjetos from "../model/inventario.js";
 import auth from "./auth-presenter.js";
 
@@ -14,6 +14,7 @@ const mensajeObjeto = document.querySelector("#mensaje-objeto");
 
 const listaCatalogoStaff = document.querySelector("#lista-catalogo-staff");
 const listaCatalogoEstudiante = document.querySelector("#lista-catalogo-estudiante");
+const bannerUltimoPosteo = document.querySelector('#banner-ultimo-posteo');
 const catalogoEstudiante = document.querySelector('#catalogo-estudiante');
 const detalleEstudiante = document.querySelector('#detalle-estudiante');
 const detalleFoto = document.querySelector('#detalle-foto');
@@ -47,6 +48,7 @@ function mostrarMensajeObjeto(texto, esExito) {
 }
 
 function renderizarCatalogos() {
+  renderizarBanner(bannerUltimoPosteo, inventario.obtenerUltimoPosteo());
   if (listaCatalogoEstudiante) {
     const objetos = inventario.listar({
       nombre: filtroNombreEstudiante?.value,
@@ -73,35 +75,42 @@ function cerrarDetalle(restaurarFoco = true) {
   origenDetalle = null;
 }
 
-if (listaCatalogoEstudiante) {
-  listaCatalogoEstudiante.addEventListener('click', (event) => {
-    const boton = event.target.closest('button[data-objeto-id]');
-    if (!boton) {
-      return;
-    }
-    const objeto = inventario.obtenerObjetoPorId(Number(boton.dataset.objetoId));
-    if (!objeto) {
-      return;
-    }
+function abrirDetalle(objeto, boton) {
+  detalleNombre.textContent = objeto.nombre;
+  detalleCategoria.textContent = objeto.categoria;
+  detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Lugar no especificado';
+  detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
+  detalleEstado.textContent = objeto.estado;
+  detalleFoto.hidden = !objeto.foto;
+  detalleSinFoto.hidden = Boolean(objeto.foto);
+  if (objeto.foto) {
+    detalleFoto.src = objeto.foto;
+    detalleFoto.alt = `Foto de ${objeto.nombre}`;
+  } else {
+    detalleFoto.removeAttribute('src');
+  }
+  origenDetalle = boton;
+  catalogoEstudiante.hidden = true;
+  detalleEstudiante.hidden = false;
+  detalleNombre.focus();
+}
 
-    detalleNombre.textContent = objeto.nombre;
-    detalleCategoria.textContent = objeto.categoria;
-    detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Lugar no especificado';
-    detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
-    detalleEstado.textContent = objeto.estado;
-    detalleFoto.hidden = !objeto.foto;
-    detalleSinFoto.hidden = Boolean(objeto.foto);
-    if (objeto.foto) {
-      detalleFoto.src = objeto.foto;
-      detalleFoto.alt = `Foto de ${objeto.nombre}`;
-    } else {
-      detalleFoto.removeAttribute('src');
-    }
-    origenDetalle = boton;
-    catalogoEstudiante.hidden = true;
-    detalleEstudiante.hidden = false;
-    detalleNombre.focus();
-  });
+function seleccionarDetalle(event) {
+  const boton = event.target.closest('button[data-objeto-id]');
+  if (!boton) {
+    return;
+  }
+  const objeto = inventario.obtenerObjetoPorId(Number(boton.dataset.objetoId));
+  if (objeto) {
+    abrirDetalle(objeto, boton);
+  }
+}
+
+if (listaCatalogoEstudiante) {
+  listaCatalogoEstudiante.addEventListener('click', seleccionarDetalle);
+}
+if (bannerUltimoPosteo) {
+  bannerUltimoPosteo.addEventListener('click', seleccionarDetalle);
 }
 
 if (btnVolverCatalogo) {
