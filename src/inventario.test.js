@@ -1,4 +1,4 @@
-import InventarioObjetos from "./inventario.js";
+import InventarioObjetos from "./model/inventario.js";
 
 describe("Registrar objeto encontrado", () => {
   it("deberia registrar un objeto con nombre y categoria obligatorios", () => {

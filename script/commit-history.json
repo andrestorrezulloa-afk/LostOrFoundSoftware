@@ -760,18 +760,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4390c352786c47b51a876ecf1c6407071b29356b",
     "author": "andrestorrezulloa-afk",
     "commit": {
       "date": "2026-11-12T14:08:59.000Z",
       "message": "fix: se arreglo la descripcion de los test",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4390c352786c47b51a876ecf1c6407071b29356b"
     },
     "stats": {
       "total": 8,
       "additions": 4,
       "deletions": 4,
       "date": "2026-11-12"
+    },
+    "coverage": 97.83,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-11-15T01:18:59.000Z",
+      "message": "refactor: organizar estructura model view presenter",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 114,
+      "additions": 61,
+      "deletions": 53,
+      "date": "2026-11-15"
     },
     "coverage": 97.83,
     "test_count": 27,

@@ -1,4 +1,4 @@
-import SistemaAuth from "./auth.js";
+import SistemaAuth from "../model/auth.js";
 
 const auth = new SistemaAuth();
 

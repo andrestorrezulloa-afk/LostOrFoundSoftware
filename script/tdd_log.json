@@ -792,9 +792,15 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4390c352786c47b51a876ecf1c6407071b29356b",
     "commitName": "fix: se arreglo la descripcion de los test",
     "commitTimestamp": 1794492541054,
     "testId": 40
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: organizar estructura model view presenter",
+    "commitTimestamp": 1794705540318,
+    "testId": 41
   }
 ]
