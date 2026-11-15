@@ -779,17 +779,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4e4bbb2353cdbe32325ef8f5d4490a8f073b5ab0",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-11-15T01:18:59.000Z",
       "message": "refactor: organizar estructura model view presenter",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4e4bbb2353cdbe32325ef8f5d4490a8f073b5ab0"
     },
     "stats": {
       "total": 114,
       "additions": 61,
       "deletions": 53,
+      "date": "2026-11-15"
+    },
+    "coverage": 97.83,
+    "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-11-15T01:23:36.000Z",
+      "message": "feature: redisenar pagina de inicio HU-04",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 119,
+      "additions": 98,
+      "deletions": 21,
       "date": "2026-11-15"
     },
     "coverage": 97.83,

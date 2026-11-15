@@ -798,9 +798,15 @@
     "testId": 40
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4e4bbb2353cdbe32325ef8f5d4490a8f073b5ab0",
     "commitName": "refactor: organizar estructura model view presenter",
     "commitTimestamp": 1794705540318,
     "testId": 41
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feature: redisenar pagina de inicio HU-04",
+    "commitTimestamp": 1794705818314,
+    "testId": 42
   }
 ]

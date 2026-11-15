@@ -52,7 +52,10 @@ function renderizarCatalogos() {
       nombre: filtroNombreEstudiante?.value,
       categoria: filtroCategoriaEstudiante?.value,
     });
-    renderizarLista(listaCatalogoEstudiante, objetos, 'No se encontraron objetos que coincidan con la búsqueda.', true);
+    const mensajeVacio = inventario.obtenerCatalogo().length
+      ? 'No se encontraron objetos que coincidan con la búsqueda.'
+      : 'Todavía no hay objetos registrados. Puedes seguir utilizando el buscador.';
+    renderizarLista(listaCatalogoEstudiante, objetos, mensajeVacio, true);
   }
 
   if (listaCatalogoStaff) {
@@ -150,7 +153,7 @@ if (btnVerCatalogoPublico) {
     }
     renderizarCatalogos();
     seccionAuth.style.display = "none";
-    vistaEstudiante.style.display = "block";
+    vistaEstudiante.style.display = "flex";
   });
 }
 
@@ -178,6 +181,16 @@ if (filtroNombreEstudiante) {
 
 if (filtroCategoriaStaff) {
   filtroCategoriaStaff.addEventListener("change", () => {
+    renderizarCatalogos();
+  });
+}
+
+renderizarCatalogos();
+
+const formBusquedaPublica = document.querySelector('#form-busqueda-publica');
+if (formBusquedaPublica) {
+  formBusquedaPublica.addEventListener('submit', (event) => {
+    event.preventDefault();
     renderizarCatalogos();
   });
 }

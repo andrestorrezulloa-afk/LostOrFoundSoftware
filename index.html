@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <section id="seccion-auth" class="auth-wrapper">
+    <section id="seccion-auth" class="auth-wrapper" style="display: none;">
       <div class="auth-card">
         <h1>Bienestar Estudiantil</h1>
         <p class="auth-subtitle">Administración de Objetos Perdidos</p>
@@ -98,28 +98,41 @@
       Acceso denegado: debe iniciar sesion
     </div>
 
-    <section id="vista-estudiante" class="panel-container" style="display: none;">
+    <section id="vista-estudiante" class="panel-container">
       <header class="topbar">
-        <span class="topbar-title">Catálogo Público de Objetos Encontrados (Estudiantes)</span>
+        <span class="topbar-title">Bienestar Estudiantil</span>
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
       </header>
       <main class="contenido-principal">
         <div id="catalogo-estudiante">
-          <div class="filtros-catalogo">
-            <label for="filtro-nombre-estudiante">Buscar por nombre</label>
-            <input type="search" id="filtro-nombre-estudiante" placeholder="Ej. Mochila" />
-            <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
-            <select id="filtro-categoria-estudiante">
-              <option value="">Todas</option>
-              <option value="Llaves">Llaves</option>
-              <option value="Electrónicos">Electrónicos</option>
-              <option value="Documentos">Documentos</option>
-              <option value="Ropa">Ropa</option>
-              <option value="Útiles">Útiles</option>
-              <option value="Otros">Otros</option>
-            </select>
-          </div>
-          <div id="lista-catalogo-estudiante" class="catalogo-grid"></div>
+          <header class="inicio-encabezado">
+            <h1>Objetos encontrados</h1>
+            <p class="inicio-eslogan">Busca, encuentra y recupera</p>
+          </header>
+          <section class="busqueda-inicio" aria-labelledby="titulo-busqueda">
+            <h2 id="titulo-busqueda">Busca tu objeto</h2>
+            <form id="form-busqueda-publica" class="filtros-catalogo" role="search">
+              <div class="campo-busqueda">
+                <label for="filtro-nombre-estudiante">Buscar por nombre</label>
+                <input type="search" id="filtro-nombre-estudiante" placeholder="Ej. Mochila" />
+              </div>
+              <div class="campo-busqueda">
+                <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
+                <select id="filtro-categoria-estudiante">
+                  <option value="">Todas</option>
+                  <option value="Llaves">Llaves</option>
+                  <option value="Electrónicos">Electrónicos</option>
+                  <option value="Documentos">Documentos</option>
+                  <option value="Ropa">Ropa</option>
+                  <option value="Útiles">Útiles</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+              <button type="submit" class="btn-primary">Buscar</button>
+            </form>
+          </section>
+          <h2 class="catalogo-titulo">Catálogo público</h2>
+          <div id="lista-catalogo-estudiante" class="catalogo-grid" aria-live="polite" aria-atomic="true"></div>
         </div>
         <section id="detalle-estudiante" class="detalle-objeto" aria-labelledby="detalle-nombre" hidden>
           <button type="button" id="btn-volver-catalogo" class="btn-secondary-sm">Volver al catálogo</button>

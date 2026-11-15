@@ -48,6 +48,7 @@ function irAVistaRegistro() {
 }
 
 function actualizarPantallaPrincipal() {
+  document.querySelector('#vista-estudiante').style.display = 'none';
   estadoAcceso.innerHTML = auth.obtenerEstadoPanel();
   if (auth.puedeAccederAlPanel()) {
     seccionAuth.style.display = "none";

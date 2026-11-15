@@ -265,7 +265,7 @@ body {
 
 .catalogo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
   gap: 18px;
 }
 
@@ -441,4 +441,54 @@ body {
 #detalle-foto[hidden],
 #detalle-sin-foto[hidden] {
   display: none;
+}
+
+/* Inicio público: búsqueda integrada en el contenido principal. */
+#vista-estudiante .contenido-principal {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.inicio-encabezado { margin-bottom: 24px; }
+.inicio-encabezado h1 { font-size: clamp(1.5rem, 4vw, 2rem); margin-bottom: 8px; }
+.inicio-eslogan { font-size: 1rem; font-weight: 400; color: #475569; }
+.busqueda-inicio {
+  padding: 24px;
+  margin-bottom: 28px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+.busqueda-inicio h2 { font-size: 1.15rem; margin-bottom: 16px; }
+#form-busqueda-publica {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  align-items: end;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+}
+.campo-busqueda { min-width: 0; }
+.campo-busqueda label { display: block; margin-bottom: 8px; }
+#form-busqueda-publica input,
+#form-busqueda-publica select { width: 100%; min-width: 0; min-height: 44px; }
+#form-busqueda-publica .btn-primary { width: auto; min-height: 44px; margin: 0; padding-inline: 24px; }
+.catalogo-titulo { font-size: 1.15rem; margin-bottom: 16px; }
+.catalogo-vacio { grid-column: 1 / -1; padding: 24px; background: #f8fafc; border-radius: 10px; }
+.objeto-card { min-width: 0; overflow-wrap: anywhere; }
+.objeto-header { flex-wrap: wrap; gap: 6px; }
+.topbar { gap: 16px; flex-wrap: wrap; }
+button:focus-visible,
+input:focus-visible,
+select:focus-visible { outline: 3px solid #2563eb; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .contenido-principal { padding: 20px 16px; }
+  .topbar { padding: 16px; }
+  .busqueda-inicio { padding: 16px; }
+  #form-busqueda-publica { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  #form-busqueda-publica .btn-primary { width: 100%; }
+  .detalle-contenido { padding: 16px; flex-direction: column; }
+  .detalle-contenido > img,
+  .detalle-contenido > .objeto-sin-img { width: 100%; max-width: 100%; }
 }
