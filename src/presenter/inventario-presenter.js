@@ -185,8 +185,6 @@ if (filtroCategoriaStaff) {
   });
 }
 
-renderizarCatalogos();
-
 const formBusquedaPublica = document.querySelector('#form-busqueda-publica');
 if (formBusquedaPublica) {
   formBusquedaPublica.addEventListener('submit', (event) => {
