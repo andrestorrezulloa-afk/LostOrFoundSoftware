@@ -1,4 +1,4 @@
-import SistemaAuth from "./auth.js";
+import SistemaAuth from "./model/auth.js";
 
 describe("Autenticacion de Bienestar Estudiantil", () => {
   it("deberia registrar una cuenta con correo valido y contraseña", () => {

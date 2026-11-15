@@ -1,4 +1,5 @@
-import InventarioObjetos from "./inventario.js";
+import { renderizarLista } from '../view/catalogo-view.js';
+import InventarioObjetos from "../model/inventario.js";
 import auth from "./auth-presenter.js";
 
 const inventario = new InventarioObjetos();
@@ -45,60 +46,16 @@ function mostrarMensajeObjeto(texto, esExito) {
   mensajeObjeto.className = esExito ? "mensaje exito" : "mensaje error";
 }
 
-function crearElemento(etiqueta, clase, texto) {
-  const elemento = document.createElement(etiqueta);
-  elemento.className = clase;
-  elemento.textContent = texto;
-  return elemento;
-}
-
-function crearTarjetaObjeto(obj, esPublico) {
-  const tarjeta = crearElemento('article', 'objeto-card', '');
-  if (obj.foto) {
-    const imagen = crearElemento('img', 'objeto-img', '');
-    imagen.src = obj.foto;
-    imagen.alt = `Foto de ${obj.nombre}`;
-    tarjeta.append(imagen);
-  } else {
-    tarjeta.append(crearElemento('div', 'objeto-sin-img', 'Sin foto'));
-  }
-
-  const cuerpo = crearElemento('div', 'objeto-body', '');
-  const cabecera = crearElemento('div', 'objeto-header', '');
-  cabecera.append(
-    crearElemento('span', 'badge-categoria', obj.categoria),
-    crearElemento('span', 'badge-estado', obj.estado)
-  );
-  cuerpo.append(
-    cabecera,
-    crearElemento('h3', 'objeto-titulo', obj.nombre),
-    crearElemento('p', 'objeto-desc', obj.descripcion || 'Sin descripción adicional.'),
-    crearElemento('small', 'objeto-fecha', `Registrado: ${obj.fechaRegistro}`)
-  );
-  if (esPublico) {
-    const boton = crearElemento('button', 'btn-detalle', 'Ver detalle');
-    boton.type = 'button';
-    boton.dataset.objetoId = String(obj.id);
-    boton.setAttribute('aria-label', `Ver detalle de ${obj.nombre}`);
-    cuerpo.append(boton);
-  }
-  tarjeta.append(cuerpo);
-  return tarjeta;
-}
-
-function renderizarLista(lista, objetos, mensajeVacio, esPublico) {
-  lista.replaceChildren(...(objetos.length
-    ? objetos.map((objeto) => crearTarjetaObjeto(objeto, esPublico))
-    : [crearElemento('p', 'catalogo-vacio', mensajeVacio)]));
-}
-
 function renderizarCatalogos() {
   if (listaCatalogoEstudiante) {
     const objetos = inventario.listar({
       nombre: filtroNombreEstudiante?.value,
       categoria: filtroCategoriaEstudiante?.value,
     });
-    renderizarLista(listaCatalogoEstudiante, objetos, 'No se encontraron objetos que coincidan con la búsqueda.', true);
+    const mensajeVacio = inventario.obtenerCatalogo().length
+      ? 'No se encontraron objetos que coincidan con la búsqueda.'
+      : 'Todavía no hay objetos registrados. Puedes seguir utilizando el buscador.';
+    renderizarLista(listaCatalogoEstudiante, objetos, mensajeVacio, true);
   }
 
   if (listaCatalogoStaff) {
@@ -196,7 +153,7 @@ if (btnVerCatalogoPublico) {
     }
     renderizarCatalogos();
     seccionAuth.style.display = "none";
-    vistaEstudiante.style.display = "block";
+    vistaEstudiante.style.display = "flex";
   });
 }
 
@@ -224,6 +181,14 @@ if (filtroNombreEstudiante) {
 
 if (filtroCategoriaStaff) {
   filtroCategoriaStaff.addEventListener("change", () => {
+    renderizarCatalogos();
+  });
+}
+
+const formBusquedaPublica = document.querySelector('#form-busqueda-publica');
+if (formBusquedaPublica) {
+  formBusquedaPublica.addEventListener('submit', (event) => {
+    event.preventDefault();
     renderizarCatalogos();
   });
 }

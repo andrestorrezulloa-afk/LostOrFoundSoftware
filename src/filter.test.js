@@ -1,4 +1,4 @@
-import InventarioObjetos from "./inventario.js";
+import InventarioObjetos from "./model/inventario.js";
 
 describe("Listar objetos registrados", () => {
   it("deberia listar solo los objetos de la categoria indicada", () => {

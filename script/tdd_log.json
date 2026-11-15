@@ -792,9 +792,27 @@
     "testId": 39
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4390c352786c47b51a876ecf1c6407071b29356b",
     "commitName": "fix: se arreglo la descripcion de los test",
     "commitTimestamp": 1794492541054,
     "testId": 40
+  },
+  {
+    "commitId": "4e4bbb2353cdbe32325ef8f5d4490a8f073b5ab0",
+    "commitName": "refactor: organizar estructura model view presenter",
+    "commitTimestamp": 1794705540318,
+    "testId": 41
+  },
+  {
+    "commitId": "1f5b8a48b482601e963f00750ac13c1ba4c699d3",
+    "commitName": "feature: redisenar pagina de inicio HU-04",
+    "commitTimestamp": 1794705818314,
+    "testId": 42
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "fix: evitar renderizado inicial duplicado del catalogo",
+    "commitTimestamp": 1794705874234,
+    "testId": 43
   }
 ]
