@@ -45,3 +45,35 @@ export function renderizarLista(lista, objetos, mensajeVacio, esPublico) {
     : [crearElemento('p', 'catalogo-vacio', mensajeVacio)]));
 }
 
+export function renderizarBanner(contenedor, objeto) {
+  if (!contenedor) {
+    return;
+  }
+  contenedor.hidden = !objeto;
+  if (!objeto) {
+    contenedor.replaceChildren();
+    return;
+  }
+  const boton = crearElemento('button', 'banner-boton', '');
+  boton.type = 'button';
+  boton.dataset.objetoId = String(objeto.id);
+  boton.setAttribute('aria-label', `Ver detalle del último objeto publicado: ${objeto.nombre}`);
+  if (objeto.foto) {
+    const imagen = crearElemento('img', 'banner-foto', '');
+    imagen.src = objeto.foto;
+    imagen.alt = `Foto de ${objeto.nombre}`;
+    boton.append(imagen);
+  } else {
+    boton.append(crearElemento('div', 'banner-sin-foto', 'Sin foto'));
+  }
+  const contenido = crearElemento('div', 'banner-contenido', '');
+  contenido.append(
+    crearElemento('span', 'banner-etiqueta', 'Último objeto publicado'),
+    crearElemento('h2', 'banner-nombre', objeto.nombre),
+    crearElemento('p', 'banner-fecha', `Publicado: ${objeto.fechaRegistro}`),
+    crearElemento('span', 'banner-enlace', 'Ver detalle →')
+  );
+  boton.append(contenido);
+  contenedor.replaceChildren(boton);
+}
+

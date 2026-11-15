@@ -836,17 +836,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d2c4982eeeaa2aa0c60a6fabf5ee008d8aeaa1a3",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-11-15T01:47:27.000Z",
       "message": "feature: consultar el ultimo objeto publicado",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/d2c4982eeeaa2aa0c60a6fabf5ee008d8aeaa1a3"
     },
     "stats": {
       "total": 62,
       "additions": 61,
       "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 98.11,
+    "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-11-15T01:51:44.000Z",
+      "message": "feature: mostrar banner del ultimo posteo en inicio",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 141,
+      "additions": 111,
+      "deletions": 30,
       "date": "2026-11-15"
     },
     "coverage": 98.11,

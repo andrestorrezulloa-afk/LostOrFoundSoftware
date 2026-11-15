@@ -1,3 +1,4 @@
+/* global jest */
 import InventarioObjetos from "./model/inventario.js";
 
 describe("Registrar objeto encontrado", () => {

@@ -20,7 +20,9 @@ class InventarioObjetos {
 
   obtenerUltimoPosteo() {
     return this.objetos.reduce((ultimo, objeto) => {
-      if (!ultimo) return objeto;
+      if (!ultimo) {
+        return objeto;
+      }
       const fechaObjeto = Number.isFinite(objeto.fechaPublicacionTimestamp)
         ? objeto.fechaPublicacionTimestamp : -Infinity;
       const fechaUltimo = Number.isFinite(ultimo.fechaPublicacionTimestamp)
