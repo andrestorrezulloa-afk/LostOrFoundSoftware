@@ -817,12 +817,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "30647d7fb1533bcb8e11eed4f571725254591b1b",
     "author": "André Ermoth",
     "commit": {
       "date": "2026-11-15T01:24:33.000Z",
       "message": "fix: evitar renderizado inicial duplicado del catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/30647d7fb1533bcb8e11eed4f571725254591b1b"
     },
     "stats": {
       "total": 2,
@@ -832,6 +832,25 @@
     },
     "coverage": 97.83,
     "test_count": 27,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "André Ermoth",
+    "commit": {
+      "date": "2026-11-15T01:47:27.000Z",
+      "message": "feature: consultar el ultimo objeto publicado",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 62,
+      "additions": 61,
+      "deletions": 1,
+      "date": "2026-11-15"
+    },
+    "coverage": 98.11,
+    "test_count": 30,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -18,6 +18,18 @@ class InventarioObjetos {
     return this.objetos.find((objeto) => objeto.id === id) || null;
   }
 
+  obtenerUltimoPosteo() {
+    return this.objetos.reduce((ultimo, objeto) => {
+      if (!ultimo) return objeto;
+      const fechaObjeto = Number.isFinite(objeto.fechaPublicacionTimestamp)
+        ? objeto.fechaPublicacionTimestamp : -Infinity;
+      const fechaUltimo = Number.isFinite(ultimo.fechaPublicacionTimestamp)
+        ? ultimo.fechaPublicacionTimestamp : -Infinity;
+      return fechaObjeto > fechaUltimo ||
+        (fechaObjeto === fechaUltimo && objeto.id > ultimo.id) ? objeto : ultimo;
+    }, null);
+  }
+
   registrarObjeto(datos) {
     if (!datos.nombre?.trim() || !datos.categoria?.trim()) {
       return {
@@ -25,6 +37,7 @@ class InventarioObjetos {
         mensaje: "El nombre y la categoria son obligatorios",
     };
   }
+    const fechaPublicacion = new Date();
     const nuevoObjeto = {
       id: this.siguienteId++,
       nombre: datos.nombre.trim(),
@@ -34,7 +47,8 @@ class InventarioObjetos {
       lugarEncontrado: datos.lugarEncontrado ? datos.lugarEncontrado.trim() : "",
       registradoPor: datos.registradoPor || null,
       estado: "Disponible",
-      fechaRegistro: new Date().toLocaleString(),
+      fechaRegistro: fechaPublicacion.toLocaleString(),
+      fechaPublicacionTimestamp: fechaPublicacion.getTime(),
     };
     this.objetos.push(nuevoObjeto);
     return { exito: true, mensaje: "Objeto registrado exitosamente", objeto: nuevoObjeto };

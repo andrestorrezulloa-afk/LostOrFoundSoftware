@@ -810,9 +810,31 @@
     "testId": 42
   },
   {
-    "commitId": "HEAD",
+    "commitId": "30647d7fb1533bcb8e11eed4f571725254591b1b",
     "commitName": "fix: evitar renderizado inicial duplicado del catalogo",
     "commitTimestamp": 1794705874234,
     "testId": 43
+  },
+  {
+    "numPassedTests": 27,
+    "failedTests": 3,
+    "numTotalTests": 30,
+    "timestamp": 1794707212133,
+    "success": false,
+    "testId": 44
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 0,
+    "numTotalTests": 30,
+    "timestamp": 1794707237569,
+    "success": true,
+    "testId": 44
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feature: consultar el ultimo objeto publicado",
+    "commitTimestamp": 1794707248811,
+    "testId": 44
   }
 ]
