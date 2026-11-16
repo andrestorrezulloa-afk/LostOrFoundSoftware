@@ -35,6 +35,23 @@ const vistaEstudiante = document.querySelector("#vista-estudiante");
 const filtroCategoriaEstudiante = document.querySelector("#filtro-categoria-estudiante");
 const filtroCategoriaStaff = document.querySelector("#filtro-categoria-staff");
 const filtroNombreEstudiante = document.querySelector('#filtro-nombre-estudiante');
+const filtroLugarEstudiante = document.querySelector('#filtro-lugar-estudiante');
+const ordenPublicaciones = document.querySelector('#orden-publicaciones');
+const btnLimpiarFiltros = document.querySelector('#btn-limpiar-filtros');
+
+function actualizarLugaresDisponibles() {
+  const lugarSeleccionado = filtroLugarEstudiante.value;
+  const lugares = inventario.obtenerCatalogo().map((objeto) => objeto.lugarEncontrado).filter(Boolean);
+  const lugaresUnicos = [...new Set(lugares)].sort();
+  const opciones = ['', ...lugaresUnicos].map((lugar) => {
+    const opcion = document.createElement('option');
+    opcion.value = lugar;
+    opcion.textContent = lugar || 'Todos los lugares';
+    return opcion;
+  });
+  filtroLugarEstudiante.replaceChildren(...opciones);
+  filtroLugarEstudiante.value = lugarSeleccionado;
+}
 
 function mostrarMensajeObjeto(texto, esExito) {
   if (!mensajeObjeto) return;
@@ -48,11 +65,14 @@ function mostrarMensajeObjeto(texto, esExito) {
 }
 
 function renderizarCatalogos() {
+  actualizarLugaresDisponibles();
   renderizarBanner(bannerUltimoPosteo, inventario.obtenerUltimoPosteo());
   if (listaCatalogoEstudiante) {
     const objetos = inventario.listar({
       nombre: filtroNombreEstudiante?.value,
       categoria: filtroCategoriaEstudiante?.value,
+      lugarEncontrado: filtroLugarEstudiante.value,
+      orden: ordenPublicaciones.value || 'recientes',
     });
     const mensajeVacio = inventario.obtenerCatalogo().length
       ? 'No se encontraron objetos que coincidan con la búsqueda.'
@@ -195,6 +215,12 @@ if (filtroCategoriaStaff) {
 }
 
 const formBusquedaPublica = document.querySelector('#form-busqueda-publica');
+filtroLugarEstudiante.addEventListener('change', renderizarCatalogos);
+ordenPublicaciones.addEventListener('change', renderizarCatalogos);
+btnLimpiarFiltros.addEventListener('click', () => {
+  formBusquedaPublica.reset();
+  renderizarCatalogos();
+});
 if (formBusquedaPublica) {
   formBusquedaPublica.addEventListener('submit', (event) => {
     event.preventDefault();

@@ -495,7 +495,7 @@ body {
 .banner-enlace { display: inline-block; margin-top: 16px; color: #1d4ed8; font-weight: 700; }
 #form-busqueda-publica {
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) auto;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: end;
   padding: 0;
   margin: 0;
@@ -503,6 +503,8 @@ body {
   background: transparent;
 }
 .campo-busqueda { min-width: 0; }
+.acciones-busqueda { display: flex; flex-wrap: wrap; gap: 12px; grid-column: 1 / -1; }
+.acciones-busqueda .btn-secondary { width: auto; min-height: 44px; }
 .campo-busqueda label { display: block; margin-bottom: 8px; }
 #form-busqueda-publica input,
 #form-busqueda-publica select { width: 100%; min-width: 0; min-height: 44px; }

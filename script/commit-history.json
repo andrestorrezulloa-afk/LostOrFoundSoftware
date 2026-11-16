@@ -912,12 +912,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "4d75657d4d32edc98deb1491e75ce84ccd1b7345",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-16T15:23:15.000Z",
       "message": "feat: ordenar publicaciones por fecha con desempate por id",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4d75657d4d32edc98deb1491e75ce84ccd1b7345"
     },
     "stats": {
       "total": 58,
@@ -927,6 +927,25 @@
     },
     "coverage": 98.67,
     "test_count": 32,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-16T15:26:30.000Z",
+      "message": "feat: conectar filtros publicos de lugar orden y limpieza",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 145,
+      "additions": 143,
+      "deletions": 2,
+      "date": "2026-11-16"
+    },
+    "coverage": 68.92,
+    "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
   }
