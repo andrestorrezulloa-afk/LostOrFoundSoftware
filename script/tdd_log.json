@@ -882,9 +882,31 @@
     "testId": 47
   },
   {
-    "commitId": "HEAD",
+    "commitId": "23dde6db33fe00d2d7702c35d76633fce1dd9051",
     "commitName": "feat: filtrar objetos por lugar junto a nombre y categoria",
     "commitTimestamp": 1794842505186,
     "testId": 47
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1794842547677,
+    "success": false,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1794842576283,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: ordenar publicaciones por fecha con desempate por id",
+    "commitTimestamp": 1794842597667,
+    "testId": 48
   }
 ]
