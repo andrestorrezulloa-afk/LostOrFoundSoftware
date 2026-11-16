@@ -860,9 +860,31 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22781cf5b1e9e2ba82d2489765e1c3d1a32e21e9",
     "commitName": "refactor: simplificar la lectura del inventario de objetos perdidos",
     "commitTimestamp": 1794765050947,
     "testId": 46
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1794842449850,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1794842473287,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: filtrar objetos por lugar junto a nombre y categoria",
+    "commitTimestamp": 1794842505186,
+    "testId": 47
   }
 ]

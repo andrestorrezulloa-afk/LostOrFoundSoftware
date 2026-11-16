@@ -874,12 +874,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "22781cf5b1e9e2ba82d2489765e1c3d1a32e21e9",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-15T17:50:47.000Z",
       "message": "refactor: simplificar la lectura del inventario de objetos perdidos",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/22781cf5b1e9e2ba82d2489765e1c3d1a32e21e9"
     },
     "stats": {
       "total": 70,
@@ -889,6 +889,25 @@
     },
     "coverage": 98.39,
     "test_count": 30,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-16T15:21:43.000Z",
+      "message": "feat: filtrar objetos por lugar junto a nombre y categoria",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 19,
+      "deletions": 1,
+      "date": "2026-11-16"
+    },
+    "coverage": 98.41,
+    "test_count": 31,
     "failed_tests": 0,
     "conclusion": "success"
   }
