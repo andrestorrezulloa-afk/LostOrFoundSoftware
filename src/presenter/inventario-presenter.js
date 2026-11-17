@@ -39,19 +39,20 @@ const filtroLugarEstudiante = document.querySelector('#filtro-lugar-estudiante')
 const ordenPublicaciones = document.querySelector('#orden-publicaciones');
 const btnLimpiarFiltros = document.querySelector('#btn-limpiar-filtros');
 
-function actualizarLugaresDisponibles() {
-  const lugarSeleccionado = filtroLugarEstudiante.value;
-  const lugares = inventario.obtenerCatalogo().map((objeto) => objeto.lugarEncontrado).filter(Boolean);
-  const lugaresUnicos = [...new Set(lugares)].sort();
-  const opciones = ['', ...lugaresUnicos].map((lugar) => {
+const campusDisponibles = ['Tupuraya 1', 'Tupuraya 2'];
+
+function mostrarOpcionesCampus(selector, textoInicial) {
+  const opciones = ['', ...campusDisponibles].map((campus) => {
     const opcion = document.createElement('option');
-    opcion.value = lugar;
-    opcion.textContent = lugar || 'Todos los lugares';
+    opcion.value = campus;
+    opcion.textContent = campus || textoInicial;
     return opcion;
   });
-  filtroLugarEstudiante.replaceChildren(...opciones);
-  filtroLugarEstudiante.value = lugarSeleccionado;
+  selector.replaceChildren(...opciones);
 }
+
+mostrarOpcionesCampus(filtroLugarEstudiante, 'Todos los campus');
+mostrarOpcionesCampus(objLugar, '-- Selecciona un campus --');
 
 function mostrarMensajeObjeto(texto, esExito) {
   if (!mensajeObjeto) return;
@@ -65,7 +66,6 @@ function mostrarMensajeObjeto(texto, esExito) {
 }
 
 function renderizarCatalogos() {
-  actualizarLugaresDisponibles();
   renderizarBanner(bannerUltimoPosteo, inventario.obtenerUltimoPosteo());
   if (listaCatalogoEstudiante) {
     const objetos = inventario.listar({
@@ -98,7 +98,7 @@ function cerrarDetalle(restaurarFoco = true) {
 function abrirDetalle(objeto, boton) {
   detalleNombre.textContent = objeto.nombre;
   detalleCategoria.textContent = objeto.categoria;
-  detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Lugar no especificado';
+  detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Campus no especificado';
   detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
   detalleEstado.textContent = objeto.estado;
   detalleFoto.hidden = !objeto.foto;

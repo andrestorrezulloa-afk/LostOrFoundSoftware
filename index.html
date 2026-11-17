@@ -129,9 +129,9 @@
                 </select>
               </div>
               <div class="campo-busqueda">
-                <label for="filtro-lugar-estudiante">Lugar de hallazgo</label>
+                <label for="filtro-lugar-estudiante">Campus</label>
                 <select id="filtro-lugar-estudiante">
-                  <option value="">Todos los lugares</option>
+                  <option value="">Todos los campus</option>
                 </select>
               </div>
               <div class="campo-busqueda">
@@ -159,7 +159,7 @@
             <div class="detalle-info">
               <h2 id="detalle-nombre" tabindex="-1"></h2>
               <p>Categoría: <span id="detalle-categoria"></span></p>
-              <p>Lugar donde se encontró: <span id="detalle-lugar"></span></p>
+              <p>Campus: <span id="detalle-lugar"></span></p>
               <p>Descripción: <span id="detalle-descripcion"></span></p>
               <p>Estado: <span id="detalle-estado"></span></p>
             </div>
@@ -204,13 +204,10 @@
             </div>
 
             <div class="form-group">
-              <label for="obj-lugar">Lugar donde se encontró *</label>
-              <input
-                type="text"
-                id="obj-lugar"
-                placeholder="Ej. Bloque C, aula 204"
-                required
-              />
+              <label for="obj-lugar">Campus *</label>
+              <select id="obj-lugar" required>
+                <option value="">-- Selecciona un campus --</option>
+              </select>
             </div>
 
             <div class="form-group">

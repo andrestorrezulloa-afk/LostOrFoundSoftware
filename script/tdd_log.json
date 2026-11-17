@@ -926,9 +926,31 @@
     "testId": 49
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b065cc9a4359db4571d0470ae4698f999920def2",
     "commitName": "feat: conectar filtros publicos de lugar orden y limpieza",
     "commitTimestamp": 1794842792555,
     "testId": 49
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1794922944378,
+    "success": false,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1794922981737,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: seleccionar campus Tupuraya en registro y catalogo",
+    "commitTimestamp": 1794923006201,
+    "testId": 50
   }
 ]

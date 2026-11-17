@@ -931,12 +931,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b065cc9a4359db4571d0470ae4698f999920def2",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-16T15:26:30.000Z",
       "message": "feat: conectar filtros publicos de lugar orden y limpieza",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b065cc9a4359db4571d0470ae4698f999920def2"
     },
     "stats": {
       "total": 145,
@@ -945,6 +945,25 @@
       "date": "2026-11-16"
     },
     "coverage": 68.92,
+    "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T13:43:24.000Z",
+      "message": "feat: seleccionar campus Tupuraya en registro y catalogo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 27,
+      "deletions": 29,
+      "date": "2026-11-17"
+    },
+    "coverage": 68.49,
     "test_count": 34,
     "failed_tests": 0,
     "conclusion": "success"
