@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2d2e585c5079953f126873c2544a7de194d3435d",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T13:43:24.000Z",
       "message": "feat: seleccionar campus Tupuraya en registro y catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2d2e585c5079953f126873c2544a7de194d3435d"
     },
     "stats": {
       "total": 56,
@@ -965,6 +965,25 @@
     },
     "coverage": 68.49,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:11:41.000Z",
+      "message": "feat: permitir al personal cambiar el estado de objetos",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 69.74,
+    "test_count": 37,
     "failed_tests": 0,
     "conclusion": "success"
   }

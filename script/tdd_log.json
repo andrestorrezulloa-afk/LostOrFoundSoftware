@@ -948,9 +948,31 @@
     "testId": 50
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2d2e585c5079953f126873c2544a7de194d3435d",
     "commitName": "feat: seleccionar campus Tupuraya en registro y catalogo",
     "commitTimestamp": 1794923006201,
     "testId": 50
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 3,
+    "numTotalTests": 37,
+    "timestamp": 1794924662027,
+    "success": false,
+    "testId": 51
+  },
+  {
+    "numPassedTests": 37,
+    "failedTests": 0,
+    "numTotalTests": 37,
+    "timestamp": 1794924683022,
+    "success": true,
+    "testId": 51
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: permitir al personal cambiar el estado de objetos",
+    "commitTimestamp": 1794924702129,
+    "testId": 51
   }
 ]

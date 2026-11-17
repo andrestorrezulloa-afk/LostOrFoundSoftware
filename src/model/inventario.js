@@ -69,6 +69,24 @@ class InventarioObjetos {
     return Boolean(datos.nombre?.trim() && datos.categoria?.trim());
   }
 
+  cambiarEstado(id, nuevoEstado, tieneSesionPersonal) {
+    if (!tieneSesionPersonal) {
+      return { exito: false, mensaje: 'Debe iniciar sesión como personal' };
+    }
+
+    const objeto = this.obtenerObjetoPorId(id);
+    if (!objeto) {
+      return { exito: false, mensaje: 'Objeto no encontrado' };
+    }
+
+    if (!['Disponible', 'Reservado', 'Reclamado'].includes(nuevoEstado)) {
+      return { exito: false, mensaje: 'Estado no válido' };
+    }
+
+    objeto.estado = nuevoEstado;
+    return { exito: true, mensaje: 'Estado actualizado correctamente' };
+  }
+
   crearFichaObjeto(datos) {
     const fechaPublicacion = new Date();
 
