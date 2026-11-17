@@ -988,12 +988,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "5f99c56c6b4027dd356181d927b43140c5ad6e47",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T14:13:18.000Z",
       "message": "feat: validar reservas y liberarlas al volver a disponible",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/5f99c56c6b4027dd356181d927b43140c5ad6e47"
     },
     "stats": {
       "total": 86,
@@ -1003,6 +1003,25 @@
     },
     "coverage": 71.84,
     "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:14:55.000Z",
+      "message": "feat: mostrar control de estado solo en tarjetas del personal",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 53,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 68.47,
+    "test_count": 42,
     "failed_tests": 0,
     "conclusion": "success"
   }

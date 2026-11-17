@@ -992,9 +992,31 @@
     "testId": 52
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f99c56c6b4027dd356181d927b43140c5ad6e47",
     "commitName": "feat: validar reservas y liberarlas al volver a disponible",
     "commitTimestamp": 1794924799084,
     "testId": 52
+  },
+  {
+    "numPassedTests": 41,
+    "failedTests": 1,
+    "numTotalTests": 42,
+    "timestamp": 1794924859183,
+    "success": false,
+    "testId": 53
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 0,
+    "numTotalTests": 42,
+    "timestamp": 1794924880568,
+    "success": true,
+    "testId": 53
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar control de estado solo en tarjetas del personal",
+    "commitTimestamp": 1794924896636,
+    "testId": 53
   }
 ]
