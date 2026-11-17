@@ -128,7 +128,23 @@
                   <option value="Otros">Otros</option>
                 </select>
               </div>
-              <button type="submit" class="btn-primary">Buscar</button>
+              <div class="campo-busqueda">
+                <label for="filtro-lugar-estudiante">Campus</label>
+                <select id="filtro-lugar-estudiante">
+                  <option value="">Todos los campus</option>
+                </select>
+              </div>
+              <div class="campo-busqueda">
+                <label for="orden-publicaciones">Orden de publicación</label>
+                <select id="orden-publicaciones">
+                  <option value="recientes">Más recientes primero</option>
+                  <option value="antiguos">Más antiguos primero</option>
+                </select>
+              </div>
+              <div class="acciones-busqueda">
+                <button type="submit" class="btn-primary">Buscar</button>
+                <button type="button" id="btn-limpiar-filtros" class="btn-secondary">Limpiar filtros</button>
+              </div>
             </form>
           </section>
           <section id="banner-ultimo-posteo" class="banner-ultimo-posteo" aria-label="Último objeto publicado" hidden></section>
@@ -143,7 +159,7 @@
             <div class="detalle-info">
               <h2 id="detalle-nombre" tabindex="-1"></h2>
               <p>Categoría: <span id="detalle-categoria"></span></p>
-              <p>Lugar donde se encontró: <span id="detalle-lugar"></span></p>
+              <p>Campus: <span id="detalle-lugar"></span></p>
               <p>Descripción: <span id="detalle-descripcion"></span></p>
               <p>Estado: <span id="detalle-estado"></span></p>
             </div>
@@ -188,13 +204,10 @@
             </div>
 
             <div class="form-group">
-              <label for="obj-lugar">Lugar donde se encontró *</label>
-              <input
-                type="text"
-                id="obj-lugar"
-                placeholder="Ej. Bloque C, aula 204"
-                required
-              />
+              <label for="obj-lugar">Campus *</label>
+              <select id="obj-lugar" required>
+                <option value="">-- Selecciona un campus --</option>
+              </select>
             </div>
 
             <div class="form-group">

@@ -860,9 +860,97 @@
     "testId": 46
   },
   {
-    "commitId": "HEAD",
+    "commitId": "22781cf5b1e9e2ba82d2489765e1c3d1a32e21e9",
     "commitName": "refactor: simplificar la lectura del inventario de objetos perdidos",
     "commitTimestamp": 1794765050947,
     "testId": 46
+  },
+  {
+    "numPassedTests": 30,
+    "failedTests": 1,
+    "numTotalTests": 31,
+    "timestamp": 1794842449850,
+    "success": false,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 0,
+    "numTotalTests": 31,
+    "timestamp": 1794842473287,
+    "success": true,
+    "testId": 47
+  },
+  {
+    "commitId": "23dde6db33fe00d2d7702c35d76633fce1dd9051",
+    "commitName": "feat: filtrar objetos por lugar junto a nombre y categoria",
+    "commitTimestamp": 1794842505186,
+    "testId": 47
+  },
+  {
+    "numPassedTests": 31,
+    "failedTests": 1,
+    "numTotalTests": 32,
+    "timestamp": 1794842547677,
+    "success": false,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 0,
+    "numTotalTests": 32,
+    "timestamp": 1794842576283,
+    "success": true,
+    "testId": 48
+  },
+  {
+    "commitId": "4d75657d4d32edc98deb1491e75ce84ccd1b7345",
+    "commitName": "feat: ordenar publicaciones por fecha con desempate por id",
+    "commitTimestamp": 1794842597667,
+    "testId": 48
+  },
+  {
+    "numPassedTests": 32,
+    "failedTests": 2,
+    "numTotalTests": 34,
+    "timestamp": 1794842670399,
+    "success": false,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1794842717842,
+    "success": true,
+    "testId": 49
+  },
+  {
+    "commitId": "b065cc9a4359db4571d0470ae4698f999920def2",
+    "commitName": "feat: conectar filtros publicos de lugar orden y limpieza",
+    "commitTimestamp": 1794842792555,
+    "testId": 49
+  },
+  {
+    "numPassedTests": 33,
+    "failedTests": 1,
+    "numTotalTests": 34,
+    "timestamp": 1794922944378,
+    "success": false,
+    "testId": 50
+  },
+  {
+    "numPassedTests": 34,
+    "failedTests": 0,
+    "numTotalTests": 34,
+    "timestamp": 1794922981737,
+    "success": true,
+    "testId": 50
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: seleccionar campus Tupuraya en registro y catalogo",
+    "commitTimestamp": 1794923006201,
+    "testId": 50
   }
 ]

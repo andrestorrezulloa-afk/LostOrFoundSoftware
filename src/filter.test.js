@@ -1,5 +1,21 @@
 import InventarioObjetos from "./model/inventario.js";
 
+describe('Filtrar por lugar de hallazgo', () => {
+  it('combina lugar, nombre y categoría y permite quitar solo el lugar', () => {
+    const inventario = new InventarioObjetos();
+    const terraza = inventario.registrarObjeto({ nombre: 'Mochila negra', categoria: 'Útiles', lugarEncontrado: 'Terraza' }).objeto;
+    const aula = inventario.registrarObjeto({ nombre: 'Mochila azul', categoria: 'Útiles', lugarEncontrado: 'Aula A1-3' }).objeto;
+    inventario.registrarObjeto({ nombre: 'Llavero', categoria: 'Llaves', lugarEncontrado: 'Terraza' });
+    inventario.registrarObjeto({ nombre: 'Mochila roja', categoria: 'Ropa', lugarEncontrado: 'Terraza' });
+    const filtros = { nombre: 'mochila', categoria: 'Útiles', lugarEncontrado: 'Terraza' };
+
+    expect(inventario.listar(filtros)).toEqual([terraza]);
+    expect(inventario.listar({ ...filtros, lugarEncontrado: '' })).toEqual([terraza, aula]);
+    expect(inventario.listar({ lugarEncontrado: 'Biblioteca' })).toEqual([]);
+    expect(inventario.obtenerCatalogo()).toHaveLength(4);
+  });
+});
+
 describe("Listar objetos registrados", () => {
   it("deberia listar solo los objetos de la categoria indicada", () => {
     const inventario = new InventarioObjetos();

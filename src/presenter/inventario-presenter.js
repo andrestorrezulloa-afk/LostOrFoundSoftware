@@ -35,6 +35,24 @@ const vistaEstudiante = document.querySelector("#vista-estudiante");
 const filtroCategoriaEstudiante = document.querySelector("#filtro-categoria-estudiante");
 const filtroCategoriaStaff = document.querySelector("#filtro-categoria-staff");
 const filtroNombreEstudiante = document.querySelector('#filtro-nombre-estudiante');
+const filtroLugarEstudiante = document.querySelector('#filtro-lugar-estudiante');
+const ordenPublicaciones = document.querySelector('#orden-publicaciones');
+const btnLimpiarFiltros = document.querySelector('#btn-limpiar-filtros');
+
+const campusDisponibles = ['Tupuraya 1', 'Tupuraya 2'];
+
+function mostrarOpcionesCampus(selector, textoInicial) {
+  const opciones = ['', ...campusDisponibles].map((campus) => {
+    const opcion = document.createElement('option');
+    opcion.value = campus;
+    opcion.textContent = campus || textoInicial;
+    return opcion;
+  });
+  selector.replaceChildren(...opciones);
+}
+
+mostrarOpcionesCampus(filtroLugarEstudiante, 'Todos los campus');
+mostrarOpcionesCampus(objLugar, '-- Selecciona un campus --');
 
 function mostrarMensajeObjeto(texto, esExito) {
   if (!mensajeObjeto) return;
@@ -53,6 +71,8 @@ function renderizarCatalogos() {
     const objetos = inventario.listar({
       nombre: filtroNombreEstudiante?.value,
       categoria: filtroCategoriaEstudiante?.value,
+      lugarEncontrado: filtroLugarEstudiante.value,
+      orden: ordenPublicaciones.value || 'recientes',
     });
     const mensajeVacio = inventario.obtenerCatalogo().length
       ? 'No se encontraron objetos que coincidan con la búsqueda.'
@@ -78,7 +98,7 @@ function cerrarDetalle(restaurarFoco = true) {
 function abrirDetalle(objeto, boton) {
   detalleNombre.textContent = objeto.nombre;
   detalleCategoria.textContent = objeto.categoria;
-  detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Lugar no especificado';
+  detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Campus no especificado';
   detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
   detalleEstado.textContent = objeto.estado;
   detalleFoto.hidden = !objeto.foto;
@@ -195,6 +215,12 @@ if (filtroCategoriaStaff) {
 }
 
 const formBusquedaPublica = document.querySelector('#form-busqueda-publica');
+filtroLugarEstudiante.addEventListener('change', renderizarCatalogos);
+ordenPublicaciones.addEventListener('change', renderizarCatalogos);
+btnLimpiarFiltros.addEventListener('click', () => {
+  formBusquedaPublica.reset();
+  renderizarCatalogos();
+});
 if (formBusquedaPublica) {
   formBusquedaPublica.addEventListener('submit', (event) => {
     event.preventDefault();
