@@ -69,7 +69,7 @@ class InventarioObjetos {
     return Boolean(datos.nombre?.trim() && datos.categoria?.trim());
   }
 
-  cambiarEstado(id, nuevoEstado, tieneSesionPersonal) {
+  cambiarEstado(id, nuevoEstado, tieneSesionPersonal, datosReserva) {
     if (!tieneSesionPersonal) {
       return { exito: false, mensaje: 'Debe iniciar sesión como personal' };
     }
@@ -83,8 +83,45 @@ class InventarioObjetos {
       return { exito: false, mensaje: 'Estado no válido' };
     }
 
+    if (nuevoEstado === 'Reservado' && !objeto.reserva) {
+      const resultado = this.reservarObjeto(id, datosReserva);
+      if (!resultado.exito) {
+        return resultado;
+      }
+    }
+
+    if (nuevoEstado === 'Disponible') {
+      delete objeto.reserva;
+    }
+
     objeto.estado = nuevoEstado;
     return { exito: true, mensaje: 'Estado actualizado correctamente' };
+  }
+
+  reservarObjeto(id, datos = {}) {
+    const objeto = this.obtenerObjetoPorId(id);
+    if (!objeto) {
+      return { exito: false, mensaje: 'Objeto no encontrado' };
+    }
+    if (objeto.estado !== 'Disponible') {
+      return { exito: false, mensaje: 'Solo se pueden reservar objetos disponibles' };
+    }
+    if (!this.tieneDatosReservaCompletos(datos)) {
+      return { exito: false, mensaje: 'Complete nombre, código de estudiante y un correo válido para reservar' };
+    }
+
+    objeto.reserva = {
+      nombre: datos.nombre.trim(),
+      codigoEstudiante: datos.codigoEstudiante.trim(),
+      correo: datos.correo.trim(),
+    };
+    objeto.estado = 'Reservado';
+    return { exito: true, mensaje: 'Reserva registrada correctamente' };
+  }
+
+  tieneDatosReservaCompletos(datos) {
+    return Boolean(datos.nombre?.trim() && datos.codigoEstudiante?.trim() &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.correo?.trim()));
   }
 
   crearFichaObjeto(datos) {

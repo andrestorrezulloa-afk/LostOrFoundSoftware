@@ -969,12 +969,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "bfd57678cfd637fe0c2d35fa3e7d8eb333b531a9",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T14:11:41.000Z",
       "message": "feat: permitir al personal cambiar el estado de objetos",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/bfd57678cfd637fe0c2d35fa3e7d8eb333b531a9"
     },
     "stats": {
       "total": 50,
@@ -984,6 +984,25 @@
     },
     "coverage": 69.74,
     "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:13:18.000Z",
+      "message": "feat: validar reservas y liberarlas al volver a disponible",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 85,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 71.84,
+    "test_count": 40,
     "failed_tests": 0,
     "conclusion": "success"
   }
