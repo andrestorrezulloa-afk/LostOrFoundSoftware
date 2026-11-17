@@ -1007,12 +1007,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0c8d7d4f45067e4c30cc97e8ed8ab184ed0021ab",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T14:14:55.000Z",
       "message": "feat: mostrar control de estado solo en tarjetas del personal",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0c8d7d4f45067e4c30cc97e8ed8ab184ed0021ab"
     },
     "stats": {
       "total": 53,
@@ -1022,6 +1022,25 @@
     },
     "coverage": 68.47,
     "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:18:53.000Z",
+      "message": "feat: confirmar y cancelar cambios de estado desde el panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 234,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 72.73,
+    "test_count": 46,
     "failed_tests": 0,
     "conclusion": "success"
   }

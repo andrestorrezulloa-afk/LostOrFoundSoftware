@@ -1014,9 +1014,31 @@
     "testId": 53
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0c8d7d4f45067e4c30cc97e8ed8ab184ed0021ab",
     "commitName": "feat: mostrar control de estado solo en tarjetas del personal",
     "commitTimestamp": 1794924896636,
     "testId": 53
+  },
+  {
+    "numPassedTests": 42,
+    "failedTests": 4,
+    "numTotalTests": 46,
+    "timestamp": 1794924961314,
+    "success": false,
+    "testId": 54
+  },
+  {
+    "numPassedTests": 46,
+    "failedTests": 0,
+    "numTotalTests": 46,
+    "timestamp": 1794925029076,
+    "success": true,
+    "testId": 54
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: confirmar y cancelar cambios de estado desde el panel",
+    "commitTimestamp": 1794925135065,
+    "testId": 54
   }
 ]

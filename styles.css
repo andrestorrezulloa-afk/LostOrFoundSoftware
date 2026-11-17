@@ -263,6 +263,13 @@ body {
   color: #0f172a;
 }
 
+.editor-estado { margin-bottom: 20px; }
+.editor-estado h3, .editor-estado p { margin-bottom: 16px; }
+.editor-estado fieldset { border: 1px solid #cbd5e1; border-radius: 8px; padding: 16px; margin-bottom: 16px; }
+.editor-estado legend { padding: 0 8px; }
+.editor-estado .btn-secondary { margin-top: 10px; }
+#editor-estado[hidden], #datos-reserva-estado[hidden] { display: none; }
+
 .catalogo-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
