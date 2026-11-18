@@ -1178,12 +1178,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8c0f44ca1489f848ddb26ef00145c6fd02802a36",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T19:09:44.000Z",
       "message": "feat: presentar reservas aceptadas en la seccion del personal",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/8c0f44ca1489f848ddb26ef00145c6fd02802a36"
     },
     "stats": {
       "total": 70,
@@ -1193,6 +1193,25 @@
     },
     "coverage": 91.3,
     "test_count": 67,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T19:17:59.000Z",
+      "message": "feat: mejorar la presentacion del catalogo y del objeto a reservar",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 99,
+      "additions": 76,
+      "deletions": 23,
+      "date": "2026-11-18"
+    },
+    "coverage": 91.3,
+    "test_count": 68,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -25,29 +25,32 @@ function crearTarjetaObjeto(obj, esPublico) {
   cuerpo.append(
     cabecera,
     crearElemento('h3', 'objeto-titulo', obj.nombre),
+    crearElemento('p', 'objeto-lugar', obj.lugarEncontrado || 'Campus no especificado'),
     crearElemento('p', 'objeto-desc', obj.descripcion || 'Sin descripción adicional.'),
     crearElemento('small', 'objeto-fecha', `Registrado: ${obj.fechaRegistro}`)
   );
+  const acciones = crearElemento('div', 'objeto-acciones', '');
   if (esPublico) {
     const boton = crearElemento('button', 'btn-detalle', 'Ver detalle');
     boton.type = 'button';
     boton.dataset.objetoId = String(obj.id);
     boton.setAttribute('aria-label', `Ver detalle de ${obj.nombre}`);
-    cuerpo.append(boton);
+    acciones.append(boton);
     if (obj.estado === 'Disponible') {
-      const reservar = crearElemento('button', 'btn-detalle', 'Reservar');
+      const reservar = crearElemento('button', 'btn-detalle btn-reservar', 'Reservar');
       reservar.type = 'button';
       reservar.dataset.reservarId = String(obj.id);
       reservar.setAttribute('aria-label', `Solicitar reserva de ${obj.nombre}`);
-      cuerpo.append(reservar);
+      acciones.append(reservar);
     }
   } else {
     const boton = crearElemento('button', 'btn-detalle', 'Cambiar estado');
     boton.type = 'button';
     boton.dataset.cambiarEstado = String(obj.id);
     boton.setAttribute('aria-label', `Cambiar estado de ${obj.nombre}`);
-    cuerpo.append(boton);
+    acciones.append(boton);
   }
+  cuerpo.append(acciones);
   tarjeta.append(cuerpo);
   return tarjeta;
 }

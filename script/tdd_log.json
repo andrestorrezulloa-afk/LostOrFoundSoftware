@@ -1220,9 +1220,39 @@
     "testId": 62
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8c0f44ca1489f848ddb26ef00145c6fd02802a36",
     "commitName": "feat: presentar reservas aceptadas en la seccion del personal",
     "commitTimestamp": 1795028986264,
     "testId": 62
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 1,
+    "numTotalTests": 68,
+    "timestamp": 1795029212108,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795029271129,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795029454744,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mejorar la presentacion del catalogo y del objeto a reservar",
+    "commitTimestamp": 1795029480745,
+    "testId": 63
   }
 ]

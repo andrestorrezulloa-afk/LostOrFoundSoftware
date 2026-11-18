@@ -1,3 +1,5 @@
+import renderizarResumenReserva from '../view/reserva-resumen-view.js';
+
 export default function conectarReservaEstudiante(inventario, actualizarCatalogos) {
   const catalogo = document.querySelector('#catalogo-estudiante');
   const lista = document.querySelector('#lista-catalogo-estudiante');
@@ -12,6 +14,7 @@ export default function conectarReservaEstudiante(inventario, actualizarCatalogo
   const cancelar = document.querySelector('#btn-cancelar-reserva');
   let objetoSeleccionado = null;
   let desdeDetalle = false;
+  let botonOrigen = null;
 
   function mostrarMensaje(texto, exito) {
     mensaje.textContent = texto;
@@ -29,6 +32,8 @@ export default function conectarReservaEstudiante(inventario, actualizarCatalogo
     for (const campo of [nombre, telefono, correo]) {
       campo.value = '';
     }
+    (botonOrigen?.isConnected ? botonOrigen : document.querySelector('#filtro-nombre-estudiante'))?.focus();
+    botonOrigen = null;
   }
 
   function abrirFormulario(evento) {
@@ -42,8 +47,10 @@ export default function conectarReservaEstudiante(inventario, actualizarCatalogo
       return;
     }
     objetoSeleccionado = objeto;
+    botonOrigen = boton;
     desdeDetalle = !detalle.hidden;
     nombreObjeto.textContent = objeto.nombre;
+    renderizarResumenReserva(document.querySelector('#resumen-objeto-reserva'), objeto);
     mensaje.textContent = '';
     mensaje.className = 'mensaje';
     catalogo.hidden = true;
@@ -69,5 +76,6 @@ export default function conectarReservaEstudiante(inventario, actualizarCatalogo
       cerrarFormulario();
       actualizarCatalogos();
     }
+    mensaje.focus();
   });
 }
