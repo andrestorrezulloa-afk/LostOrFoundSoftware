@@ -1026,12 +1026,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0656a2a64392334bba0f2a0334d65add87cb08dd",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T14:18:53.000Z",
       "message": "feat: confirmar y cancelar cambios de estado desde el panel",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0656a2a64392334bba0f2a0334d65add87cb08dd"
     },
     "stats": {
       "total": 234,
@@ -1041,6 +1041,25 @@
     },
     "coverage": 72.73,
     "test_count": 46,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:41:34.000Z",
+      "message": "feat: usar telefono y correo institucional en las reservas",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 92,
+      "additions": 67,
+      "deletions": 25,
+      "date": "2026-11-18"
+    },
+    "coverage": 73.55,
+    "test_count": 47,
     "failed_tests": 0,
     "conclusion": "success"
   }

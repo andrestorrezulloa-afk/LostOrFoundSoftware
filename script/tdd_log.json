@@ -1036,9 +1036,31 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0656a2a64392334bba0f2a0334d65add87cb08dd",
     "commitName": "feat: confirmar y cancelar cambios de estado desde el panel",
     "commitTimestamp": 1794925135065,
     "testId": 54
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 4,
+    "numTotalTests": 47,
+    "timestamp": 1795027226833,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1795027271616,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: usar telefono y correo institucional en las reservas",
+    "commitTimestamp": 1795027296097,
+    "testId": 55
   }
 ]

@@ -1,4 +1,5 @@
 import listar from './filter.js';
+import { validarDatosReserva, prepararDatosReserva } from './datos-reserva.js';
 
 class InventarioObjetos {
   constructor() {
@@ -106,22 +107,14 @@ class InventarioObjetos {
     if (objeto.estado !== 'Disponible') {
       return { exito: false, mensaje: 'Solo se pueden reservar objetos disponibles' };
     }
-    if (!this.tieneDatosReservaCompletos(datos)) {
-      return { exito: false, mensaje: 'Complete nombre, código de estudiante y un correo válido para reservar' };
+    const errorDatos = validarDatosReserva(datos);
+    if (errorDatos) {
+      return { exito: false, mensaje: errorDatos };
     }
 
-    objeto.reserva = {
-      nombre: datos.nombre.trim(),
-      codigoEstudiante: datos.codigoEstudiante.trim(),
-      correo: datos.correo.trim(),
-    };
+    objeto.reserva = prepararDatosReserva(datos);
     objeto.estado = 'Reservado';
     return { exito: true, mensaje: 'Reserva registrada correctamente' };
-  }
-
-  tieneDatosReservaCompletos(datos) {
-    return Boolean(datos.nombre?.trim() && datos.codigoEstudiante?.trim() &&
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.correo?.trim()));
   }
 
   crearFichaObjeto(datos) {
