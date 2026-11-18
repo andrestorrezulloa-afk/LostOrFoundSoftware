@@ -1197,17 +1197,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "85e511f6481a605a9b33ee6caafa9ce853f8e6e6",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T19:17:59.000Z",
       "message": "feat: mejorar la presentacion del catalogo y del objeto a reservar",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/85e511f6481a605a9b33ee6caafa9ce853f8e6e6"
     },
     "stats": {
       "total": 99,
       "additions": 76,
       "deletions": 23,
+      "date": "2026-11-18"
+    },
+    "coverage": 91.3,
+    "test_count": 68,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T19:20:27.000Z",
+      "message": "style: unificar la interfaz y adaptar las vistas a movil",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 936,
+      "additions": 384,
+      "deletions": 552,
       "date": "2026-11-18"
     },
     "coverage": 91.3,
