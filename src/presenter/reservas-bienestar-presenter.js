@@ -1,15 +1,18 @@
 import renderizarSolicitudes from '../view/solicitudes-view.js';
+import renderizarReservasAceptadas from '../view/reservas-aceptadas-view.js';
 
 export default function conectarReservasBienestar(inventario, auth, actualizarCatalogos) {
   const panel = document.querySelector('#panel-solicitudes-bienestar');
   const lista = document.querySelector('#lista-solicitudes-reserva');
   const mensaje = document.querySelector('#mensaje-solicitudes-bienestar');
+  const reservasAceptadas = document.querySelector('#lista-reservas-aceptadas');
 
   function actualizarSolicitudes() {
     const tieneSesion = auth.puedeAccederAlPanel();
     panel.hidden = !tieneSesion;
     if (!tieneSesion) {
       lista.replaceChildren();
+      reservasAceptadas.replaceChildren();
       return;
     }
     const solicitudes = inventario.obtenerSolicitudesPendientes(tieneSesion).map((solicitud) => ({
@@ -17,6 +20,8 @@ export default function conectarReservasBienestar(inventario, auth, actualizarCa
       nombreObjeto: inventario.obtenerObjetoPorId(solicitud.objetoId).nombre,
     }));
     renderizarSolicitudes(lista, solicitudes);
+    const objetosReservados = inventario.obtenerCatalogo().filter((objeto) => objeto.estado === 'Reservado' && objeto.reserva);
+    renderizarReservasAceptadas(reservasAceptadas, objetosReservados);
   }
 
   lista.addEventListener('click', (evento) => {

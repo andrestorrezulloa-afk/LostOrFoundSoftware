@@ -1198,9 +1198,31 @@
     "testId": 61
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c59e18ac1e4a7142788915b82f232304ca4ecbec",
     "commitName": "feat: separar el panel en vistas con navegacion accesible",
     "commitTimestamp": 1795028873591,
     "testId": 61
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 1,
+    "numTotalTests": 67,
+    "timestamp": 1795028930286,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1795028961971,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: presentar reservas aceptadas en la seccion del personal",
+    "commitTimestamp": 1795028986264,
+    "testId": 62
   }
 ]

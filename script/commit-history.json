@@ -1159,12 +1159,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c59e18ac1e4a7142788915b82f232304ca4ecbec",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T19:07:51.000Z",
       "message": "feat: separar el panel en vistas con navegacion accesible",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/c59e18ac1e4a7142788915b82f232304ca4ecbec"
     },
     "stats": {
       "total": 202,
@@ -1174,6 +1174,25 @@
     },
     "coverage": 90.87,
     "test_count": 66,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T19:09:44.000Z",
+      "message": "feat: presentar reservas aceptadas en la seccion del personal",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 70,
+      "additions": 70,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 91.3,
+    "test_count": 67,
     "failed_tests": 0,
     "conclusion": "success"
   }
