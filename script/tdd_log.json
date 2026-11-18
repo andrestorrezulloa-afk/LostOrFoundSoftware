@@ -1168,9 +1168,39 @@
     "testId": 60
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d16eb94e5fa798c38ab9d40f32c74136c08a6013",
     "commitName": "feat: revisar y aceptar reservas desde el panel de Bienestar",
     "commitTimestamp": 1795027950357,
     "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1795028658359,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 3,
+    "numTotalTests": 66,
+    "timestamp": 1795028756101,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1795028842048,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: separar el panel en vistas con navegacion accesible",
+    "commitTimestamp": 1795028873591,
+    "testId": 61
   }
 ]

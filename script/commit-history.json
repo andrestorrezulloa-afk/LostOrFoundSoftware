@@ -1140,12 +1140,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "d16eb94e5fa798c38ab9d40f32c74136c08a6013",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:52:29.000Z",
       "message": "feat: revisar y aceptar reservas desde el panel de Bienestar",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/d16eb94e5fa798c38ab9d40f32c74136c08a6013"
     },
     "stats": {
       "total": 191,
@@ -1155,6 +1155,25 @@
     },
     "coverage": 90.39,
     "test_count": 63,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T19:07:51.000Z",
+      "message": "feat: separar el panel en vistas con navegacion accesible",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 202,
+      "additions": 178,
+      "deletions": 24,
+      "date": "2026-11-18"
+    },
+    "coverage": 90.87,
+    "test_count": 66,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -6,6 +6,7 @@ import conectarReservaEstudiante from './reserva-estudiante-presenter.js';
 import conectarReservasBienestar from './reservas-bienestar-presenter.js';
 
 const inventario = new InventarioObjetos();
+export { inventario };
 
 const formObjeto = document.querySelector("#form-registrar-objeto");
 const objNombre = document.querySelector("#obj-nombre");
