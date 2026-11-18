@@ -255,6 +255,12 @@
 
         
         <div class="seccion-catalogo">
+          <section id="panel-solicitudes-bienestar" class="panel-solicitudes" aria-labelledby="titulo-solicitudes-bienestar" hidden>
+            <h2 id="titulo-solicitudes-bienestar">Solicitudes de reserva pendientes</h2>
+            <p>Aceptar una solicitud cambia el objeto a «Reservado». Verifica la propiedad antes de entregarlo.</p>
+            <p id="mensaje-solicitudes-bienestar" class="mensaje" role="status" aria-live="polite"></p>
+            <div id="lista-solicitudes-reserva" aria-live="polite"></div>
+          </section>
           <h2>Catálogo de Objetos Publicados</h2>
           <p id="mensaje-cambio-estado" class="mensaje" role="status" aria-live="polite"></p>
           <section id="editor-estado" class="card-formulario editor-estado" aria-labelledby="titulo-editor-estado" hidden>

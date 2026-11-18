@@ -2,15 +2,20 @@ import fs from 'fs';
 
 function crearControl() {
   return {
-    value: '', hidden: false, textContent: '', children: [], dataset: {}, eventos: {}, atributos: {},
+    value: '', hidden: false, textContent: '', children: [], dataset: {}, eventos: {}, atributos: {}, style: {},
     addEventListener(tipo, accion) { (this.eventos[tipo] ||= []).push(accion); },
-    emitir(tipo, evento = {}) { for (const accion of this.eventos[tipo] || []) { accion(evento); } },
+    emitir(tipo, evento = {}) { return Promise.all((this.eventos[tipo] || []).map((accion) => accion(evento))); },
     append(...hijos) { this.children.push(...hijos); },
     replaceChildren(...hijos) { this.children = hijos; },
     setAttribute(nombre, valor) { this.atributos[nombre] = valor; },
     removeAttribute(nombre) { delete this.atributos[nombre]; },
     focus() {},
+    reset() {},
   };
+}
+
+export function textosDe(elemento) {
+  return [elemento.textContent, ...elemento.children.map(textosDe)].join(' ');
 }
 
 export default function crearDocumentoPrueba() {

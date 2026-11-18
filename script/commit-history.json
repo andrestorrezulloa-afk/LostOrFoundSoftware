@@ -1121,12 +1121,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0436a67f7ffb33f233c38308866c92969a224427",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:49:13.000Z",
       "message": "feat: enviar solicitudes desde el catalogo estudiantil",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0436a67f7ffb33f233c38308866c92969a224427"
     },
     "stats": {
       "total": 219,
@@ -1136,6 +1136,25 @@
     },
     "coverage": 78.82,
     "test_count": 59,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:52:29.000Z",
+      "message": "feat: revisar y aceptar reservas desde el panel de Bienestar",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 191,
+      "additions": 188,
+      "deletions": 3,
+      "date": "2026-11-18"
+    },
+    "coverage": 90.39,
+    "test_count": 63,
     "failed_tests": 0,
     "conclusion": "success"
   }

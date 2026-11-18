@@ -1146,9 +1146,31 @@
     "testId": 59
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0436a67f7ffb33f233c38308866c92969a224427",
     "commitName": "feat: enviar solicitudes desde el catalogo estudiantil",
     "commitTimestamp": 1795027754644,
     "testId": 59
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 4,
+    "numTotalTests": 63,
+    "timestamp": 1795027830876,
+    "success": false,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1795027883016,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: revisar y aceptar reservas desde el panel de Bienestar",
+    "commitTimestamp": 1795027950357,
+    "testId": 60
   }
 ]
