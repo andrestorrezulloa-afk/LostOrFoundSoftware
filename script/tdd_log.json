@@ -1102,9 +1102,31 @@
     "testId": 57
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7b9a10faefd9670f24daf1d55ed835122f1b440a",
     "commitName": "feat: aceptar solicitudes y reservar el objeto con sus datos",
     "commitTimestamp": 1795027493103,
     "testId": 57
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 2,
+    "numTotalTests": 55,
+    "timestamp": 1795027522334,
+    "success": false,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1795027558229,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: mostrar reserva disponible y colores de los estados",
+    "commitTimestamp": 1795027595955,
+    "testId": 58
   }
 ]

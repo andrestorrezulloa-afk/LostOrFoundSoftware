@@ -1083,12 +1083,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "7b9a10faefd9670f24daf1d55ed835122f1b440a",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:44:51.000Z",
       "message": "feat: aceptar solicitudes y reservar el objeto con sus datos",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/7b9a10faefd9670f24daf1d55ed835122f1b440a"
     },
     "stats": {
       "total": 83,
@@ -1098,6 +1098,25 @@
     },
     "coverage": 75.99,
     "test_count": 53,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:46:34.000Z",
+      "message": "feat: mostrar reserva disponible y colores de los estados",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 74,
+      "additions": 73,
+      "deletions": 1,
+      "date": "2026-11-18"
+    },
+    "coverage": 77.49,
+    "test_count": 55,
     "failed_tests": 0,
     "conclusion": "success"
   }

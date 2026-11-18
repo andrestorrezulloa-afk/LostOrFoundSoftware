@@ -20,7 +20,7 @@ function crearTarjetaObjeto(obj, esPublico) {
   const cabecera = crearElemento('div', 'objeto-header', '');
   cabecera.append(
     crearElemento('span', 'badge-categoria', obj.categoria),
-    crearElemento('span', 'badge-estado', obj.estado)
+    crearElemento('span', `badge-estado estado-${obj.estado.toLowerCase()}`, obj.estado)
   );
   cuerpo.append(
     cabecera,
@@ -34,6 +34,13 @@ function crearTarjetaObjeto(obj, esPublico) {
     boton.dataset.objetoId = String(obj.id);
     boton.setAttribute('aria-label', `Ver detalle de ${obj.nombre}`);
     cuerpo.append(boton);
+    if (obj.estado === 'Disponible') {
+      const reservar = crearElemento('button', 'btn-detalle', 'Reservar');
+      reservar.type = 'button';
+      reservar.dataset.reservarId = String(obj.id);
+      reservar.setAttribute('aria-label', `Solicitar reserva de ${obj.nombre}`);
+      cuerpo.append(reservar);
+    }
   } else {
     const boton = crearElemento('button', 'btn-detalle', 'Cambiar estado');
     boton.type = 'button';

@@ -334,6 +334,13 @@ body {
   border-radius: 999px;
 }
 
+.estado-disponible { background: #dcfce7; color: #166534; }
+.estado-reservado { background: #dbeafe; color: #1e40af; }
+.estado-reclamado { background: #fee2e2; color: #991b1b; }
+.solicitud-card { padding: 16px; margin-bottom: 12px; border: 1px solid #cbd5e1; border-radius: 10px; overflow-wrap: anywhere; }
+.solicitud-card p { margin-bottom: 8px; }
+.objeto-body .btn-detalle + .btn-detalle { margin-left: 8px; }
+
 .objeto-titulo {
   font-size: 1rem;
   margin-bottom: 6px;
