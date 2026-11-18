@@ -1080,9 +1080,31 @@
     "testId": 56
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8ca4cacaef7ce074197483a0dab721120fc7c02a",
     "commitName": "feat: registrar solicitudes de reserva pendientes para Bienestar",
     "commitTimestamp": 1795027391395,
     "testId": 56
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 3,
+    "numTotalTests": 53,
+    "timestamp": 1795027429305,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1795027460517,
+    "success": true,
+    "testId": 57
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: aceptar solicitudes y reservar el objeto con sus datos",
+    "commitTimestamp": 1795027493103,
+    "testId": 57
   }
 ]

@@ -1064,12 +1064,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8ca4cacaef7ce074197483a0dab721120fc7c02a",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:43:10.000Z",
       "message": "feat: registrar solicitudes de reserva pendientes para Bienestar",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/8ca4cacaef7ce074197483a0dab721120fc7c02a"
     },
     "stats": {
       "total": 94,
@@ -1079,6 +1079,25 @@
     },
     "coverage": 75.13,
     "test_count": 50,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:44:51.000Z",
+      "message": "feat: aceptar solicitudes y reservar el objeto con sus datos",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 83,
+      "additions": 83,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 75.99,
+    "test_count": 53,
     "failed_tests": 0,
     "conclusion": "success"
   }

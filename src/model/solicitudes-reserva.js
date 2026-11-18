@@ -34,4 +34,16 @@ export default class SolicitudesReserva {
   listarPendientes() {
     return this.solicitudes.filter((solicitud) => solicitud.estado === 'Pendiente');
   }
+
+  obtenerPendiente(id) {
+    return this.listarPendientes().find((solicitud) => solicitud.id === id);
+  }
+
+  cerrarPendientesDelObjeto(objetoId) {
+    for (const solicitud of this.listarPendientes()) {
+      if (solicitud.objetoId === objetoId) {
+        solicitud.estado = 'No disponible';
+      }
+    }
+  }
 }
