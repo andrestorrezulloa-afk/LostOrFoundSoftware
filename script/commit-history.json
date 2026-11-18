@@ -1102,12 +1102,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "8336e3b0c0bb356a6d52f1a8ff444bdb05561fb0",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:46:34.000Z",
       "message": "feat: mostrar reserva disponible y colores de los estados",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/8336e3b0c0bb356a6d52f1a8ff444bdb05561fb0"
     },
     "stats": {
       "total": 74,
@@ -1117,6 +1117,25 @@
     },
     "coverage": 77.49,
     "test_count": 55,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:49:13.000Z",
+      "message": "feat: enviar solicitudes desde el catalogo estudiantil",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 219,
+      "additions": 219,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 78.82,
+    "test_count": 59,
     "failed_tests": 0,
     "conclusion": "success"
   }

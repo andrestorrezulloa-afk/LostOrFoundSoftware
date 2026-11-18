@@ -1124,9 +1124,31 @@
     "testId": 58
   },
   {
-    "commitId": "HEAD",
+    "commitId": "8336e3b0c0bb356a6d52f1a8ff444bdb05561fb0",
     "commitName": "feat: mostrar reserva disponible y colores de los estados",
     "commitTimestamp": 1795027595955,
     "testId": 58
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 4,
+    "numTotalTests": 59,
+    "timestamp": 1795027649090,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1795027702350,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: enviar solicitudes desde el catalogo estudiantil",
+    "commitTimestamp": 1795027754644,
+    "testId": 59
   }
 ]

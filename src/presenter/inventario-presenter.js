@@ -2,6 +2,7 @@ import { renderizarLista, renderizarBanner } from '../view/catalogo-view.js';
 import InventarioObjetos from "../model/inventario.js";
 import auth from "./auth-presenter.js";
 import conectarCambioEstado from './estado-presenter.js';
+import conectarReservaEstudiante from './reserva-estudiante-presenter.js';
 
 const inventario = new InventarioObjetos();
 
@@ -102,6 +103,10 @@ function abrirDetalle(objeto, boton) {
   detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Campus no especificado';
   detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
   detalleEstado.textContent = objeto.estado;
+  detalleEstado.className = `badge-estado estado-${objeto.estado.toLowerCase()}`;
+  const reservar = document.querySelector('#btn-reservar-detalle');
+  reservar.hidden = objeto.estado !== 'Disponible';
+  reservar.dataset.reservarId = String(objeto.id);
   detalleFoto.hidden = !objeto.foto;
   detalleSinFoto.hidden = Boolean(objeto.foto);
   if (objeto.foto) {
@@ -230,4 +235,5 @@ if (formBusquedaPublica) {
 }
 
 conectarCambioEstado(inventario, auth, renderizarCatalogos);
+conectarReservaEstudiante(inventario, renderizarCatalogos);
 renderizarCatalogos();

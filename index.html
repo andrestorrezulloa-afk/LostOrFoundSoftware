@@ -104,6 +104,7 @@
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
       </header>
       <main class="contenido-principal">
+        <p id="mensaje-solicitud-reserva" class="mensaje" role="status" aria-live="polite"></p>
         <div id="catalogo-estudiante">
           <header class="inicio-encabezado">
             <h1>Objetos encontrados</h1>
@@ -151,6 +152,27 @@
           <h2 class="catalogo-titulo">Catálogo público</h2>
           <div id="lista-catalogo-estudiante" class="catalogo-grid" aria-live="polite" aria-atomic="true"></div>
         </div>
+        <section id="formulario-reserva-estudiante" class="card-formulario formulario-reserva" aria-labelledby="titulo-solicitud-reserva" hidden>
+          <h2 id="titulo-solicitud-reserva">Solicitar reserva de <span id="nombre-objeto-reserva"></span></h2>
+          <p>Bienestar Estudiantil revisará tu solicitud. El objeto se reservará cuando la acepten.</p>
+          <p>La solicitud no acredita la propiedad. Se verificará antes de entregar el objeto.</p>
+          <form id="form-solicitar-reserva" novalidate>
+            <div class="form-group">
+              <label for="solicitud-nombre">Nombre completo *</label>
+              <input id="solicitud-nombre" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="solicitud-telefono">Número de teléfono *</label>
+              <input id="solicitud-telefono" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="solicitud-correo">Correo institucional *</label>
+              <input id="solicitud-correo" type="email" autocomplete="email" placeholder="ejemplo@ucb.edu.bo" required />
+            </div>
+            <button type="submit" class="btn-primary">Enviar solicitud a Bienestar</button>
+            <button type="button" id="btn-cancelar-reserva" class="btn-secondary">Cancelar</button>
+          </form>
+        </section>
         <section id="detalle-estudiante" class="detalle-objeto" aria-labelledby="detalle-nombre" hidden>
           <button type="button" id="btn-volver-catalogo" class="btn-secondary-sm">Volver al catálogo</button>
           <div class="detalle-contenido">
@@ -162,6 +184,7 @@
               <p>Campus: <span id="detalle-lugar"></span></p>
               <p>Descripción: <span id="detalle-descripcion"></span></p>
               <p>Estado: <span id="detalle-estado"></span></p>
+              <button id="btn-reservar-detalle" type="button" class="btn-detalle" hidden>Reservar</button>
             </div>
           </div>
         </section>
