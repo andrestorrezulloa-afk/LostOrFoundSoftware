@@ -1,10 +1,12 @@
 import listar from './filter.js';
 import { validarDatosReserva, prepararDatosReserva } from './datos-reserva.js';
+import SolicitudesReserva from './solicitudes-reserva.js';
 
 class InventarioObjetos {
   constructor() {
     this.objetos = [];
     this.siguienteId = 1;
+    this.solicitudesReserva = new SolicitudesReserva();
   }
 
   listar(filtros = {}) {
@@ -115,6 +117,17 @@ class InventarioObjetos {
     objeto.reserva = prepararDatosReserva(datos);
     objeto.estado = 'Reservado';
     return { exito: true, mensaje: 'Reserva registrada correctamente' };
+  }
+
+  solicitarReserva(id, datos) {
+    return this.solicitudesReserva.registrar(this.obtenerObjetoPorId(id), datos);
+  }
+
+  obtenerSolicitudesPendientes(tieneSesionPersonal) {
+    if (!tieneSesionPersonal) {
+      return [];
+    }
+    return this.solicitudesReserva.listarPendientes();
   }
 
   crearFichaObjeto(datos) {

@@ -1045,12 +1045,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "6eca88afb1c900ec3f3ba9e927e701f56ce89d0e",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T18:41:34.000Z",
       "message": "feat: usar telefono y correo institucional en las reservas",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/6eca88afb1c900ec3f3ba9e927e701f56ce89d0e"
     },
     "stats": {
       "total": 92,
@@ -1060,6 +1060,25 @@
     },
     "coverage": 73.55,
     "test_count": 47,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-18T18:43:10.000Z",
+      "message": "feat: registrar solicitudes de reserva pendientes para Bienestar",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 94,
+      "additions": 94,
+      "deletions": 0,
+      "date": "2026-11-18"
+    },
+    "coverage": 75.13,
+    "test_count": 50,
     "failed_tests": 0,
     "conclusion": "success"
   }
