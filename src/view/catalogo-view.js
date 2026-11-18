@@ -34,6 +34,12 @@ function crearTarjetaObjeto(obj, esPublico) {
     boton.dataset.objetoId = String(obj.id);
     boton.setAttribute('aria-label', `Ver detalle de ${obj.nombre}`);
     cuerpo.append(boton);
+  } else {
+    const boton = crearElemento('button', 'btn-detalle', 'Cambiar estado');
+    boton.type = 'button';
+    boton.dataset.cambiarEstado = String(obj.id);
+    boton.setAttribute('aria-label', `Cambiar estado de ${obj.nombre}`);
+    cuerpo.append(boton);
   }
   tarjeta.append(cuerpo);
   return tarjeta;

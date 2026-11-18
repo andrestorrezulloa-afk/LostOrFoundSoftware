@@ -233,6 +233,39 @@
         
         <div class="seccion-catalogo">
           <h2>Catálogo de Objetos Publicados</h2>
+          <p id="mensaje-cambio-estado" class="mensaje" role="status" aria-live="polite"></p>
+          <section id="editor-estado" class="card-formulario editor-estado" aria-labelledby="titulo-editor-estado" hidden>
+            <h3 id="titulo-editor-estado">Cambiar estado de <span id="nombre-objeto-estado"></span></h3>
+            <form id="form-cambiar-estado">
+              <div class="form-group">
+                <label for="nuevo-estado">Estado</label>
+                <select id="nuevo-estado" required>
+                  <option value="Disponible">Disponible</option>
+                  <option value="Reservado">Reservado</option>
+                  <option value="Reclamado">Reclamado</option>
+                </select>
+              </div>
+              <p>«Reclamado» indica que verificaste la propiedad y entregaste el objeto a su dueño.</p>
+              <fieldset id="datos-reserva-estado" hidden disabled>
+                <legend>Datos del estudiante que reserva</legend>
+                <div class="form-group">
+                  <label for="reserva-nombre">Nombre completo</label>
+                  <input id="reserva-nombre" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="reserva-codigo">Código de estudiante</label>
+                  <input id="reserva-codigo" type="text" />
+                </div>
+                <div class="form-group">
+                  <label for="reserva-correo">Correo institucional</label>
+                  <input id="reserva-correo" type="email" />
+                </div>
+              </fieldset>
+              <p>Al volver a «Disponible», la reserva anterior deja de estar activa.</p>
+              <button type="submit" class="btn-primary">Confirmar cambio</button>
+              <button type="button" id="btn-cancelar-estado" class="btn-secondary">Cancelar</button>
+            </form>
+          </section>
           <div class="filtros-catalogo filtros-catalogo-staff">
             <label for="filtro-categoria-staff">Filtrar por categoría</label>
             <select id="filtro-categoria-staff">

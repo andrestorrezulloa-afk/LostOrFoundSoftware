@@ -1,6 +1,7 @@
 import { renderizarLista, renderizarBanner } from '../view/catalogo-view.js';
 import InventarioObjetos from "../model/inventario.js";
 import auth from "./auth-presenter.js";
+import conectarCambioEstado from './estado-presenter.js';
 
 const inventario = new InventarioObjetos();
 
@@ -228,4 +229,5 @@ if (formBusquedaPublica) {
   });
 }
 
+conectarCambioEstado(inventario, auth, renderizarCatalogos);
 renderizarCatalogos();

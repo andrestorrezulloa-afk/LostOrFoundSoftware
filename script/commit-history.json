@@ -950,12 +950,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2d2e585c5079953f126873c2544a7de194d3435d",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-17T13:43:24.000Z",
       "message": "feat: seleccionar campus Tupuraya en registro y catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2d2e585c5079953f126873c2544a7de194d3435d"
     },
     "stats": {
       "total": 56,
@@ -965,6 +965,82 @@
     },
     "coverage": 68.49,
     "test_count": 34,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "bfd57678cfd637fe0c2d35fa3e7d8eb333b531a9",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:11:41.000Z",
+      "message": "feat: permitir al personal cambiar el estado de objetos",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/bfd57678cfd637fe0c2d35fa3e7d8eb333b531a9"
+    },
+    "stats": {
+      "total": 50,
+      "additions": 50,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 69.74,
+    "test_count": 37,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "5f99c56c6b4027dd356181d927b43140c5ad6e47",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:13:18.000Z",
+      "message": "feat: validar reservas y liberarlas al volver a disponible",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/5f99c56c6b4027dd356181d927b43140c5ad6e47"
+    },
+    "stats": {
+      "total": 86,
+      "additions": 85,
+      "deletions": 1,
+      "date": "2026-11-17"
+    },
+    "coverage": 71.84,
+    "test_count": 40,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0c8d7d4f45067e4c30cc97e8ed8ab184ed0021ab",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:14:55.000Z",
+      "message": "feat: mostrar control de estado solo en tarjetas del personal",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0c8d7d4f45067e4c30cc97e8ed8ab184ed0021ab"
+    },
+    "stats": {
+      "total": 53,
+      "additions": 53,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 68.47,
+    "test_count": 42,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "Luiscuac",
+    "commit": {
+      "date": "2026-11-17T14:18:53.000Z",
+      "message": "feat: confirmar y cancelar cambios de estado desde el panel",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 234,
+      "additions": 234,
+      "deletions": 0,
+      "date": "2026-11-17"
+    },
+    "coverage": 72.73,
+    "test_count": 46,
     "failed_tests": 0,
     "conclusion": "success"
   }
