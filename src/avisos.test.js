@@ -13,4 +13,18 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
       { categoria: 'Electrónicos', activa: true },
     ]);
   });
+
+  it('deberia permitir desactivar una suscripcion individual sin afectar las demas', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir(CORREO, 'Electrónicos');
+    avisos.suscribir(CORREO, 'Útiles');
+
+    const resultado = avisos.cancelarSuscripcion(CORREO, 'Electrónicos');
+
+    expect(resultado.exito).toEqual(true);
+    expect(avisos.obtenerSuscripciones(CORREO)).toEqual([
+      { categoria: 'Electrónicos', activa: false },
+      { categoria: 'Útiles', activa: true },
+    ]);
+  });
 });

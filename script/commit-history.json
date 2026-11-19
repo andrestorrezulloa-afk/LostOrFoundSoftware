@@ -1577,12 +1577,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "faa9a15a104f2b81395162bb3cdae41896fc989e",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:59:33.000Z",
       "message": "feat: activar suscripciones de avisos por categoria para estudiantes",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/faa9a15a104f2b81395162bb3cdae41896fc989e"
     },
     "stats": {
       "total": 58,
@@ -1594,5 +1594,24 @@
     "test_count": 78,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:00:29.000Z",
+      "message": "test: exigir desactivar suscripciones de avisos individualmente en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.09,
+    "test_count": 79,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

@@ -1554,9 +1554,23 @@
     "testId": 83
   },
   {
-    "commitId": "HEAD",
+    "commitId": "faa9a15a104f2b81395162bb3cdae41896fc989e",
     "commitName": "feat: activar suscripciones de avisos por categoria para estudiantes",
     "commitTimestamp": 1795064375290,
     "testId": 83
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 1,
+    "numTotalTests": 79,
+    "timestamp": 1795064421116,
+    "success": false,
+    "testId": 84
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir desactivar suscripciones de avisos individualmente en HU-12",
+    "commitTimestamp": 1795064431376,
+    "testId": 84
   }
 ]
