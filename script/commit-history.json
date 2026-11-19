@@ -1216,12 +1216,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69dea3d010fd502bab047a24e588b4ccec4ea251",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T19:20:27.000Z",
       "message": "style: unificar la interfaz y adaptar las vistas a movil",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/69dea3d010fd502bab047a24e588b4ccec4ea251"
     },
     "stats": {
       "total": 936,
@@ -1231,6 +1231,329 @@
     },
     "coverage": 91.3,
     "test_count": 68,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e396a1127713a9fdf8c6e97975477ba5252a909c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:09:56.000Z",
+      "message": "test: exigir inicio de sesion con cuenta Google institucional en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e396a1127713a9fdf8c6e97975477ba5252a909c"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.3,
+    "test_count": 68,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "4f0fa27b60d5aaa781fe74f828565e327652c5e2",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:19:32.000Z",
+      "message": "feat: iniciar sesion de estudiante con cuenta Google institucional",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4f0fa27b60d5aaa781fe74f828565e327652c5e2"
+    },
+    "stats": {
+      "total": 28,
+      "additions": 28,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.13,
+    "test_count": 69,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "56c50bff7e58ac09300f44ec0dfaa690d33314ff",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:21:11.000Z",
+      "message": "test: exigir rechazo de cuentas ajenas a los dominios institucionales en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/56c50bff7e58ac09300f44ec0dfaa690d33314ff"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.13,
+    "test_count": 70,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "bbefe9d729089ae725069bfebdfbd45acde96a44",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:22:00.000Z",
+      "message": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/bbefe9d729089ae725069bfebdfbd45acde96a44"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 33,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.39,
+    "test_count": 70,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "869a5e4b0c011546497f3fe65900c881696beafc",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:23:22.000Z",
+      "message": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/869a5e4b0c011546497f3fe65900c881696beafc"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.39,
+    "test_count": 71,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "5572038fb4d0c9c554df897b9f1b7d538c975349",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:24:09.000Z",
+      "message": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/5572038fb4d0c9c554df897b9f1b7d538c975349"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.46,
+    "test_count": 71,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "e909eec3a2fce8691b4db1966bd03d4dc0f4d291",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:25:01.000Z",
+      "message": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e909eec3a2fce8691b4db1966bd03d4dc0f4d291"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.46,
+    "test_count": 72,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "2ef57c70dfd88d79e599cbadb9b99b1fed044553",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:25:52.000Z",
+      "message": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2ef57c70dfd88d79e599cbadb9b99b1fed044553"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.47,
+    "test_count": 72,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:26:39.000Z",
+      "message": "test: exigir que la sesion de estudiante no acceda al panel de Bienestar en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/94247cd7f0234b9cb6c3c4e47f18af39100e1a14"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.47,
+    "test_count": 73,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:27:40.000Z",
+      "message": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/94247cd7f0234b9cb6c3c4e47f18af39100e1a14"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 5,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 73,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b026f4543a7b9c902948c7a2ef4aca86adefdd3b",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:29:00.000Z",
+      "message": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b026f4543a7b9c902948c7a2ef4aca86adefdd3b"
+    },
+    "stats": {
+      "total": 8,
+      "additions": 6,
+      "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 73,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "c7fb65a1f65b28a58c80bed154adbee74a1f3155",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:29:48.000Z",
+      "message": "test: exigir dominios institucionales configurables explicitamente en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/c7fb65a1f65b28a58c80bed154adbee74a1f3155"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 74,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "76ac1b6124aa5a3938c2cdb666d4054b40828516",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:30:52.000Z",
+      "message": "feat: configurar los dominios institucionales sin asumir uno fijo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/76ac1b6124aa5a3938c2cdb666d4054b40828516"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 74,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "59f76e73dc0c59bd41917f4e28f80a8cbb22e065",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:34:18.000Z",
+      "message": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/59f76e73dc0c59bd41917f4e28f80a8cbb22e065"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 56,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 77,
+    "failed_tests": 3,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "ad7b69fa92c4f0d9b336d67e9355332955289462",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:38:34.000Z",
+      "message": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/ad7b69fa92c4f0d9b336d67e9355332955289462"
+    },
+    "stats": {
+      "total": 125,
+      "additions": 125,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.23,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "0a175e8313bd693389d3f52384c4d5da9ef4087e",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:42:11.000Z",
+      "message": "style: agregar estilos del selector de Google y la sesion de estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0a175e8313bd693389d3f52384c4d5da9ef4087e"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.23,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:46:11.000Z",
+      "message": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 119,
+      "additions": 73,
+      "deletions": 46,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.26,
+    "test_count": 77,
     "failed_tests": 0,
     "conclusion": "success"
   }

@@ -45,6 +45,26 @@
               Crear cuenta
             </button>
           </div>
+
+          <hr class="divider" />
+          <h2 class="auth-subtitulo">Soy estudiante</h2>
+          <p class="auth-hint">El acceso es opcional y sirve para configurar avisos. Puedes consultar el catálogo sin iniciar sesión.</p>
+          <button type="button" id="btn-login-google" class="btn-google">
+            <span class="google-mark" aria-hidden="true">G</span>
+            Iniciar sesión con Google institucional
+          </button>
+          <div id="vista-google" class="google-chooser" hidden>
+            <p class="google-titulo">Elige una cuenta (demostración)</p>
+            <button type="button" id="google-cuenta-institucional" class="google-cuenta">
+              <span class="google-avatar" aria-hidden="true">E</span>
+              <span class="google-datos"><strong>estudiante@ucb.edu.bo</strong><small>Estudiante UCB</small></span>
+            </button>
+            <button type="button" id="google-cuenta-ajena" class="google-cuenta">
+              <span class="google-avatar google-avatar-ajeno" aria-hidden="true">V</span>
+              <span class="google-datos"><strong>visitante@gmail.com</strong><small>Cuenta ajena a la UCB</small></span>
+            </button>
+            <button type="button" id="google-cancelar" class="btn-link">Cancelar</button>
+          </div>
         </div>
 
       
@@ -102,6 +122,11 @@
     <section id="vista-estudiante" class="panel-container">
       <header class="topbar">
         <div class="marca"><span class="marca-simbolo" aria-hidden="true">be.</span><span>Bienestar Estudiantil<small>Objetos encontrados</small></span></div>
+        <div class="estudiante-sesion" id="estudiante-sesion" hidden>
+          <span class="sesion-indicador">Sesión de estudiante</span>
+          <strong id="estudiante-actual"></strong>
+          <button type="button" id="btn-logout-estudiante" class="btn-logout">Cerrar sesión</button>
+        </div>
         <button id="btn-volver-login" class="btn-secondary-sm">Acceso del personal ↗</button>
       </header>
       <main class="contenido-principal">

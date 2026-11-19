@@ -1264,9 +1264,271 @@
     "testId": 64
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69dea3d010fd502bab047a24e588b4ccec4ea251",
     "commitName": "style: unificar la interfaz y adaptar las vistas a movil",
     "commitTimestamp": 1795029629197,
     "testId": 64
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795061286480,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795061353256,
+    "success": false,
+    "testId": 65
+  },
+  {
+    "commitId": "e396a1127713a9fdf8c6e97975477ba5252a909c",
+    "commitName": "test: exigir inicio de sesion con cuenta Google institucional en HU-11",
+    "commitTimestamp": 1795061397528,
+    "testId": 65
+  },
+  {
+    "numPassedTests": 69,
+    "failedTests": 0,
+    "numTotalTests": 69,
+    "timestamp": 1795061965218,
+    "success": true,
+    "testId": 66
+  },
+  {
+    "commitId": "4f0fa27b60d5aaa781fe74f828565e327652c5e2",
+    "commitName": "feat: iniciar sesion de estudiante con cuenta Google institucional",
+    "commitTimestamp": 1795061974581,
+    "testId": 66
+  },
+  {
+    "numPassedTests": 69,
+    "failedTests": 1,
+    "numTotalTests": 70,
+    "timestamp": 1795062050398,
+    "success": false,
+    "testId": 67
+  },
+  {
+    "commitId": "56c50bff7e58ac09300f44ec0dfaa690d33314ff",
+    "commitName": "test: exigir rechazo de cuentas ajenas a los dominios institucionales en HU-11",
+    "commitTimestamp": 1795062072583,
+    "testId": 67
+  },
+  {
+    "numPassedTests": 70,
+    "failedTests": 0,
+    "numTotalTests": 70,
+    "timestamp": 1795062114022,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "bbefe9d729089ae725069bfebdfbd45acde96a44",
+    "commitName": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
+    "commitTimestamp": 1795062122183,
+    "testId": 68
+  },
+  {
+    "numPassedTests": 70,
+    "failedTests": 1,
+    "numTotalTests": 71,
+    "timestamp": 1795062189058,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "869a5e4b0c011546497f3fe65900c881696beafc",
+    "commitName": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
+    "commitTimestamp": 1795062203899,
+    "testId": 69
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1795062241664,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "5572038fb4d0c9c554df897b9f1b7d538c975349",
+    "commitName": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
+    "commitTimestamp": 1795062251106,
+    "testId": 70
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 1,
+    "numTotalTests": 72,
+    "timestamp": 1795062293770,
+    "success": false,
+    "testId": 71
+  },
+  {
+    "commitId": "e909eec3a2fce8691b4db1966bd03d4dc0f4d291",
+    "commitName": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
+    "commitTimestamp": 1795062303032,
+    "testId": 71
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 0,
+    "numTotalTests": 72,
+    "timestamp": 1795062344743,
+    "success": true,
+    "testId": 72
+  },
+  {
+    "commitId": "2ef57c70dfd88d79e599cbadb9b99b1fed044553",
+    "commitName": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
+    "commitTimestamp": 1795062354023,
+    "testId": 72
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 1,
+    "numTotalTests": 73,
+    "timestamp": 1795062391652,
+    "success": false,
+    "testId": 73
+  },
+  {
+    "commitId": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
+    "commitName": "test: exigir que la sesion de estudiante no acceda al panel de Bienestar en HU-11",
+    "commitTimestamp": 1795062401393,
+    "testId": 73
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 0,
+    "numTotalTests": 73,
+    "timestamp": 1795062452930,
+    "success": true,
+    "testId": 74
+  },
+  {
+    "commitId": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
+    "commitName": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+    "commitTimestamp": 1795062462521,
+    "testId": 74
+  },
+  {
+    "commitId": "b026f4543a7b9c902948c7a2ef4aca86adefdd3b",
+    "commitName": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+    "commitTimestamp": 1795062541788,
+    "testId": 75
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 1,
+    "numTotalTests": 74,
+    "timestamp": 1795062580727,
+    "success": false,
+    "testId": 76
+  },
+  {
+    "commitId": "c7fb65a1f65b28a58c80bed154adbee74a1f3155",
+    "commitName": "test: exigir dominios institucionales configurables explicitamente en HU-11",
+    "commitTimestamp": 1795062590309,
+    "testId": 76
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 0,
+    "numTotalTests": 74,
+    "timestamp": 1795062643776,
+    "success": true,
+    "testId": 77
+  },
+  {
+    "commitId": "76ac1b6124aa5a3938c2cdb666d4054b40828516",
+    "commitName": "feat: configurar los dominios institucionales sin asumir uno fijo",
+    "commitTimestamp": 1795062654189,
+    "testId": 77
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 3,
+    "numTotalTests": 77,
+    "timestamp": 1795062851629,
+    "success": false,
+    "testId": 78
+  },
+  {
+    "commitId": "59f76e73dc0c59bd41917f4e28f80a8cbb22e065",
+    "commitName": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
+    "commitTimestamp": 1795062860352,
+    "testId": 78
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 2,
+    "numTotalTests": 77,
+    "timestamp": 1795062992810,
+    "success": false,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 2,
+    "numTotalTests": 77,
+    "timestamp": 1795063006253,
+    "success": false,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063056179,
+    "success": true,
+    "testId": 79
+  },
+  {
+    "commitId": "ad7b69fa92c4f0d9b336d67e9355332955289462",
+    "commitName": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
+    "commitTimestamp": 1795063115914,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063312655,
+    "success": true,
+    "testId": 80
+  },
+  {
+    "commitId": "0a175e8313bd693389d3f52384c4d5da9ef4087e",
+    "commitName": "style: agregar estilos del selector de Google y la sesion de estudiante",
+    "commitTimestamp": 1795063333446,
+    "testId": 80
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063493694,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063562218,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
+    "commitTimestamp": 1795063573776,
+    "testId": 81
   }
 ]
