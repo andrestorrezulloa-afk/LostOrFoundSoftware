@@ -2014,11 +2014,30 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "157787efc8bd043d96df17ae9ed39a8fea51997e",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T06:20:20.000Z",
       "message": "chore: actualizar log de ejecuciones tdd",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/157787efc8bd043d96df17ae9ed39a8fea51997e"
+    },
+    "stats": {
+      "total": 0,
+      "additions": 0,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T06:30:23.000Z",
+      "message": "Merge branch 'HU-03-Detalle-Objetos'\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
       "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
     },
     "stats": {
