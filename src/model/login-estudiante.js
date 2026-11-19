@@ -66,6 +66,10 @@ class LoginEstudiante {
   puedeConfigurarAvisos() {
     return this.tieneSesionEstudiante();
   }
+
+  cerrarSesion() {
+    this.estudianteActual = null;
+  }
 }
 
 export default LoginEstudiante;

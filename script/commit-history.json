@@ -1349,12 +1349,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "e909eec3a2fce8691b4db1966bd03d4dc0f4d291",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:25:01.000Z",
       "message": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e909eec3a2fce8691b4db1966bd03d4dc0f4d291"
     },
     "stats": {
       "total": 16,
@@ -1366,5 +1366,24 @@
     "test_count": 72,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:25:52.000Z",
+      "message": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 4,
+      "additions": 4,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.47,
+    "test_count": 72,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

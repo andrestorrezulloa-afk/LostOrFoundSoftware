@@ -1370,9 +1370,23 @@
     "testId": 71
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e909eec3a2fce8691b4db1966bd03d4dc0f4d291",
     "commitName": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
     "commitTimestamp": 1795062303032,
     "testId": 71
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 0,
+    "numTotalTests": 72,
+    "timestamp": 1795062344743,
+    "success": true,
+    "testId": 72
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
+    "commitTimestamp": 1795062354023,
+    "testId": 72
   }
 ]
