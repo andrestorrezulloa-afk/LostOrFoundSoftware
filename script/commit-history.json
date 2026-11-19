@@ -1843,12 +1843,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "61c88ca1e61673d7446eaeb92d345a19555dd0a7",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:18:11.000Z",
       "message": "test: exigir registrar el error de envio sin perder la publicacion en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/61c88ca1e61673d7446eaeb92d345a19555dd0a7"
     },
     "stats": {
       "total": 20,
@@ -1860,5 +1860,24 @@
     "test_count": 85,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:19:08.000Z",
+      "message": "feat: registrar errores de envio de avisos sin afectar la publicacion",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

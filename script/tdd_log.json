@@ -1750,9 +1750,23 @@
     "testId": 97
   },
   {
-    "commitId": "HEAD",
+    "commitId": "61c88ca1e61673d7446eaeb92d345a19555dd0a7",
     "commitName": "test: exigir registrar el error de envio sin perder la publicacion en HU-12",
     "commitTimestamp": 1795065492415,
     "testId": 97
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795065540850,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: registrar errores de envio de avisos sin afectar la publicacion",
+    "commitTimestamp": 1795065549527,
+    "testId": 98
   }
 ]

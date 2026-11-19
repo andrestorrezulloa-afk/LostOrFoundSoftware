@@ -18,6 +18,7 @@ class SistemaAvisos {
   constructor(opciones = {}) {
     this.almacenamiento = opciones.almacenamiento || new Map();
     this.avisos = [];
+    this.errores = [];
     this.enviarCorreo = opciones.enviarCorreo || (() => ({ exito: true }));
   }
 
@@ -106,7 +107,27 @@ class SistemaAvisos {
       fecha: new Date().toISOString(),
     };
     this.avisos.push(aviso);
+    this.enviar(correo, aviso);
     return aviso;
+  }
+
+  enviar(correo, aviso) {
+    try {
+      const resultado = this.enviarCorreo({ correo, aviso });
+      if (!resultado || resultado.exito === false) {
+        this.errores.push({ correo, aviso, mensaje: 'No se pudo enviar el aviso' });
+      }
+    } catch (error) {
+      this.errores.push({
+        correo,
+        aviso,
+        mensaje: error && error.message ? error.message : 'Error desconocido al enviar el aviso',
+      });
+    }
+  }
+
+  obtenerErrores() {
+    return [...this.errores];
   }
 
   avisosDe(correo) {
