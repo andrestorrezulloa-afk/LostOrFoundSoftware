@@ -1446,9 +1446,23 @@
     "testId": 77
   },
   {
-    "commitId": "HEAD",
+    "commitId": "76ac1b6124aa5a3938c2cdb666d4054b40828516",
     "commitName": "feat: configurar los dominios institucionales sin asumir uno fijo",
     "commitTimestamp": 1795062654189,
     "testId": 77
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 3,
+    "numTotalTests": 77,
+    "timestamp": 1795062851629,
+    "success": false,
+    "testId": 78
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
+    "commitTimestamp": 1795062860352,
+    "testId": 78
   }
 ]

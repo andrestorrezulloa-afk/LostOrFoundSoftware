@@ -1463,12 +1463,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "76ac1b6124aa5a3938c2cdb666d4054b40828516",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:30:52.000Z",
       "message": "feat: configurar los dominios institucionales sin asumir uno fijo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/76ac1b6124aa5a3938c2cdb666d4054b40828516"
     },
     "stats": {
       "total": 3,
@@ -1480,5 +1480,24 @@
     "test_count": 74,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:34:18.000Z",
+      "message": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 56,
+      "additions": 56,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 77,
+    "failed_tests": 3,
+    "conclusion": "failure"
   }
 ]
