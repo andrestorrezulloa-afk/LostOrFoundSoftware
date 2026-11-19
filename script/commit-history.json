@@ -1786,12 +1786,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "d840d8c8c2f809779ee92bba1bf254f3ab34ec67",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:13:29.000Z",
       "message": "feat: enviar un solo aviso por publicacion y suscriptor",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/d840d8c8c2f809779ee92bba1bf254f3ab34ec67"
     },
     "stats": {
       "total": 6,
@@ -1803,5 +1803,24 @@
     "test_count": 83,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:15:21.000Z",
+      "message": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 84,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

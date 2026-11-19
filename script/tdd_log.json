@@ -1708,9 +1708,23 @@
     "testId": 94
   },
   {
-    "commitId": "HEAD",
+    "commitId": "d840d8c8c2f809779ee92bba1bf254f3ab34ec67",
     "commitName": "feat: enviar un solo aviso por publicacion y suscriptor",
     "commitTimestamp": 1795065211033,
     "testId": 94
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 1,
+    "numTotalTests": 84,
+    "timestamp": 1795065312325,
+    "success": false,
+    "testId": 95
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
+    "commitTimestamp": 1795065323195,
+    "testId": 95
   }
 ]

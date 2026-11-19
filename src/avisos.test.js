@@ -85,4 +85,19 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
     expect(avisos.avisosDe('suscrito@ucb.edu.bo').length).toEqual(1);
     expect(avisos.avisosDe('sin-suscripcion@ucb.edu.bo').length).toEqual(0);
   });
+
+  it('no deberia generar un aviso al editar los datos de un objeto ni al volver a abrir su ficha', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir(CORREO, 'Electrónicos');
+    const inventario = new InventarioObjetos({ avisos });
+    const registro = inventario.registrarObjeto({ nombre: 'Casio', categoria: 'Electrónicos' });
+    expect(avisos.avisosDe(CORREO).length).toEqual(1);
+
+    const edicion = inventario.actualizarObjeto(registro.objeto.id, { descripcion: 'Con tapa grafito' });
+    inventario.obtenerObjetoPorId(registro.objeto.id);
+
+    expect(edicion.exito).toEqual(true);
+    expect(avisos.avisosDe(CORREO).length).toEqual(1);
+    expect(inventario.obtenerObjetoPorId(registro.objeto.id).descripcion).toEqual('Con tapa grafito');
+  });
 });
