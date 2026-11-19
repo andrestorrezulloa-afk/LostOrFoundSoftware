@@ -53,6 +53,23 @@ class SistemaAvisos {
       suscripciones: this.obtenerSuscripciones(correo),
     };
   }
+
+  cancelarSuscripcion(correo, categoria) {
+    const suscripciones = this.obtenerSuscripciones(correo);
+    const existente = suscripciones.find(
+      (suscripcion) => suscripcion.categoria === categoria
+    );
+    if (existente) {
+      existente.activa = false;
+    }
+    this.suscripcionesDeUnEstudiante.set(correo, suscripciones);
+
+    return {
+      exito: true,
+      mensaje: MENSAJES_AVISOS.suscripcionCancelada,
+      suscripciones: this.obtenerSuscripciones(correo),
+    };
+  }
 }
 
 export default SistemaAvisos;

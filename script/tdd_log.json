@@ -1568,9 +1568,23 @@
     "testId": 84
   },
   {
-    "commitId": "HEAD",
+    "commitId": "96dc57205a650b1eb9e745baf9e7a3d7508936d1",
     "commitName": "test: exigir desactivar suscripciones de avisos individualmente en HU-12",
     "commitTimestamp": 1795064431376,
     "testId": 84
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 0,
+    "numTotalTests": 79,
+    "timestamp": 1795064517299,
+    "success": true,
+    "testId": 85
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: cancelar suscripciones de avisos por categoria",
+    "commitTimestamp": 1795064527027,
+    "testId": 85
   }
 ]
