@@ -1444,12 +1444,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "c7fb65a1f65b28a58c80bed154adbee74a1f3155",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:29:48.000Z",
       "message": "test: exigir dominios institucionales configurables explicitamente en HU-11",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/c7fb65a1f65b28a58c80bed154adbee74a1f3155"
     },
     "stats": {
       "total": 15,
@@ -1461,5 +1461,24 @@
     "test_count": 74,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:30:52.000Z",
+      "message": "feat: configurar los dominios institucionales sin asumir uno fijo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 74,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

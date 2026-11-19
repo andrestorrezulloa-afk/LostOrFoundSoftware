@@ -1432,9 +1432,23 @@
     "testId": 76
   },
   {
-    "commitId": "HEAD",
+    "commitId": "c7fb65a1f65b28a58c80bed154adbee74a1f3155",
     "commitName": "test: exigir dominios institucionales configurables explicitamente en HU-11",
     "commitTimestamp": 1795062590309,
     "testId": 76
+  },
+  {
+    "numPassedTests": 74,
+    "failedTests": 0,
+    "numTotalTests": 74,
+    "timestamp": 1795062643776,
+    "success": true,
+    "testId": 77
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: configurar los dominios institucionales sin asumir uno fijo",
+    "commitTimestamp": 1795062654189,
+    "testId": 77
   }
 ]

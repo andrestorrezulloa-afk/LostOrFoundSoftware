@@ -9,7 +9,8 @@ export const MENSAJES_LOGIN_ESTUDIANTE = {
 
 class LoginEstudiante {
   constructor(opciones = {}) {
-    this.dominiosInstitucionales = [...DOMINIOS_INSTITUCIONALES_POR_DEFECTO];
+    this.dominiosInstitucionales =
+      opciones.dominiosInstitucionales || [...DOMINIOS_INSTITUCIONALES_POR_DEFECTO];
     this.proveedorGoogle = opciones.proveedorGoogle || (() => null);
     this.estudianteActual = null;
   }
