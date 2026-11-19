@@ -1342,9 +1342,23 @@
     "testId": 69
   },
   {
-    "commitId": "HEAD",
+    "commitId": "869a5e4b0c011546497f3fe65900c881696beafc",
     "commitName": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
     "commitTimestamp": 1795062203899,
     "testId": 69
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 0,
+    "numTotalTests": 71,
+    "timestamp": 1795062241664,
+    "success": true,
+    "testId": 70
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
+    "commitTimestamp": 1795062251106,
+    "testId": 70
   }
 ]

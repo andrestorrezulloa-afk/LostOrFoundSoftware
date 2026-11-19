@@ -1311,12 +1311,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "869a5e4b0c011546497f3fe65900c881696beafc",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:23:22.000Z",
       "message": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/869a5e4b0c011546497f3fe65900c881696beafc"
     },
     "stats": {
       "total": 17,
@@ -1328,5 +1328,24 @@
     "test_count": 71,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:24:09.000Z",
+      "message": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 12,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.46,
+    "test_count": 71,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

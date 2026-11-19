@@ -4,6 +4,7 @@ export const MENSAJES_LOGIN_ESTUDIANTE = {
   exito: 'Sesion iniciada como estudiante',
   dominioNoAutorizado:
     'Solo las cuentas con correo institucional (@ucb.edu.bo) pueden iniciar sesion',
+  falloGoogle: 'No se pudo iniciar sesion con Google. Intentalo de nuevo.',
 };
 
 class LoginEstudiante {
@@ -15,7 +16,17 @@ class LoginEstudiante {
   }
 
   iniciarSesionConGoogle() {
-    const cuenta = this.proveedorGoogle();
+    let cuenta = null;
+    try {
+      cuenta = this.proveedorGoogle();
+    } catch (error) {
+      cuenta = null;
+    }
+
+    if (!cuenta || !cuenta.correo) {
+      this.estudianteActual = null;
+      return { exito: false, mensaje: MENSAJES_LOGIN_ESTUDIANTE.falloGoogle };
+    }
 
     if (!this.esCorreoInstitucional(cuenta.correo)) {
       this.estudianteActual = null;
