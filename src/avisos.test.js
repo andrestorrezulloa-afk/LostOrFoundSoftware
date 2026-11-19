@@ -39,4 +39,23 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
       { categoria: 'Electrónicos', activa: true },
     ]);
   });
+
+  it('deberia generar un aviso con la categoria, el objeto y el enlace al detalle al publicar en una categoria suscrita', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir(CORREO, 'Electrónicos');
+
+    const generados = avisos.publicarAvisoDeObjeto({
+      id: 7,
+      nombre: 'Casio',
+      categoria: 'Electrónicos',
+      estado: 'Disponible',
+    });
+
+    expect(generados.length).toEqual(1);
+    expect(generados[0].correo).toEqual(CORREO);
+    expect(generados[0].categoria).toEqual('Electrónicos');
+    expect(generados[0].objeto.nombre).toEqual('Casio');
+    expect(generados[0].enlace).toEqual('#/objeto/7');
+    expect(avisos.avisosDe(CORREO).length).toEqual(1);
+  });
 });

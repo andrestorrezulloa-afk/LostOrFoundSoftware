@@ -1610,9 +1610,23 @@
     "testId": 87
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3c5b68c83c886fbf2f97ce8eb6ad7a89ade321c2",
     "commitName": "feat: conservar las suscripciones entre sesiones del estudiante",
     "commitTimestamp": 1795064703735,
     "testId": 87
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 1,
+    "numTotalTests": 81,
+    "timestamp": 1795064753603,
+    "success": false,
+    "testId": 88
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir generar aviso con categoria, objeto y enlace al publicar en HU-12",
+    "commitTimestamp": 1795064763464,
+    "testId": 88
   }
 ]
