@@ -1710,12 +1710,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "f1b09547a0d0af332b746e5c288d6937747d3615",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:09:20.000Z",
       "message": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f1b09547a0d0af332b746e5c288d6937747d3615"
     },
     "stats": {
       "total": 13,
@@ -1727,5 +1727,24 @@
     "test_count": 82,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:10:20.000Z",
+      "message": "feat: avisar a los suscriptores cuando Bienestar publica un objeto nuevo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.13,
+    "test_count": 82,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

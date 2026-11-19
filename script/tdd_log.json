@@ -1652,9 +1652,23 @@
     "testId": 90
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f1b09547a0d0af332b746e5c288d6937747d3615",
     "commitName": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
     "commitTimestamp": 1795064962026,
     "testId": 90
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 0,
+    "numTotalTests": 82,
+    "timestamp": 1795065011087,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: avisar a los suscriptores cuando Bienestar publica un objeto nuevo",
+    "commitTimestamp": 1795065021714,
+    "testId": 91
   }
 ]

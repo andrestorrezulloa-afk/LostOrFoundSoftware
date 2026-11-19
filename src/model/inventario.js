@@ -3,10 +3,11 @@ import { validarDatosReserva, prepararDatosReserva } from './datos-reserva.js';
 import SolicitudesReserva from './solicitudes-reserva.js';
 
 class InventarioObjetos {
-  constructor() {
+  constructor(opciones = {}) {
     this.objetos = [];
     this.siguienteId = 1;
     this.solicitudesReserva = new SolicitudesReserva();
+    this.sistemaAvisos = opciones.avisos || null;
   }
 
   listar(filtros = {}) {
@@ -64,6 +65,9 @@ class InventarioObjetos {
 
     const nuevoObjeto = this.crearFichaObjeto(datos);
     this.objetos.push(nuevoObjeto);
+    if (this.sistemaAvisos) {
+      this.sistemaAvisos.publicarAvisoDeObjeto(nuevoObjeto);
+    }
 
     return { exito: true, mensaje: 'Objeto registrado exitosamente', objeto: nuevoObjeto };
   }
