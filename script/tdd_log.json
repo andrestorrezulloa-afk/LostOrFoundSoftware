@@ -1906,9 +1906,23 @@
     "testId": 106
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ed151b612eaa1513b23f5a9008584c322b313254",
     "commitName": "Merge branch 'HU-03-Detalle-Objetos'\n\n# Conflicts:\n#\tscript/commit-history.json\n#\tscript/tdd_log.json",
     "commitTimestamp": 1795069824961,
     "testId": 107
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795069851950,
+    "success": true,
+    "testId": 108
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: actualizar log de ejecuciones tdd",
+    "commitTimestamp": 1795069910530,
+    "testId": 108
   }
 ]
