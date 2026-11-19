@@ -100,4 +100,24 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
     expect(avisos.avisosDe(CORREO).length).toEqual(1);
     expect(inventario.obtenerObjetoPorId(registro.objeto.id).descripcion).toEqual('Con tapa grafito');
   });
+
+  it('deberia guardar el objeto y registrar el error si falla el envio del aviso, sin duplicar la publicacion', () => {
+    const avisos = new SistemaAvisos({
+      enviarCorreo: () => {
+        throw new Error('servidor de correo no disponible');
+      },
+    });
+    avisos.suscribir(CORREO, 'Electrónicos');
+    const inventario = new InventarioObjetos({ avisos });
+
+    const registro = inventario.registrarObjeto({ nombre: 'Casio', categoria: 'Electrónicos' });
+
+    expect(registro.exito).toEqual(true);
+    expect(inventario.obtenerCatalogo().length).toEqual(1);
+    expect(avisos.avisosDe(CORREO).length).toEqual(1);
+    expect(avisos.obtenerErrores().length).toEqual(1);
+
+    inventario.registrarObjeto({ nombre: 'Otra calculadora', categoria: 'Electrónicos' });
+    expect(inventario.obtenerCatalogo().length).toEqual(2);
+  });
 });

@@ -1736,9 +1736,23 @@
     "testId": 96
   },
   {
-    "commitId": "HEAD",
+    "commitId": "3172a299264d30d55092bdb1d3188857e17311d7",
     "commitName": "feat: actualizar datos de un objeto sin generar aviso de publicacion",
     "commitTimestamp": 1795065376461,
     "testId": 96
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 1,
+    "numTotalTests": 85,
+    "timestamp": 1795065483546,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir registrar el error de envio sin perder la publicacion en HU-12",
+    "commitTimestamp": 1795065492415,
+    "testId": 97
   }
 ]
