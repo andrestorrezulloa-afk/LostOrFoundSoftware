@@ -108,6 +108,21 @@ class InventarioObjetos {
     return { exito: true, mensaje: 'Estado actualizado correctamente' };
   }
 
+  actualizarObjeto(id, datos = {}) {
+    const objeto = this.obtenerObjetoPorId(id);
+    if (!objeto) {
+      return { exito: false, mensaje: 'Objeto no encontrado' };
+    }
+    // Editar datos no es una publicacion nueva: jamas genera avisos.
+    const camposEditables = ['nombre', 'categoria', 'descripcion', 'foto', 'lugarEncontrado'];
+    for (const campo of camposEditables) {
+      if (campo in datos) {
+        objeto[campo] = typeof datos[campo] === 'string' ? datos[campo].trim() : datos[campo];
+      }
+    }
+    return { exito: true, mensaje: 'Objeto actualizado correctamente', objeto };
+  }
+
   reservarObjeto(id, datos = {}) {
     const objeto = this.obtenerObjetoPorId(id);
     if (!objeto) {

@@ -1805,12 +1805,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "cc4058e721184ed8e9f2e2347be7eafb26ca398d",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:15:21.000Z",
       "message": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/cc4058e721184ed8e9f2e2347be7eafb26ca398d"
     },
     "stats": {
       "total": 15,
@@ -1822,5 +1822,24 @@
     "test_count": 84,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:16:14.000Z",
+      "message": "feat: actualizar datos de un objeto sin generar aviso de publicacion",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.12,
+    "test_count": 84,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

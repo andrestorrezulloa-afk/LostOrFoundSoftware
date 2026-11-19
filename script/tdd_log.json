@@ -1722,9 +1722,23 @@
     "testId": 95
   },
   {
-    "commitId": "HEAD",
+    "commitId": "cc4058e721184ed8e9f2e2347be7eafb26ca398d",
     "commitName": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
     "commitTimestamp": 1795065323195,
     "testId": 95
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 0,
+    "numTotalTests": 84,
+    "timestamp": 1795065365114,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: actualizar datos de un objeto sin generar aviso de publicacion",
+    "commitTimestamp": 1795065376461,
+    "testId": 96
   }
 ]
