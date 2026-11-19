@@ -628,9 +628,23 @@
     "testId": 26
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2c56d52585c5903ba3a3628feb31b6095d63372c",
     "commitName": "Fix: small problem with filter UI",
     "commitTimestamp": 1792650066279,
     "testId": 26
+  },
+  {
+    "numPassedTests": 20,
+    "failedTests": 0,
+    "numTotalTests": 20,
+    "timestamp": 1792650206934,
+    "success": true,
+    "testId": 27
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "chore: actualizar log de ejecuciones tdd",
+    "commitTimestamp": 1795060814683,
+    "testId": 27
   }
 ]
