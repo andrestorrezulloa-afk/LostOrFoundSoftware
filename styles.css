@@ -151,6 +151,29 @@ input[readonly] { background: #f3f6f8; color: var(--secundario); }
 .switch-view { margin-top: 24px; font-size: 12px; color: var(--secundario); text-align: center; }
 .divider { border: 0; border-top: 1px solid var(--borde); margin: 26px 0; }
 
+/* Acceso opcional de estudiantes con cuenta Google institucional */
+.auth-subtitulo { font-size: 15px; margin-bottom: 6px; }
+.auth-hint { color: var(--secundario); font-size: 12px; margin-bottom: 18px; }
+.btn-google { display: inline-flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 44px; padding: 10px 18px; border: 1px solid #cdd7e0; border-radius: 7px; background: white; color: var(--tinta); font-size: 13px; font-weight: 650; }
+.btn-google:hover { background: var(--suave); border-color: #9eafbf; }
+.google-mark { display: grid; place-items: center; flex: 0 0 22px; height: 22px; border-radius: 50%; background: #e7ecf3; color: #2459ad; font-size: 12px; font-weight: 750; }
+.google-chooser { margin-top: 16px; padding: 16px; border: 1px solid var(--borde); border-radius: var(--radio); background: var(--suave); }
+.google-titulo { color: var(--secundario); font-size: 11px; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; margin-bottom: 12px; }
+.google-cuenta { display: flex; align-items: center; gap: 12px; width: 100%; padding: 10px 12px; border: 1px solid var(--borde); border-radius: 8px; background: white; text-align: left; }
+.google-cuenta + .google-cuenta { margin-top: 8px; }
+.google-cuenta:hover { border-color: #9eafbf; background: var(--suave); }
+.google-avatar { display: grid; place-items: center; flex: 0 0 34px; height: 34px; border-radius: 50%; background: #dbe7f3; color: #2459ad; font-size: 14px; font-weight: 750; }
+.google-avatar-ajeno { background: #f2e4e4; color: #a35151; }
+.google-datos { display: grid; min-width: 0; }
+.google-datos strong { font-size: 12px; font-weight: 650; overflow-wrap: anywhere; }
+.google-datos small { color: var(--secundario); font-size: 11px; }
+.google-chooser .btn-link { display: block; margin: 10px auto 0; }
+.estudiante-sesion { display: flex; align-items: center; gap: 10px; }
+.estudiante-sesion .sesion-indicador { color: var(--secundario); }
+.estudiante-sesion strong { font-size: 12px; font-weight: 650; }
+.estudiante-sesion .btn-logout { min-height: 38px; margin: 0; padding: 8px 12px; color: var(--tinta); background: white; border-color: #cdd7e0; }
+.estudiante-sesion .btn-logout:hover { background: var(--suave); border-color: #9eafbf; }
+
 /* Espacio del personal: navegación y vistas */
 .admin-shell { flex-direction: row; align-items: flex-start; }
 .admin-sidebar { display: flex; flex-direction: column; position: sticky; top: 0; width: 232px; flex: 0 0 232px; min-height: 100vh; padding: 30px 18px 24px; color: white; background: var(--navy); }

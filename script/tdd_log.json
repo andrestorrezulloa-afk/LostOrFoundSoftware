@@ -1490,9 +1490,23 @@
     "testId": 79
   },
   {
-    "commitId": "HEAD",
+    "commitId": "ad7b69fa92c4f0d9b336d67e9355332955289462",
     "commitName": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
     "commitTimestamp": 1795063115914,
     "testId": 79
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063312655,
+    "success": true,
+    "testId": 80
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: agregar estilos del selector de Google y la sesion de estudiante",
+    "commitTimestamp": 1795063333446,
+    "testId": 80
   }
 ]

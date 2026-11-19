@@ -1501,16 +1501,35 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "ad7b69fa92c4f0d9b336d67e9355332955289462",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:38:34.000Z",
       "message": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/ad7b69fa92c4f0d9b336d67e9355332955289462"
     },
     "stats": {
       "total": 125,
       "additions": 125,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.23,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:42:11.000Z",
+      "message": "style: agregar estilos del selector de Google y la sesion de estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 23,
+      "additions": 23,
       "deletions": 0,
       "date": "2026-11-19"
     },
