@@ -173,6 +173,28 @@ input[readonly] { background: #f3f6f8; color: var(--secundario); }
 .estudiante-sesion strong { font-size: 12px; font-weight: 650; }
 .estudiante-sesion .btn-logout { min-height: 38px; margin: 0; padding: 8px 12px; color: var(--tinta); background: white; border-color: #cdd7e0; }
 .estudiante-sesion .btn-logout:hover { background: var(--suave); border-color: #9eafbf; }
+.estudiante-acciones { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+
+/* Mis avisos: suscripciones por categoría y avisos recibidos */
+.mis-avisos { padding: 28px max(24px, calc((100vw - 1176px) / 2)) 40px; }
+.avisos-encabezado { max-width: 620px; margin: 18px 0 22px; }
+.avisos-encabezado h2 { margin: 8px 0; }
+.avisos-encabezado p:last-child { color: var(--secundario); font-size: 13px; }
+.avisos-categorias { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 30px; }
+.aviso-categoria { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; padding: 12px 16px; border: 1px solid #cdd7e0; border-radius: var(--radio); background: white; text-align: left; }
+.aviso-categoria:hover { border-color: #9eafbf; background: var(--suave); }
+.aviso-categoria.activa { border-color: var(--azul); background: #eaf1fb; }
+.aviso-nombre { font-size: 14px; font-weight: 650; }
+.aviso-estado { color: var(--secundario); font-size: 11px; }
+.aviso-categoria.activa .aviso-estado { color: var(--azul); }
+.avisos-subtitulo { margin: 26px 0 14px; }
+.avisos-lista { display: grid; gap: 12px; }
+.aviso-card { display: grid; gap: 4px; padding: 16px 18px; border: 1px solid var(--borde); border-radius: var(--radio); background: white; }
+.aviso-etiqueta { color: var(--azul); font-size: 11px; font-weight: 750; letter-spacing: .1em; }
+.aviso-objeto { font-size: 16px; font-weight: 650; }
+.aviso-enlace { color: var(--secundario); font-size: 12px; }
+.aviso-fecha { color: var(--secundario); font-size: 11px; }
+.avisos-vacio { color: var(--secundario); font-size: 13px; }
 
 /* Espacio del personal: navegación y vistas */
 .admin-shell { flex-direction: row; align-items: flex-start; }
