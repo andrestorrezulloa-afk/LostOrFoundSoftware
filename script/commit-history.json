@@ -1273,12 +1273,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "56c50bff7e58ac09300f44ec0dfaa690d33314ff",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:21:11.000Z",
       "message": "test: exigir rechazo de cuentas ajenas a los dominios institucionales en HU-11",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/56c50bff7e58ac09300f44ec0dfaa690d33314ff"
     },
     "stats": {
       "total": 15,
@@ -1290,5 +1290,24 @@
     "test_count": 70,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:22:00.000Z",
+      "message": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 34,
+      "additions": 33,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.39,
+    "test_count": 70,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

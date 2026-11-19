@@ -1314,9 +1314,23 @@
     "testId": 67
   },
   {
-    "commitId": "HEAD",
+    "commitId": "56c50bff7e58ac09300f44ec0dfaa690d33314ff",
     "commitName": "test: exigir rechazo de cuentas ajenas a los dominios institucionales en HU-11",
     "commitTimestamp": 1795062072583,
     "testId": 67
+  },
+  {
+    "numPassedTests": 70,
+    "failedTests": 0,
+    "numTotalTests": 70,
+    "timestamp": 1795062114022,
+    "success": true,
+    "testId": 68
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
+    "commitTimestamp": 1795062122183,
+    "testId": 68
   }
 ]
