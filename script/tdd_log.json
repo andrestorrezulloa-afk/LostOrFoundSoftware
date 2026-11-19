@@ -1286,9 +1286,23 @@
     "testId": 65
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e396a1127713a9fdf8c6e97975477ba5252a909c",
     "commitName": "test: exigir inicio de sesion con cuenta Google institucional en HU-11",
     "commitTimestamp": 1795061397528,
     "testId": 65
+  },
+  {
+    "numPassedTests": 69,
+    "failedTests": 0,
+    "numTotalTests": 69,
+    "timestamp": 1795061965218,
+    "success": true,
+    "testId": 66
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: iniciar sesion de estudiante con cuenta Google institucional",
+    "commitTimestamp": 1795061974581,
+    "testId": 66
   }
 ]
