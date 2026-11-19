@@ -1792,9 +1792,69 @@
     "testId": 100
   },
   {
-    "commitId": "HEAD",
+    "commitId": "f879870c172bc49fbc6978cfd82c258e455f626c",
     "commitName": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
     "commitTimestamp": 1795065687025,
     "testId": 100
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 4,
+    "numTotalTests": 90,
+    "timestamp": 1795066091024,
+    "success": false,
+    "testId": 101
+  },
+  {
+    "commitId": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "commitName": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795066100115,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 2,
+    "numTotalTests": 90,
+    "timestamp": 1795066731763,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 2,
+    "numTotalTests": 90,
+    "timestamp": 1795066849630,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795066981828,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795067003443,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795067082046,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795067135856,
+    "testId": 102
   }
 ]

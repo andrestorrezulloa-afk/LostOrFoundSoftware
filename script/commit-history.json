@@ -1900,12 +1900,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "f879870c172bc49fbc6978cfd82c258e455f626c",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:21:25.000Z",
       "message": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f879870c172bc49fbc6978cfd82c258e455f626c"
     },
     "stats": {
       "total": 3,
@@ -1915,6 +1915,44 @@
     },
     "coverage": 91.2,
     "test_count": 86,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:28:18.000Z",
+      "message": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f879870c172bc49fbc6978cfd82c258e455f626c"
+    },
+    "stats": {
+      "total": 87,
+      "additions": 87,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 90,
+    "failed_tests": 4,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:45:34.000Z",
+      "message": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 89,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
     "failed_tests": 0,
     "conclusion": "success"
   }
