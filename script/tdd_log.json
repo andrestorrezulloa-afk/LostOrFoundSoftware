@@ -1398,9 +1398,29 @@
     "testId": 73
   },
   {
-    "commitId": "HEAD",
+    "commitId": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
     "commitName": "test: exigir que la sesion de estudiante no acceda al panel de Bienestar en HU-11",
     "commitTimestamp": 1795062401393,
     "testId": 73
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 0,
+    "numTotalTests": 73,
+    "timestamp": 1795062452930,
+    "success": true,
+    "testId": 74
+  },
+  {
+    "commitId": "94247cd7f0234b9cb6c3c4e47f18af39100e1a14",
+    "commitName": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+    "commitTimestamp": 1795062462521,
+    "testId": 74
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
+    "commitTimestamp": 1795062541788,
+    "testId": 75
   }
 ]
