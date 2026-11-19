@@ -1,9 +1,12 @@
 import listar from './filter.js';
+import { validarDatosReserva, prepararDatosReserva } from './datos-reserva.js';
+import SolicitudesReserva from './solicitudes-reserva.js';
 
 class InventarioObjetos {
   constructor() {
     this.objetos = [];
     this.siguienteId = 1;
+    this.solicitudesReserva = new SolicitudesReserva();
   }
 
   listar(filtros = {}) {
@@ -95,6 +98,9 @@ class InventarioObjetos {
     }
 
     objeto.estado = nuevoEstado;
+    if (nuevoEstado !== 'Disponible') {
+      this.solicitudesReserva.cerrarPendientesDelObjeto(id);
+    }
     return { exito: true, mensaje: 'Estado actualizado correctamente' };
   }
 
@@ -106,22 +112,43 @@ class InventarioObjetos {
     if (objeto.estado !== 'Disponible') {
       return { exito: false, mensaje: 'Solo se pueden reservar objetos disponibles' };
     }
-    if (!this.tieneDatosReservaCompletos(datos)) {
-      return { exito: false, mensaje: 'Complete nombre, código de estudiante y un correo válido para reservar' };
+    const errorDatos = validarDatosReserva(datos);
+    if (errorDatos) {
+      return { exito: false, mensaje: errorDatos };
     }
 
-    objeto.reserva = {
-      nombre: datos.nombre.trim(),
-      codigoEstudiante: datos.codigoEstudiante.trim(),
-      correo: datos.correo.trim(),
-    };
+    objeto.reserva = prepararDatosReserva(datos);
     objeto.estado = 'Reservado';
+    this.solicitudesReserva.cerrarPendientesDelObjeto(id);
     return { exito: true, mensaje: 'Reserva registrada correctamente' };
   }
 
-  tieneDatosReservaCompletos(datos) {
-    return Boolean(datos.nombre?.trim() && datos.codigoEstudiante?.trim() &&
-      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(datos.correo?.trim()));
+  solicitarReserva(id, datos) {
+    return this.solicitudesReserva.registrar(this.obtenerObjetoPorId(id), datos);
+  }
+
+  aceptarSolicitudReserva(id, tieneSesionPersonal) {
+    if (!tieneSesionPersonal) {
+      return { exito: false, mensaje: 'Debe iniciar sesión como personal' };
+    }
+    const solicitud = this.solicitudesReserva.obtenerPendiente(id);
+    if (!solicitud) {
+      return { exito: false, mensaje: 'La solicitud ya no está pendiente o no existe' };
+    }
+
+    const resultado = this.reservarObjeto(solicitud.objetoId, solicitud.estudiante);
+    if (!resultado.exito) {
+      return resultado;
+    }
+    solicitud.estado = 'Aceptada';
+    return { exito: true, mensaje: 'Solicitud aceptada. El objeto está reservado.' };
+  }
+
+  obtenerSolicitudesPendientes(tieneSesionPersonal) {
+    if (!tieneSesionPersonal) {
+      return [];
+    }
+    return this.solicitudesReserva.listarPendientes();
   }
 
   crearFichaObjeto(datos) {

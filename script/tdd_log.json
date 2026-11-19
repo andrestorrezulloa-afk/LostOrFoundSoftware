@@ -1036,9 +1036,237 @@
     "testId": 54
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0656a2a64392334bba0f2a0334d65add87cb08dd",
     "commitName": "feat: confirmar y cancelar cambios de estado desde el panel",
     "commitTimestamp": 1794925135065,
     "testId": 54
+  },
+  {
+    "numPassedTests": 43,
+    "failedTests": 4,
+    "numTotalTests": 47,
+    "timestamp": 1795027226833,
+    "success": false,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 0,
+    "numTotalTests": 47,
+    "timestamp": 1795027271616,
+    "success": true,
+    "testId": 55
+  },
+  {
+    "commitId": "6eca88afb1c900ec3f3ba9e927e701f56ce89d0e",
+    "commitName": "feat: usar telefono y correo institucional en las reservas",
+    "commitTimestamp": 1795027296097,
+    "testId": 55
+  },
+  {
+    "numPassedTests": 47,
+    "failedTests": 3,
+    "numTotalTests": 50,
+    "timestamp": 1795027333249,
+    "success": false,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 0,
+    "numTotalTests": 50,
+    "timestamp": 1795027371921,
+    "success": true,
+    "testId": 56
+  },
+  {
+    "commitId": "8ca4cacaef7ce074197483a0dab721120fc7c02a",
+    "commitName": "feat: registrar solicitudes de reserva pendientes para Bienestar",
+    "commitTimestamp": 1795027391395,
+    "testId": 56
+  },
+  {
+    "numPassedTests": 50,
+    "failedTests": 3,
+    "numTotalTests": 53,
+    "timestamp": 1795027429305,
+    "success": false,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 0,
+    "numTotalTests": 53,
+    "timestamp": 1795027460517,
+    "success": true,
+    "testId": 57
+  },
+  {
+    "commitId": "7b9a10faefd9670f24daf1d55ed835122f1b440a",
+    "commitName": "feat: aceptar solicitudes y reservar el objeto con sus datos",
+    "commitTimestamp": 1795027493103,
+    "testId": 57
+  },
+  {
+    "numPassedTests": 53,
+    "failedTests": 2,
+    "numTotalTests": 55,
+    "timestamp": 1795027522334,
+    "success": false,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 0,
+    "numTotalTests": 55,
+    "timestamp": 1795027558229,
+    "success": true,
+    "testId": 58
+  },
+  {
+    "commitId": "8336e3b0c0bb356a6d52f1a8ff444bdb05561fb0",
+    "commitName": "feat: mostrar reserva disponible y colores de los estados",
+    "commitTimestamp": 1795027595955,
+    "testId": 58
+  },
+  {
+    "numPassedTests": 55,
+    "failedTests": 4,
+    "numTotalTests": 59,
+    "timestamp": 1795027649090,
+    "success": false,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 0,
+    "numTotalTests": 59,
+    "timestamp": 1795027702350,
+    "success": true,
+    "testId": 59
+  },
+  {
+    "commitId": "0436a67f7ffb33f233c38308866c92969a224427",
+    "commitName": "feat: enviar solicitudes desde el catalogo estudiantil",
+    "commitTimestamp": 1795027754644,
+    "testId": 59
+  },
+  {
+    "numPassedTests": 59,
+    "failedTests": 4,
+    "numTotalTests": 63,
+    "timestamp": 1795027830876,
+    "success": false,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1795027883016,
+    "success": true,
+    "testId": 60
+  },
+  {
+    "commitId": "d16eb94e5fa798c38ab9d40f32c74136c08a6013",
+    "commitName": "feat: revisar y aceptar reservas desde el panel de Bienestar",
+    "commitTimestamp": 1795027950357,
+    "testId": 60
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 0,
+    "numTotalTests": 63,
+    "timestamp": 1795028658359,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 63,
+    "failedTests": 3,
+    "numTotalTests": 66,
+    "timestamp": 1795028756101,
+    "success": false,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 0,
+    "numTotalTests": 66,
+    "timestamp": 1795028842048,
+    "success": true,
+    "testId": 61
+  },
+  {
+    "commitId": "c59e18ac1e4a7142788915b82f232304ca4ecbec",
+    "commitName": "feat: separar el panel en vistas con navegacion accesible",
+    "commitTimestamp": 1795028873591,
+    "testId": 61
+  },
+  {
+    "numPassedTests": 66,
+    "failedTests": 1,
+    "numTotalTests": 67,
+    "timestamp": 1795028930286,
+    "success": false,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 0,
+    "numTotalTests": 67,
+    "timestamp": 1795028961971,
+    "success": true,
+    "testId": 62
+  },
+  {
+    "commitId": "8c0f44ca1489f848ddb26ef00145c6fd02802a36",
+    "commitName": "feat: presentar reservas aceptadas en la seccion del personal",
+    "commitTimestamp": 1795028986264,
+    "testId": 62
+  },
+  {
+    "numPassedTests": 67,
+    "failedTests": 1,
+    "numTotalTests": 68,
+    "timestamp": 1795029212108,
+    "success": false,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795029271129,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795029454744,
+    "success": true,
+    "testId": 63
+  },
+  {
+    "commitId": "85e511f6481a605a9b33ee6caafa9ce853f8e6e6",
+    "commitName": "feat: mejorar la presentacion del catalogo y del objeto a reservar",
+    "commitTimestamp": 1795029480745,
+    "testId": 63
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795029600357,
+    "success": true,
+    "testId": 64
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: unificar la interfaz y adaptar las vistas a movil",
+    "commitTimestamp": 1795029629197,
+    "testId": 64
   }
 ]

@@ -6,7 +6,7 @@ export default function conectarCambioEstado(inventario, auth, actualizarCatalog
   const nuevoEstado = document.querySelector('#nuevo-estado');
   const datosReserva = document.querySelector('#datos-reserva-estado');
   const nombre = document.querySelector('#reserva-nombre');
-  const codigo = document.querySelector('#reserva-codigo');
+  const telefono = document.querySelector('#reserva-telefono');
   const correo = document.querySelector('#reserva-correo');
   const cancelar = document.querySelector('#btn-cancelar-estado');
   const mensaje = document.querySelector('#mensaje-cambio-estado');
@@ -19,9 +19,10 @@ export default function conectarCambioEstado(inventario, auth, actualizarCatalog
 
   function actualizarCamposReserva() {
     const necesitaReserva = nuevoEstado.value === 'Reservado';
-    datosReserva.hidden = !necesitaReserva;
-    datosReserva.disabled = !necesitaReserva;
-    for (const campo of [nombre, codigo, correo]) {
+    const mostrarDatos = necesitaReserva || Boolean(objetoSeleccionado.reserva);
+    datosReserva.hidden = !mostrarDatos;
+    datosReserva.disabled = !mostrarDatos;
+    for (const campo of [nombre, telefono, correo]) {
       campo.readOnly = Boolean(objetoSeleccionado.reserva);
       campo.required = necesitaReserva && !objetoSeleccionado.reserva;
     }
@@ -50,7 +51,7 @@ export default function conectarCambioEstado(inventario, auth, actualizarCatalog
     nombreObjeto.textContent = objetoSeleccionado.nombre;
     nuevoEstado.value = objetoSeleccionado.estado;
     nombre.value = objetoSeleccionado.reserva?.nombre || '';
-    codigo.value = objetoSeleccionado.reserva?.codigoEstudiante || '';
+    telefono.value = objetoSeleccionado.reserva?.telefono || '';
     correo.value = objetoSeleccionado.reserva?.correo || '';
     mensaje.textContent = '';
     mensaje.className = 'mensaje';
@@ -71,7 +72,7 @@ export default function conectarCambioEstado(inventario, auth, actualizarCatalog
       objetoSeleccionado.id,
       nuevoEstado.value,
       auth.puedeAccederAlPanel(),
-      { nombre: nombre.value, codigoEstudiante: codigo.value, correo: correo.value }
+      { nombre: nombre.value, telefono: telefono.value, correo: correo.value }
     );
     mostrarMensaje(resultado.mensaje, resultado.exito);
     if (resultado.exito) {

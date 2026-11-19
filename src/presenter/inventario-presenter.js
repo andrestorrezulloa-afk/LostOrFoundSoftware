@@ -2,8 +2,11 @@ import { renderizarLista, renderizarBanner } from '../view/catalogo-view.js';
 import InventarioObjetos from "../model/inventario.js";
 import auth from "./auth-presenter.js";
 import conectarCambioEstado from './estado-presenter.js';
+import conectarReservaEstudiante from './reserva-estudiante-presenter.js';
+import conectarReservasBienestar from './reservas-bienestar-presenter.js';
 
 const inventario = new InventarioObjetos();
+export { inventario };
 
 const formObjeto = document.querySelector("#form-registrar-objeto");
 const objNombre = document.querySelector("#obj-nombre");
@@ -27,6 +30,7 @@ const detalleDescripcion = document.querySelector('#detalle-descripcion');
 const detalleEstado = document.querySelector('#detalle-estado');
 const btnVolverCatalogo = document.querySelector('#btn-volver-catalogo');
 let origenDetalle = null;
+let objetoDetalleId = null;
 
 const btnVerCatalogoPublico = document.querySelector("#btn-ver-catalogo-publico");
 const btnVolverLogin = document.querySelector("#btn-volver-login");
@@ -67,6 +71,7 @@ function mostrarMensajeObjeto(texto, esExito) {
 }
 
 function renderizarCatalogos() {
+  actualizarSolicitudes();
   renderizarBanner(bannerUltimoPosteo, inventario.obtenerUltimoPosteo());
   if (listaCatalogoEstudiante) {
     const objetos = inventario.listar({
@@ -85,6 +90,9 @@ function renderizarCatalogos() {
     const objetos = inventario.listar({ categoria: filtroCategoriaStaff?.value });
     renderizarLista(listaCatalogoStaff, objetos, 'No hay objetos para esta categoría.', false);
   }
+  if (objetoDetalleId && !detalleEstudiante.hidden) {
+    abrirDetalle(inventario.obtenerObjetoPorId(objetoDetalleId), origenDetalle);
+  }
 }
 
 function cerrarDetalle(restaurarFoco = true) {
@@ -94,14 +102,20 @@ function cerrarDetalle(restaurarFoco = true) {
     (origenDetalle?.isConnected ? origenDetalle : filtroNombreEstudiante)?.focus();
   }
   origenDetalle = null;
+  objetoDetalleId = null;
 }
 
 function abrirDetalle(objeto, boton) {
+  objetoDetalleId = objeto.id;
   detalleNombre.textContent = objeto.nombre;
   detalleCategoria.textContent = objeto.categoria;
   detalleLugar.textContent = objeto.lugarEncontrado?.trim() || 'Campus no especificado';
   detalleDescripcion.textContent = objeto.descripcion?.trim() || 'Sin descripción';
   detalleEstado.textContent = objeto.estado;
+  detalleEstado.className = `badge-estado estado-${objeto.estado.toLowerCase()}`;
+  const reservar = document.querySelector('#btn-reservar-detalle');
+  reservar.hidden = objeto.estado !== 'Disponible';
+  reservar.dataset.reservarId = String(objeto.id);
   detalleFoto.hidden = !objeto.foto;
   detalleSinFoto.hidden = Boolean(objeto.foto);
   if (objeto.foto) {
@@ -230,4 +244,6 @@ if (formBusquedaPublica) {
 }
 
 conectarCambioEstado(inventario, auth, renderizarCatalogos);
+conectarReservaEstudiante(inventario, renderizarCatalogos);
+const actualizarSolicitudes = conectarReservasBienestar(inventario, auth, renderizarCatalogos);
 renderizarCatalogos();

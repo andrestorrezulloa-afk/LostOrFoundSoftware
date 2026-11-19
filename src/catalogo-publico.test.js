@@ -7,7 +7,7 @@ jest.mock('./view/catalogo-view.js', () => ({
 }));
 jest.mock('./presenter/auth-presenter.js', () => ({
   __esModule: true,
-  default: { obtenerUsuarioActual: () => null },
+  default: { obtenerUsuarioActual: () => null, puedeAccederAlPanel: () => false },
 }));
 jest.mock('./model/inventario.js', () => {
   const Inventario = jest.requireActual('./model/inventario.js').default;

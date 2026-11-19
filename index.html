@@ -9,13 +9,14 @@
   <body>
     <section id="seccion-auth" class="auth-wrapper" style="display: none;">
       <div class="auth-card">
-        <h1>Bienestar Estudiantil</h1>
-        <p class="auth-subtitle">Administración de Objetos Perdidos</p>
+        <div class="marca"><span class="marca-simbolo" aria-hidden="true">be.</span><span>Bienestar Estudiantil<small>Objetos encontrados</small></span></div>
+        <h1>Acceso del personal</h1>
+        <p class="auth-subtitle">Gestiona los hallazgos y acompaña su recuperación.</p>
 
         <div id="mensaje-sistema" class="mensaje"></div>
 
         <div id="vista-login">
-          <h2>Iniciar Sesión (Personal)</h2>
+          <h2>Iniciar sesión</h2>
           <form id="login-form">
             <div class="form-group">
               <label for="login-correo">Correo institucional</label>
@@ -100,24 +101,25 @@
 
     <section id="vista-estudiante" class="panel-container">
       <header class="topbar">
-        <span class="topbar-title">Bienestar Estudiantil</span>
-        <button id="btn-volver-login" class="btn-secondary-sm">Acceso Personal</button>
+        <div class="marca"><span class="marca-simbolo" aria-hidden="true">be.</span><span>Bienestar Estudiantil<small>Objetos encontrados</small></span></div>
+        <button id="btn-volver-login" class="btn-secondary-sm">Acceso del personal ↗</button>
       </header>
       <main class="contenido-principal">
+        <p id="mensaje-solicitud-reserva" class="mensaje" role="status" aria-live="polite" tabindex="-1"></p>
         <div id="catalogo-estudiante">
           <header class="inicio-encabezado">
-            <h1>Objetos encontrados</h1>
-            <p class="inicio-eslogan">Busca, encuentra y recupera</p>
+            <div><p class="eyebrow">OBJETOS ENCONTRADOS · CAMPUS TUPURAYA</p><h1>Algo tuyo<br>puede estar aquí.</h1><p class="inicio-eslogan">Un lugar para volver a encontrar. Explora los hallazgos del campus y da el primer paso para recuperar tu pertenencia.</p></div>
+            <aside class="guia-recuperacion" aria-labelledby="titulo-guia"><h2 id="titulo-guia">Volver a encontrar, paso a paso.</h2><ol class="pasos-recuperacion"><li><strong>Busca tu objeto</strong><span>Revisa las fotos y los detalles.</span></li><li><strong>Envía tu solicitud</strong><span>Bienestar revisará tus datos.</span></li><li><strong>Recupéralo</strong><span>Verifica la propiedad al recogerlo.</span></li></ol></aside>
           </header>
           <section class="busqueda-inicio" aria-labelledby="titulo-busqueda">
-            <h2 id="titulo-busqueda">Busca tu objeto</h2>
+            <h2 id="titulo-busqueda">Encuentra tu pertenencia</h2>
             <form id="form-busqueda-publica" class="filtros-catalogo" role="search">
               <div class="campo-busqueda">
-                <label for="filtro-nombre-estudiante">Buscar por nombre</label>
+                <label for="filtro-nombre-estudiante">Nombre del objeto</label>
                 <input type="search" id="filtro-nombre-estudiante" placeholder="Ej. Mochila" />
               </div>
               <div class="campo-busqueda">
-                <label for="filtro-categoria-estudiante">Filtrar por categoría</label>
+                <label for="filtro-categoria-estudiante">Categoría</label>
                 <select id="filtro-categoria-estudiante">
                   <option value="">Todas</option>
                   <option value="Llaves">Llaves</option>
@@ -135,22 +137,46 @@
                 </select>
               </div>
               <div class="campo-busqueda">
-                <label for="orden-publicaciones">Orden de publicación</label>
+                <label for="orden-publicaciones">Ordenar por</label>
                 <select id="orden-publicaciones">
                   <option value="recientes">Más recientes primero</option>
                   <option value="antiguos">Más antiguos primero</option>
                 </select>
               </div>
-              <div class="acciones-busqueda">
+              <div class="acciones-busqueda"><p>Consulta libre. No necesitas iniciar sesión.</p>
                 <button type="submit" class="btn-primary">Buscar</button>
                 <button type="button" id="btn-limpiar-filtros" class="btn-secondary">Limpiar filtros</button>
               </div>
             </form>
           </section>
           <section id="banner-ultimo-posteo" class="banner-ultimo-posteo" aria-label="Último objeto publicado" hidden></section>
-          <h2 class="catalogo-titulo">Catálogo público</h2>
+          <div class="section-heading"><div><p class="eyebrow">HALLAZGOS DEL CAMPUS</p><h2 class="catalogo-titulo">Catálogo de objetos</h2><p>¿Reconoces algo tuyo? Revisa sus detalles antes de solicitarlo.</p></div></div>
           <div id="lista-catalogo-estudiante" class="catalogo-grid" aria-live="polite" aria-atomic="true"></div>
         </div>
+        <section id="formulario-reserva-estudiante" class="card-formulario formulario-reserva" aria-labelledby="titulo-solicitud-reserva" hidden>
+          <header class="reserva-cabecera"><p class="eyebrow">UN PASO MÁS CERCA DE RECUPERARLO</p><h2 id="titulo-solicitud-reserva">Solicitar reserva de <span id="nombre-objeto-reserva"></span></h2></header>
+          <div class="reserva-layout">
+            <aside class="reserva-contexto" aria-label="Objeto que solicitas"><div id="resumen-objeto-reserva"></div><p>Reservar no acredita la propiedad. Bienestar la verificará contigo antes de entregar el objeto.</p></aside>
+            <div class="reserva-form"><p>Completa tus datos de contacto. El objeto se reservará cuando Bienestar acepte tu solicitud.</p>
+          <form id="form-solicitar-reserva" novalidate>
+            <div class="form-group">
+              <label for="solicitud-nombre">Nombre completo *</label>
+              <input id="solicitud-nombre" type="text" autocomplete="name" required />
+            </div>
+            <div class="form-group">
+              <label for="solicitud-telefono">Número de teléfono *</label>
+              <input id="solicitud-telefono" type="tel" autocomplete="tel" required />
+            </div>
+            <div class="form-group">
+              <label for="solicitud-correo">Correo institucional *</label>
+              <input id="solicitud-correo" type="email" autocomplete="email" placeholder="ejemplo@ucb.edu.bo" required />
+            </div>
+            <button type="submit" class="btn-primary">Enviar solicitud a Bienestar</button>
+            <button type="button" id="btn-cancelar-reserva" class="btn-secondary">Cancelar</button>
+          </form>
+            </div>
+          </div>
+        </section>
         <section id="detalle-estudiante" class="detalle-objeto" aria-labelledby="detalle-nombre" hidden>
           <button type="button" id="btn-volver-catalogo" class="btn-secondary-sm">Volver al catálogo</button>
           <div class="detalle-contenido">
@@ -162,23 +188,46 @@
               <p>Campus: <span id="detalle-lugar"></span></p>
               <p>Descripción: <span id="detalle-descripcion"></span></p>
               <p>Estado: <span id="detalle-estado"></span></p>
+              <button id="btn-reservar-detalle" type="button" class="btn-detalle btn-reservar" hidden>Reservar</button>
             </div>
           </div>
         </section>
       </main>
+      <footer class="public-footer"><span>Bienestar Estudiantil · Campus Tupuraya</span><span>Busca, encuentra y recupera.</span></footer>
     </section>
 
-    <section id="panel-gestion" class="panel-container" style="display: none;">
-      <header class="topbar">
-        <span class="topbar-title">Panel de Gestión - Bienestar Estudiantil</span>
-        <button id="btn-logout" class="btn-logout">Cerrar sesión</button>
-      </header>
-
-      <main id="contenido-objetos" class="contenido-principal layout-gestion">
-        
-        <div class="card-formulario">
-          <h2>Registrar Objeto Encontrado</h2>
-          <div id="mensaje-objeto" class="mensaje"></div>
+    <section id="panel-gestion" class="panel-container admin-shell" style="display: none;">
+      <aside class="admin-sidebar">
+        <div class="marca marca-admin"><span class="marca-simbolo" aria-hidden="true">be.</span><span>Bienestar Estudiantil<small>Objetos encontrados</small></span></div>
+        <p class="nav-caption">ESPACIO DEL PERSONAL</p>
+        <nav class="admin-nav" aria-label="Secciones de Bienestar">
+          <button type="button" id="nav-inicio" aria-current="false"><span aria-hidden="true">01</span>Inicio</button>
+          <button type="button" id="nav-registro" aria-current="false"><span aria-hidden="true">02</span>Registrar objeto</button>
+          <button type="button" id="nav-objetos" aria-current="false"><span aria-hidden="true">03</span>Gestionar objetos</button>
+          <button type="button" id="nav-reservas" aria-current="false"><span aria-hidden="true">04</span>Reservas</button>
+        </nav>
+        <div class="sidebar-pie"><span class="sesion-indicador">Sesión de personal</span><strong id="nombre-personal"></strong><button type="button" id="btn-logout" class="btn-logout">Cerrar sesión <span aria-hidden="true">↗</span></button></div>
+      </aside>
+      <main id="contenido-objetos" class="admin-contenido">
+        <header class="admin-encabezado"><p class="eyebrow">BIENESTAR ESTUDIANTIL</p><h1 id="titulo-pagina-admin" tabindex="-1">Inicio</h1><p id="descripcion-pagina-admin">Una vista general para acompañar cada recuperación.</p></header>
+        <section id="admin-inicio" class="admin-vista" aria-label="Inicio" hidden>
+          <div class="bienvenida-panel"><div><p class="eyebrow">CADA OBJETO TIENE UNA HISTORIA</p><h2>Ayudemos a que vuelva<br>a las manos correctas.</h2><p>Registra los hallazgos, revisa las solicitudes y acompaña la recuperación de cada pertenencia.</p></div><div class="bienvenida-sello" aria-hidden="true">be.</div></div>
+          <div class="resumen-grid" aria-label="Resumen del catálogo">
+            <article class="resumen-card"><span class="badge-estado estado-disponible">Disponible</span><strong id="resumen-disponibles">0</strong><p>Objetos por recuperar</p></article>
+            <article class="resumen-card"><span class="badge-estado estado-reservado">Reservado</span><strong id="resumen-reservados">0</strong><p>En espera de entrega</p></article>
+            <article class="resumen-card"><span class="badge-estado estado-reclamado">Reclamado</span><strong id="resumen-reclamados">0</strong><p>Devueltos a su dueño</p></article>
+          </div>
+          <div class="section-heading"><div><p class="eyebrow">¿QUÉ NECESITAS HACER?</p><h2>Accesos rápidos</h2></div></div>
+          <div class="accesos-grid">
+            <button type="button" id="acceso-registro" class="acceso-card"><span class="acceso-numero">01</span><strong>Registrar un hallazgo</strong><span>Agrega sus datos y publícalo en el catálogo.</span><span class="acceso-flecha" aria-hidden="true">↗</span></button>
+            <button type="button" id="acceso-objetos" class="acceso-card"><span class="acceso-numero">02</span><strong>Revisar los objetos</strong><span>Consulta el catálogo y actualiza sus estados.</span><span class="acceso-flecha" aria-hidden="true">↗</span></button>
+            <button type="button" id="acceso-reservas" class="acceso-card"><span class="acceso-numero">03</span><strong>Atender las reservas</strong><span>Revisa las solicitudes y coordina la entrega.</span><span class="acceso-flecha" aria-hidden="true">↗</span></button>
+          </div>
+        </section>
+        <section id="admin-registro" class="admin-vista" aria-label="Registrar objeto" hidden>
+          <div class="registro-layout"><div class="registro-formulario"><div class="card-formulario">
+          <h2>Datos del hallazgo</h2>
+          <div id="mensaje-objeto" class="mensaje" role="status" aria-live="polite"></div>
 
           <form id="form-registrar-objeto">
             <div class="form-group">
@@ -228,11 +277,9 @@
               Publicar en el catálogo
             </button>
           </form>
-        </div>
-
-        
-        <div class="seccion-catalogo">
-          <h2>Catálogo de Objetos Publicados</h2>
+        </div></div><aside class="ayuda-registro"><p class="eyebrow">ANTES DE PUBLICAR</p><h2>Los detalles ayudan a reconocerlo.</h2><p>Usa un nombre claro e indica el campus donde encontraste el objeto.</p><ul><li>Describe su color, marca o algún detalle visible.</li><li>Si puedes, agrega una fotografía del objeto.</li><li>Evita publicar información personal o documentos legibles.</li></ul></aside></div>
+        </section>
+        <section id="admin-objetos" class="admin-vista seccion-catalogo" aria-label="Gestionar objetos" hidden>
           <p id="mensaje-cambio-estado" class="mensaje" role="status" aria-live="polite"></p>
           <section id="editor-estado" class="card-formulario editor-estado" aria-labelledby="titulo-editor-estado" hidden>
             <h3 id="titulo-editor-estado">Cambiar estado de <span id="nombre-objeto-estado"></span></h3>
@@ -253,8 +300,8 @@
                   <input id="reserva-nombre" type="text" />
                 </div>
                 <div class="form-group">
-                  <label for="reserva-codigo">Código de estudiante</label>
-                  <input id="reserva-codigo" type="text" />
+                  <label for="reserva-telefono">Número de teléfono</label>
+                  <input id="reserva-telefono" type="tel" />
                 </div>
                 <div class="form-group">
                   <label for="reserva-correo">Correo institucional</label>
@@ -266,6 +313,7 @@
               <button type="button" id="btn-cancelar-estado" class="btn-secondary">Cancelar</button>
             </form>
           </section>
+          <div class="section-heading"><div><h2>Catálogo de objetos</h2><p>Consulta cada hallazgo y registra su recuperación.</p></div></div>
           <div class="filtros-catalogo filtros-catalogo-staff">
             <label for="filtro-categoria-staff">Filtrar por categoría</label>
             <select id="filtro-categoria-staff">
@@ -279,7 +327,17 @@
             </select>
           </div>
           <div id="lista-catalogo-staff" class="catalogo-grid"></div>
-        </div>
+        </section>
+        <section id="admin-reservas" class="admin-vista" aria-label="Reservas" hidden>
+          <section id="panel-solicitudes-bienestar" class="panel-solicitudes" aria-labelledby="titulo-solicitudes-bienestar" hidden>
+            <h2 id="titulo-solicitudes-bienestar">Solicitudes de reserva pendientes</h2>
+            <p>Aceptar una solicitud cambia el objeto a «Reservado». Verifica la propiedad antes de entregarlo.</p>
+            <p id="mensaje-solicitudes-bienestar" class="mensaje" role="status" aria-live="polite"></p>
+            <div id="lista-solicitudes-reserva" aria-live="polite"></div>
+          </section>
+          <section class="reservas-activas" aria-labelledby="titulo-reservas-aceptadas"><div class="section-heading"><div><p class="eyebrow">SOLICITUDES ACEPTADAS</p><h2 id="titulo-reservas-aceptadas">Reservas en espera de entrega</h2><p>Los datos de contacto son visibles únicamente para el personal.</p></div><button type="button" id="acceso-gestion-reservas" class="btn-secondary-sm">Gestionar la entrega ↗</button></div><div id="lista-reservas-aceptadas" class="reservas-grid"></div></section>
+        </section>
+        <footer class="admin-footer">Bienestar Estudiantil <span>Un espacio para volver a encontrar.</span></footer>
       </main>
     </section>
 

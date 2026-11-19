@@ -60,7 +60,7 @@ describe('Cambio de estado desde el panel', () => {
   });
 
   it('cancela sin modificar el objeto ni su reserva', () => {
-    inventario.reservarObjeto(objeto.id, { nombre: 'Ana', codigoEstudiante: '123', correo: 'ana@ucb.edu.bo' });
+    inventario.reservarObjeto(objeto.id, { nombre: 'Ana', telefono: '76543210', correo: 'ana@ucb.edu.bo' });
     const original = JSON.stringify(objeto);
     abrirEditor();
     elegirEstado('Disponible');
@@ -93,13 +93,20 @@ describe('Cambio de estado desde el panel', () => {
     expect(objeto.estado).toBe('Disponible');
     expect(controles['editor-estado'].hidden).toBe(false);
     controles['reserva-nombre'].value = 'Ana';
-    controles['reserva-codigo'].value = '123';
+    controles['reserva-telefono'].value = '76543210';
     controles['reserva-correo'].value = 'ana@ucb.edu.bo';
     confirmar();
     expect(objeto.estado).toBe('Reservado');
     expect(objeto.reserva.nombre).toBe('Ana');
     abrirEditor();
     expect(controles['reserva-nombre'].readOnly).toBe(true);
+    elegirEstado('Reclamado');
+    expect(controles['datos-reserva-estado'].hidden).toBe(false);
+    expect(controles['reserva-telefono'].value).toBe('76543210');
+    confirmar();
+    expect(objeto.estado).toBe('Reclamado');
+    expect(objeto.reserva.telefono).toBe('76543210');
+    abrirEditor();
     elegirEstado('Disponible');
     confirmar();
     expect(objeto.estado).toBe('Disponible');
