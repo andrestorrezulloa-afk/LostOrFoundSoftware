@@ -1539,17 +1539,36 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "884111e2f7dc0ce7c5278b6802ccb96c7d6d3869",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:46:11.000Z",
       "message": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/884111e2f7dc0ce7c5278b6802ccb96c7d6d3869"
     },
     "stats": {
       "total": 119,
       "additions": 73,
       "deletions": 46,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.26,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:56:23.000Z",
+      "message": "test: exigir suscripcion de estudiante a avisos por categoria en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
       "date": "2026-11-19"
     },
     "coverage": 91.26,

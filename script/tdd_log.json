@@ -1526,9 +1526,23 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "884111e2f7dc0ce7c5278b6802ccb96c7d6d3869",
     "commitName": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
     "commitTimestamp": 1795063573776,
     "testId": 81
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795064174962,
+    "success": false,
+    "testId": 82
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir suscripcion de estudiante a avisos por categoria en HU-12",
+    "commitTimestamp": 1795064185583,
+    "testId": 82
   }
 ]
