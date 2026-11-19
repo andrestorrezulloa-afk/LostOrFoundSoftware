@@ -79,7 +79,10 @@ class SistemaAvisos {
 
     const generados = [];
     for (const correo of this.almacenamiento.keys()) {
-      if (this.categoriasSuscritas(correo).includes(objeto.categoria)) {
+      const yaAvisado = this.avisos.some(
+        (aviso) => aviso.correo === correo && aviso.objetoId === objeto.id
+      );
+      if (!yaAvisado && this.categoriasSuscritas(correo).includes(objeto.categoria)) {
         generados.push(this.generarAviso(correo, objeto));
       }
     }
@@ -97,6 +100,7 @@ class SistemaAvisos {
       id: this.avisos.length + 1,
       correo,
       categoria: objeto.categoria,
+      objetoId: objeto.id,
       objeto,
       enlace: `#/objeto/${objeto.id}`,
       fecha: new Date().toISOString(),

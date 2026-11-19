@@ -1680,9 +1680,37 @@
     "testId": 92
   },
   {
-    "commitId": "HEAD",
+    "commitId": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
     "commitName": "test: exigir un solo aviso por publicacion y solo para suscriptores en HU-12",
     "commitTimestamp": 1795065071361,
     "testId": 92
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1795065106390,
+    "success": false,
+    "testId": 93
+  },
+  {
+    "commitId": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
+    "commitName": "feat: enviar un solo aviso por publicacion y suscriptor",
+    "commitTimestamp": 1795065116884,
+    "testId": 93
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 0,
+    "numTotalTests": 83,
+    "timestamp": 1795065201179,
+    "success": true,
+    "testId": 94
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: enviar un solo aviso por publicacion y suscriptor",
+    "commitTimestamp": 1795065211033,
+    "testId": 94
   }
 ]
