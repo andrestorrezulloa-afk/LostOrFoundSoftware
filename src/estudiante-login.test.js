@@ -1,4 +1,5 @@
 import LoginEstudiante from "./model/login-estudiante.js";
+import InventarioObjetos from "./model/inventario.js";
 
 function cuentaGoogle(correo, nombre = "Estudiante Demo") {
   return { correo, nombre };
@@ -49,5 +50,20 @@ describe("HU-11: Acceder opcionalmente con cuenta institucional", () => {
     );
     expect(login.obtenerEstudianteActual()).toEqual(null);
     expect(login.puedeConfigurarAvisos()).toEqual(false);
+  });
+
+  it("deberia cerrar la sesion del estudiante y permitir seguir consultando el catalogo como visitante", () => {
+    const login = new LoginEstudiante({
+      proveedorGoogle: () => cuentaGoogle("estudiante@ucb.edu.bo"),
+    });
+    login.iniciarSesionConGoogle();
+    const inventario = new InventarioObjetos();
+    inventario.registrarObjeto({ nombre: "Llavero", categoria: "Llaves" });
+
+    login.cerrarSesion();
+
+    expect(login.obtenerEstudianteActual()).toEqual(null);
+    expect(login.tieneSesionEstudiante()).toEqual(false);
+    expect(inventario.listar().length).toEqual(1);
   });
 });

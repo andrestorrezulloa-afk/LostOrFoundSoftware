@@ -1356,9 +1356,23 @@
     "testId": 70
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5572038fb4d0c9c554df897b9f1b7d538c975349",
     "commitName": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
     "commitTimestamp": 1795062251106,
     "testId": 70
+  },
+  {
+    "numPassedTests": 71,
+    "failedTests": 1,
+    "numTotalTests": 72,
+    "timestamp": 1795062293770,
+    "success": false,
+    "testId": 71
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
+    "commitTimestamp": 1795062303032,
+    "testId": 71
   }
 ]

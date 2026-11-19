@@ -1330,12 +1330,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "5572038fb4d0c9c554df897b9f1b7d538c975349",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:24:09.000Z",
       "message": "feat: manejar el fallo del inicio de sesion con Google con mensaje comprensible",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/5572038fb4d0c9c554df897b9f1b7d538c975349"
     },
     "stats": {
       "total": 13,
@@ -1347,5 +1347,24 @@
     "test_count": 71,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:25:01.000Z",
+      "message": "test: exigir cerrar la sesion del estudiante y mantener el catalogo publico en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.46,
+    "test_count": 72,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]
