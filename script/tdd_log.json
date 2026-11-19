@@ -1300,9 +1300,23 @@
     "testId": 66
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4f0fa27b60d5aaa781fe74f828565e327652c5e2",
     "commitName": "feat: iniciar sesion de estudiante con cuenta Google institucional",
     "commitTimestamp": 1795061974581,
     "testId": 66
+  },
+  {
+    "numPassedTests": 69,
+    "failedTests": 1,
+    "numTotalTests": 70,
+    "timestamp": 1795062050398,
+    "success": false,
+    "testId": 67
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir rechazo de cuentas ajenas a los dominios institucionales en HU-11",
+    "commitTimestamp": 1795062072583,
+    "testId": 67
   }
 ]
