@@ -1691,12 +1691,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "e9c7aa2ce31fa36af012879a78a6c006e313a03f",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:07:20.000Z",
       "message": "feat: generar avisos al publicar objetos en categorias suscritas",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e9c7aa2ce31fa36af012879a78a6c006e313a03f"
     },
     "stats": {
       "total": 39,
@@ -1708,5 +1708,24 @@
     "test_count": 81,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:09:20.000Z",
+      "message": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.1,
+    "test_count": 82,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

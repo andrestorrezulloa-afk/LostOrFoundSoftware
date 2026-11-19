@@ -1638,9 +1638,23 @@
     "testId": 89
   },
   {
-    "commitId": "HEAD",
+    "commitId": "e9c7aa2ce31fa36af012879a78a6c006e313a03f",
     "commitName": "feat: generar avisos al publicar objetos en categorias suscritas",
     "commitTimestamp": 1795064842456,
     "testId": 89
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1795064952131,
+    "success": false,
+    "testId": 90
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
+    "commitTimestamp": 1795064962026,
+    "testId": 90
   }
 ]

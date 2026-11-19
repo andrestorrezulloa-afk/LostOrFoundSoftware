@@ -1,4 +1,5 @@
 import SistemaAvisos from './model/avisos.js';
+import InventarioObjetos from './model/inventario.js';
 
 const CORREO = 'estudiante@ucb.edu.bo';
 
@@ -57,5 +58,17 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
     expect(generados[0].objeto.nombre).toEqual('Casio');
     expect(generados[0].enlace).toEqual('#/objeto/7');
     expect(avisos.avisosDe(CORREO).length).toEqual(1);
+  });
+
+  it('deberia generar los avisos cuando Bienestar publica un objeto nuevo desde el inventario', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir(CORREO, 'Electrónicos');
+    const inventario = new InventarioObjetos({ avisos });
+
+    const registro = inventario.registrarObjeto({ nombre: 'Casio', categoria: 'Electrónicos' });
+
+    expect(registro.exito).toEqual(true);
+    expect(avisos.avisosDe(CORREO).length).toEqual(1);
+    expect(avisos.avisosDe(CORREO)[0].objeto.nombre).toEqual('Casio');
   });
 });
