@@ -1764,9 +1764,23 @@
     "testId": 98
   },
   {
-    "commitId": "HEAD",
+    "commitId": "4f8ce001f60b988ac519f13b440303df051faf22",
     "commitName": "feat: registrar errores de envio de avisos sin afectar la publicacion",
     "commitTimestamp": 1795065549527,
     "testId": 98
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 1,
+    "numTotalTests": 86,
+    "timestamp": 1795065594736,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir que los avisos no incluyan datos personales en HU-12",
+    "commitTimestamp": 1795065603336,
+    "testId": 99
   }
 ]

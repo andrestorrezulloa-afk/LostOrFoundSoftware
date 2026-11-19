@@ -120,4 +120,23 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
     inventario.registrarObjeto({ nombre: 'Otra calculadora', categoria: 'Electrónicos' });
     expect(inventario.obtenerCatalogo().length).toEqual(2);
   });
+
+  it('no deberia incluir datos personales de quien reserva en los avisos', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir(CORREO, 'Electrónicos');
+    const inventario = new InventarioObjetos({ avisos });
+    const registro = inventario.registrarObjeto({ nombre: 'Casio', categoria: 'Electrónicos' });
+    inventario.reservarObjeto(registro.objeto.id, {
+      nombre: 'Luis Perez',
+      telefono: '76543210',
+      correo: 'luis@ucb.edu.bo',
+    });
+
+    const aviso = avisos.avisosDe(CORREO)[0];
+
+    expect(JSON.stringify(aviso)).not.toContain('76543210');
+    expect(aviso.objeto.reserva).toEqual(undefined);
+    expect(aviso.objeto.nombre).toEqual('Casio');
+    expect(aviso.objeto.categoria).toEqual('Electrónicos');
+  });
 });
