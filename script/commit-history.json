@@ -1615,12 +1615,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "a066fafe3db03b3e832b946ffbd3a88aa42eab30",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:02:05.000Z",
       "message": "feat: cancelar suscripciones de avisos por categoria",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/a066fafe3db03b3e832b946ffbd3a88aa42eab30"
     },
     "stats": {
       "total": 17,
@@ -1632,5 +1632,24 @@
     "test_count": 79,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:03:06.000Z",
+      "message": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 80,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

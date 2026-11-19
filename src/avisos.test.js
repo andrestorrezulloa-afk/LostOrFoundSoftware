@@ -27,4 +27,16 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
       { categoria: 'Útiles', activa: true },
     ]);
   });
+
+  it('deberia guardar las preferencias y mostrarlas cuando el mismo estudiante inicia sesion de nuevo', () => {
+    const almacenamiento = new Map();
+    const avisos = new SistemaAvisos({ almacenamiento });
+    avisos.suscribir(CORREO, 'Electrónicos');
+
+    const nuevaSesion = new SistemaAvisos({ almacenamiento });
+
+    expect(nuevaSesion.obtenerSuscripciones(CORREO)).toEqual([
+      { categoria: 'Electrónicos', activa: true },
+    ]);
+  });
 });

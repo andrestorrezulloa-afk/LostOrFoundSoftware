@@ -1582,9 +1582,23 @@
     "testId": 85
   },
   {
-    "commitId": "HEAD",
+    "commitId": "a066fafe3db03b3e832b946ffbd3a88aa42eab30",
     "commitName": "feat: cancelar suscripciones de avisos por categoria",
     "commitTimestamp": 1795064527027,
     "testId": 85
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 1,
+    "numTotalTests": 80,
+    "timestamp": 1795064578050,
+    "success": false,
+    "testId": 86
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
+    "commitTimestamp": 1795064587429,
+    "testId": 86
   }
 ]
