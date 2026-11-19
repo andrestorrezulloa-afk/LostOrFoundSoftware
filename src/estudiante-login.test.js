@@ -33,4 +33,21 @@ describe("HU-11: Acceder opcionalmente con cuenta institucional", () => {
     expect(login.obtenerEstudianteActual()).toEqual(null);
     expect(login.puedeConfigurarAvisos()).toEqual(false);
   });
+
+  it("no deberia habilitar funciones personalizadas y deberia mostrar un mensaje claro si falla el inicio de sesion con Google", () => {
+    const login = new LoginEstudiante({
+      proveedorGoogle: () => {
+        throw new Error("popup bloqueado");
+      },
+    });
+
+    const resultado = login.iniciarSesionConGoogle();
+
+    expect(resultado.exito).toEqual(false);
+    expect(resultado.mensaje).toEqual(
+      "No se pudo iniciar sesion con Google. Intentalo de nuevo."
+    );
+    expect(login.obtenerEstudianteActual()).toEqual(null);
+    expect(login.puedeConfigurarAvisos()).toEqual(false);
+  });
 });

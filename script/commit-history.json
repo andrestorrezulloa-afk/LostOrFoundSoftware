@@ -1292,12 +1292,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "bbefe9d729089ae725069bfebdfbd45acde96a44",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:22:00.000Z",
       "message": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/bbefe9d729089ae725069bfebdfbd45acde96a44"
     },
     "stats": {
       "total": 34,
@@ -1309,5 +1309,24 @@
     "test_count": 70,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:23:22.000Z",
+      "message": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.39,
+    "test_count": 71,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

@@ -1328,9 +1328,23 @@
     "testId": 68
   },
   {
-    "commitId": "HEAD",
+    "commitId": "bbefe9d729089ae725069bfebdfbd45acde96a44",
     "commitName": "feat: rechazar cuentas ajenas a los dominios institucionales autorizados",
     "commitTimestamp": 1795062122183,
     "testId": 68
+  },
+  {
+    "numPassedTests": 70,
+    "failedTests": 1,
+    "numTotalTests": 71,
+    "timestamp": 1795062189058,
+    "success": false,
+    "testId": 69
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir mensaje claro cuando falla el inicio de sesion con Google en HU-11",
+    "commitTimestamp": 1795062203899,
+    "testId": 69
   }
 ]
