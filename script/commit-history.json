@@ -1634,12 +1634,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:03:06.000Z",
       "message": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe"
     },
     "stats": {
       "total": 12,
@@ -1651,5 +1651,24 @@
     "test_count": 80,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:05:02.000Z",
+      "message": "feat: conservar las suscripciones entre sesiones del estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 3,
+      "deletions": 4,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.15,
+    "test_count": 80,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

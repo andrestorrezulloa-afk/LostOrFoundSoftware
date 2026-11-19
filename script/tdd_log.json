@@ -1596,9 +1596,23 @@
     "testId": 86
   },
   {
-    "commitId": "HEAD",
+    "commitId": "9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe",
     "commitName": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
     "commitTimestamp": 1795064587429,
     "testId": 86
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1795064693835,
+    "success": true,
+    "testId": 87
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conservar las suscripciones entre sesiones del estudiante",
+    "commitTimestamp": 1795064703735,
+    "testId": 87
   }
 ]

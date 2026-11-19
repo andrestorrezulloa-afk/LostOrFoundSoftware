@@ -17,7 +17,6 @@ export const MENSAJES_AVISOS = {
 class SistemaAvisos {
   constructor(opciones = {}) {
     this.almacenamiento = opciones.almacenamiento || new Map();
-    this.suscripcionesDeUnEstudiante = new Map();
   }
 
   categoriasDisponibles() {
@@ -25,7 +24,7 @@ class SistemaAvisos {
   }
 
   obtenerSuscripciones(correo) {
-    return this.suscripcionesDeUnEstudiante.get(correo) || [];
+    return this.almacenamiento.get(correo) || [];
   }
 
   suscribir(correo, categoria) {
@@ -45,7 +44,7 @@ class SistemaAvisos {
     } else {
       suscripciones.push({ categoria, activa: true });
     }
-    this.suscripcionesDeUnEstudiante.set(correo, suscripciones);
+    this.almacenamiento.set(correo, suscripciones);
 
     return {
       exito: true,
@@ -62,7 +61,7 @@ class SistemaAvisos {
     if (existente) {
       existente.activa = false;
     }
-    this.suscripcionesDeUnEstudiante.set(correo, suscripciones);
+    this.almacenamiento.set(correo, suscripciones);
 
     return {
       exito: true,
