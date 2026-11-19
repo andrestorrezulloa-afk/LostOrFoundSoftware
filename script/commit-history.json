@@ -1938,17 +1938,36 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "7a52de190e865b6678104b73946638e82451b5e8",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:45:34.000Z",
       "message": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/7a52de190e865b6678104b73946638e82451b5e8"
     },
     "stats": {
       "total": 89,
       "additions": 89,
       "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:45:53.000Z",
+      "message": "feat: conectar el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 178,
+      "additions": 176,
+      "deletions": 2,
       "date": "2026-11-19"
     },
     "coverage": 90.77,

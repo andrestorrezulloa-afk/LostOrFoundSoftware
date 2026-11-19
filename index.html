@@ -127,7 +127,10 @@
           <strong id="estudiante-actual"></strong>
           <button type="button" id="btn-logout-estudiante" class="btn-logout">Cerrar sesión</button>
         </div>
-        <button id="btn-volver-login" class="btn-secondary-sm">Acceso del personal ↗</button>
+        <div class="estudiante-acciones">
+          <button type="button" id="btn-ver-avisos" class="btn-secondary-sm">Mis avisos</button>
+          <button id="btn-volver-login" class="btn-secondary-sm">Acceso del personal ↗</button>
+        </div>
       </header>
       <main class="contenido-principal">
         <p id="mensaje-solicitud-reserva" class="mensaje" role="status" aria-live="polite" tabindex="-1"></p>
@@ -178,6 +181,18 @@
           <div class="section-heading"><div><p class="eyebrow">HALLAZGOS DEL CAMPUS</p><h2 class="catalogo-titulo">Catálogo de objetos</h2><p>¿Reconoces algo tuyo? Revisa sus detalles antes de solicitarlo.</p></div></div>
           <div id="lista-catalogo-estudiante" class="catalogo-grid" aria-live="polite" aria-atomic="true"></div>
         </div>
+        <section id="seccion-mis-avisos" class="mis-avisos" aria-labelledby="titulo-mis-avisos" hidden>
+          <button type="button" id="btn-volver-catalogo-avisos" class="btn-secondary-sm">Volver al catálogo</button>
+          <header class="avisos-encabezado">
+            <p class="eyebrow">AVISOS POR CATEGORÍA</p>
+            <h2 id="titulo-mis-avisos">Mis avisos</h2>
+            <p>Activa las categorías que te interesan: te avisamos cuando Bienestar publique un objeto nuevo.</p>
+          </header>
+          <p id="mensaje-avisos" class="mensaje" role="status" aria-live="polite" tabindex="-1"></p>
+          <div id="avisos-categorias" class="avisos-categorias"></div>
+          <h3 class="avisos-subtitulo">Avisos recibidos</h3>
+          <div id="lista-avisos" class="avisos-lista" aria-live="polite"></div>
+        </section>
         <section id="formulario-reserva-estudiante" class="card-formulario formulario-reserva" aria-labelledby="titulo-solicitud-reserva" hidden>
           <header class="reserva-cabecera"><p class="eyebrow">UN PASO MÁS CERCA DE RECUPERARLO</p><h2 id="titulo-solicitud-reserva">Solicitar reserva de <span id="nombre-objeto-reserva"></span></h2></header>
           <div class="reserva-layout">

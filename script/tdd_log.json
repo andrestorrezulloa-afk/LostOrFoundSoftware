@@ -1852,9 +1852,15 @@
     "testId": 102
   },
   {
-    "commitId": "HEAD",
+    "commitId": "7a52de190e865b6678104b73946638e82451b5e8",
     "commitName": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
     "commitTimestamp": 1795067135856,
     "testId": 102
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795067154780,
+    "testId": 103
   }
 ]
