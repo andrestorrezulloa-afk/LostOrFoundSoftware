@@ -97,12 +97,13 @@ class SistemaAvisos {
   }
 
   generarAviso(correo, objeto) {
+    // El aviso solo viaja con datos del objeto: nunca con informacion personal.
     const aviso = {
       id: this.avisos.length + 1,
       correo,
       categoria: objeto.categoria,
       objetoId: objeto.id,
-      objeto,
+      objeto: { id: objeto.id, nombre: objeto.nombre, categoria: objeto.categoria },
       enlace: `#/objeto/${objeto.id}`,
       fecha: new Date().toISOString(),
     };

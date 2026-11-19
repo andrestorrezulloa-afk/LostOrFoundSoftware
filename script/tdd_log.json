@@ -1778,9 +1778,23 @@
     "testId": 99
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2e1f51a5840d40308a73af4d11eec104616b1ddc",
     "commitName": "test: exigir que los avisos no incluyan datos personales en HU-12",
     "commitTimestamp": 1795065603336,
     "testId": 99
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 0,
+    "numTotalTests": 86,
+    "timestamp": 1795065678074,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
+    "commitTimestamp": 1795065687025,
+    "testId": 100
   }
 ]

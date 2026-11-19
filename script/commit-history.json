@@ -1881,12 +1881,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "2e1f51a5840d40308a73af4d11eec104616b1ddc",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:20:02.000Z",
       "message": "test: exigir que los avisos no incluyan datos personales en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2e1f51a5840d40308a73af4d11eec104616b1ddc"
     },
     "stats": {
       "total": 19,
@@ -1898,5 +1898,24 @@
     "test_count": 86,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:21:25.000Z",
+      "message": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 86,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
