@@ -1418,9 +1418,23 @@
     "testId": 74
   },
   {
-    "commitId": "HEAD",
+    "commitId": "b026f4543a7b9c902948c7a2ef4aca86adefdd3b",
     "commitName": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
     "commitTimestamp": 1795062541788,
     "testId": 75
+  },
+  {
+    "numPassedTests": 73,
+    "failedTests": 1,
+    "numTotalTests": 74,
+    "timestamp": 1795062580727,
+    "success": false,
+    "testId": 76
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir dominios institucionales configurables explicitamente en HU-11",
+    "commitTimestamp": 1795062590309,
+    "testId": 76
   }
 ]

@@ -1425,12 +1425,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "b026f4543a7b9c902948c7a2ef4aca86adefdd3b",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:29:00.000Z",
       "message": "feat: negar el acceso al panel de Bienestar con sesion de estudiante",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b026f4543a7b9c902948c7a2ef4aca86adefdd3b"
     },
     "stats": {
       "total": 8,
@@ -1442,5 +1442,24 @@
     "test_count": 73,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:29:48.000Z",
+      "message": "test: exigir dominios institucionales configurables explicitamente en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.48,
+    "test_count": 74,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

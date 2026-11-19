@@ -76,4 +76,19 @@ describe("HU-11: Acceder opcionalmente con cuenta institucional", () => {
     expect(login.tieneSesionEstudiante()).toEqual(true);
     expect(login.puedeAccederAlPanel()).toEqual(false);
   });
+
+  it("deberia aceptar cuentas de los dominios institucionales configurados explicitamente", () => {
+    const login = new LoginEstudiante({
+      dominiosInstitucionales: ["ucb.edu.bo", "ucb.edu"],
+      proveedorGoogle: () => cuentaGoogle("estudiante@ucb.edu"),
+    });
+
+    const resultado = login.iniciarSesionConGoogle();
+
+    expect(resultado.exito).toEqual(true);
+    expect(login.obtenerEstudianteActual()).toEqual({
+      correo: "estudiante@ucb.edu",
+      nombre: "Estudiante Demo",
+    });
+  });
 });
