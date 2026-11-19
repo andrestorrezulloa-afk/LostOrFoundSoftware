@@ -1216,18 +1216,37 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "69dea3d010fd502bab047a24e588b4ccec4ea251",
     "author": "Luiscuac",
     "commit": {
       "date": "2026-11-18T19:20:27.000Z",
       "message": "style: unificar la interfaz y adaptar las vistas a movil",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/69dea3d010fd502bab047a24e588b4ccec4ea251"
     },
     "stats": {
       "total": 936,
       "additions": 384,
       "deletions": 552,
       "date": "2026-11-18"
+    },
+    "coverage": 91.3,
+    "test_count": 68,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:09:56.000Z",
+      "message": "test: exigir inicio de sesion con cuenta Google institucional en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-19"
     },
     "coverage": 91.3,
     "test_count": 68,

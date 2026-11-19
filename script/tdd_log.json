@@ -1264,9 +1264,31 @@
     "testId": 64
   },
   {
-    "commitId": "HEAD",
+    "commitId": "69dea3d010fd502bab047a24e588b4ccec4ea251",
     "commitName": "style: unificar la interfaz y adaptar las vistas a movil",
     "commitTimestamp": 1795029629197,
     "testId": 64
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795061286480,
+    "success": true,
+    "testId": 65
+  },
+  {
+    "numPassedTests": 68,
+    "failedTests": 0,
+    "numTotalTests": 68,
+    "timestamp": 1795061353256,
+    "success": false,
+    "testId": 65
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir inicio de sesion con cuenta Google institucional en HU-11",
+    "commitTimestamp": 1795061397528,
+    "testId": 65
   }
 ]
