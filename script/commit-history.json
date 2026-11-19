@@ -1368,12 +1368,12 @@
     "conclusion": "failure"
   },
   {
-    "sha": "HEAD",
+    "sha": "2ef57c70dfd88d79e599cbadb9b99b1fed044553",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:25:52.000Z",
       "message": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2ef57c70dfd88d79e599cbadb9b99b1fed044553"
     },
     "stats": {
       "total": 4,
@@ -1385,5 +1385,24 @@
     "test_count": 72,
     "failed_tests": 0,
     "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:26:39.000Z",
+      "message": "test: exigir que la sesion de estudiante no acceda al panel de Bienestar en HU-11",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 10,
+      "additions": 10,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.47,
+    "test_count": 73,
+    "failed_tests": 1,
+    "conclusion": "failure"
   }
 ]

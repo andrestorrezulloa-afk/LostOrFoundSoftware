@@ -66,4 +66,14 @@ describe("HU-11: Acceder opcionalmente con cuenta institucional", () => {
     expect(login.tieneSesionEstudiante()).toEqual(false);
     expect(inventario.listar().length).toEqual(1);
   });
+
+  it("no deberia permitir que la sesion de estudiante entre al panel ni a las acciones de Bienestar", () => {
+    const login = new LoginEstudiante({
+      proveedorGoogle: () => cuentaGoogle("estudiante@ucb.edu.bo"),
+    });
+    login.iniciarSesionConGoogle();
+
+    expect(login.tieneSesionEstudiante()).toEqual(true);
+    expect(login.puedeAccederAlPanel()).toEqual(false);
+  });
 });

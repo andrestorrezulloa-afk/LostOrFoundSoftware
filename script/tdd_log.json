@@ -1384,9 +1384,23 @@
     "testId": 72
   },
   {
-    "commitId": "HEAD",
+    "commitId": "2ef57c70dfd88d79e599cbadb9b99b1fed044553",
     "commitName": "feat: cerrar la sesion del estudiante sin perder el acceso publico al catalogo",
     "commitTimestamp": 1795062354023,
     "testId": 72
+  },
+  {
+    "numPassedTests": 72,
+    "failedTests": 1,
+    "numTotalTests": 73,
+    "timestamp": 1795062391652,
+    "success": false,
+    "testId": 73
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir que la sesion de estudiante no acceda al panel de Bienestar en HU-11",
+    "commitTimestamp": 1795062401393,
+    "testId": 73
   }
 ]
