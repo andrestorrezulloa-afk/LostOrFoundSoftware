@@ -1624,9 +1624,23 @@
     "testId": 88
   },
   {
-    "commitId": "HEAD",
+    "commitId": "85a16f17b233dc0912717948784c606791b72595",
     "commitName": "test: exigir generar aviso con categoria, objeto y enlace al publicar en HU-12",
     "commitTimestamp": 1795064763464,
     "testId": 88
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 0,
+    "numTotalTests": 81,
+    "timestamp": 1795064832573,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: generar avisos al publicar objetos en categorias suscritas",
+    "commitTimestamp": 1795064842456,
+    "testId": 89
   }
 ]

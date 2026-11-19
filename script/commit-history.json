@@ -1672,12 +1672,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "85a16f17b233dc0912717948784c606791b72595",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T05:06:01.000Z",
       "message": "test: exigir generar aviso con categoria, objeto y enlace al publicar en HU-12",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/85a16f17b233dc0912717948784c606791b72595"
     },
     "stats": {
       "total": 19,
@@ -1689,5 +1689,24 @@
     "test_count": 81,
     "failed_tests": 1,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:07:20.000Z",
+      "message": "feat: generar avisos al publicar objetos en categorias suscritas",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.1,
+    "test_count": 81,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]
