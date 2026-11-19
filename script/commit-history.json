@@ -1520,12 +1520,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "0a175e8313bd693389d3f52384c4d5da9ef4087e",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:42:11.000Z",
       "message": "style: agregar estilos del selector de Google y la sesion de estudiante",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/0a175e8313bd693389d3f52384c4d5da9ef4087e"
     },
     "stats": {
       "total": 23,
@@ -1534,6 +1534,25 @@
       "date": "2026-11-19"
     },
     "coverage": 91.23,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:46:11.000Z",
+      "message": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 119,
+      "additions": 73,
+      "deletions": 46,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.26,
     "test_count": 77,
     "failed_tests": 0,
     "conclusion": "success"

@@ -20,7 +20,9 @@ const estudianteActual = document.querySelector('#estudiante-actual');
 const btnLogoutEstudiante = document.querySelector('#btn-logout-estudiante');
 
 function mostrarMensaje(texto, esExito) {
-  if (!mensajeSistema) return;
+  if (!mensajeSistema) {
+    return;
+  }
   if (!texto) {
     mensajeSistema.className = 'mensaje';
     mensajeSistema.textContent = '';
@@ -53,38 +55,63 @@ function iniciarConCuentaDemo(tipo) {
 function actualizarVistaEstudiante() {
   const estudiante = login.obtenerEstudianteActual();
   if (!estudiante) {
-    if (estudianteSesion) estudianteSesion.hidden = true;
-    if (estudianteActual) estudianteActual.textContent = '';
+    if (estudianteSesion) {
+      estudianteSesion.hidden = true;
+    }
+    if (estudianteActual) {
+      estudianteActual.textContent = '';
+    }
     return;
   }
-  if (estudianteActual) estudianteActual.textContent = estudiante.nombre;
-  if (estudianteSesion) estudianteSesion.hidden = false;
-  if (seccionAuth) seccionAuth.style.display = 'none';
-  if (vistaEstudiante) vistaEstudiante.style.display = 'flex';
+  if (estudianteActual) {
+    estudianteActual.textContent = estudiante.nombre;
+  }
+  if (estudianteSesion) {
+    estudianteSesion.hidden = false;
+  }
+  if (seccionAuth) {
+    seccionAuth.style.display = 'none';
+  }
+  if (vistaEstudiante) {
+    vistaEstudiante.style.display = 'flex';
+  }
 }
 
 function volverAlAcceso() {
-  if (estudianteSesion) estudianteSesion.hidden = true;
-  if (estudianteActual) estudianteActual.textContent = '';
-  if (seccionAuth) seccionAuth.style.display = 'flex';
-  if (vistaEstudiante) vistaEstudiante.style.display = 'none';
+  if (estudianteSesion) {
+    estudianteSesion.hidden = true;
+  }
+  if (estudianteActual) {
+    estudianteActual.textContent = '';
+  }
+  if (seccionAuth) {
+    seccionAuth.style.display = 'flex';
+  }
+  if (vistaEstudiante) {
+    vistaEstudiante.style.display = 'none';
+  }
 }
 
 if (btnLoginGoogle) {
   btnLoginGoogle.addEventListener('click', abrirSelectorGoogle);
 }
 
-if (document.querySelector('#google-cuenta-institucional')) {
-  document.querySelector('#google-cuenta-institucional').addEventListener('click', () => iniciarConCuentaDemo('institucional'));
+const btnCuentaInstitucional = document.querySelector('#google-cuenta-institucional');
+if (btnCuentaInstitucional) {
+  btnCuentaInstitucional.addEventListener('click', () => iniciarConCuentaDemo('institucional'));
 }
 
-if (document.querySelector('#google-cuenta-ajena')) {
-  document.querySelector('#google-cuenta-ajena').addEventListener('click', () => iniciarConCuentaDemo('ajena'));
+const btnCuentaAjena = document.querySelector('#google-cuenta-ajena');
+if (btnCuentaAjena) {
+  btnCuentaAjena.addEventListener('click', () => iniciarConCuentaDemo('ajena'));
 }
 
-if (document.querySelector('#google-cancelar')) {
-  document.querySelector('#google-cancelar').addEventListener('click', () => {
-    if (vistaGoogle) vistaGoogle.hidden = true;
+const btnCancelarGoogle = document.querySelector('#google-cancelar');
+if (btnCancelarGoogle) {
+  btnCancelarGoogle.addEventListener('click', () => {
+    if (vistaGoogle) {
+      vistaGoogle.hidden = true;
+    }
   });
 }
 

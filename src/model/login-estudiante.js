@@ -19,7 +19,7 @@ class LoginEstudiante {
     let cuenta = null;
     try {
       cuenta = this.proveedorGoogle();
-    } catch (error) {
+    } catch {
       cuenta = null;
     }
 

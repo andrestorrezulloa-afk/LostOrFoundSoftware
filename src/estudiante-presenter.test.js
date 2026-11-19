@@ -1,11 +1,11 @@
-/* global beforeEach */
+/* global beforeEach, jest */
 import crearDocumentoPrueba from './test-support/documento.js';
 
 let controles;
 
 function conectarPresentador() {
-  const modulo = require('./presenter/estudiante-presenter.js');
-  return modulo.default;
+  jest.resetModules();
+  return require('./presenter/estudiante-presenter.js').default;
 }
 
 beforeEach(() => {

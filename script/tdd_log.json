@@ -1504,9 +1504,31 @@
     "testId": 80
   },
   {
-    "commitId": "HEAD",
+    "commitId": "0a175e8313bd693389d3f52384c4d5da9ef4087e",
     "commitName": "style: agregar estilos del selector de Google y la sesion de estudiante",
     "commitTimestamp": 1795063333446,
     "testId": 80
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063493694,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063562218,
+    "success": true,
+    "testId": 81
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
+    "commitTimestamp": 1795063573776,
+    "testId": 81
   }
 ]
