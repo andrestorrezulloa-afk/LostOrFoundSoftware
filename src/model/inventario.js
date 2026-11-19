@@ -3,10 +3,11 @@ import { validarDatosReserva, prepararDatosReserva } from './datos-reserva.js';
 import SolicitudesReserva from './solicitudes-reserva.js';
 
 class InventarioObjetos {
-  constructor() {
+  constructor(opciones = {}) {
     this.objetos = [];
     this.siguienteId = 1;
     this.solicitudesReserva = new SolicitudesReserva();
+    this.sistemaAvisos = opciones.avisos || null;
   }
 
   listar(filtros = {}) {
@@ -64,6 +65,9 @@ class InventarioObjetos {
 
     const nuevoObjeto = this.crearFichaObjeto(datos);
     this.objetos.push(nuevoObjeto);
+    if (this.sistemaAvisos) {
+      this.sistemaAvisos.publicarAvisoDeObjeto(nuevoObjeto);
+    }
 
     return { exito: true, mensaje: 'Objeto registrado exitosamente', objeto: nuevoObjeto };
   }
@@ -102,6 +106,21 @@ class InventarioObjetos {
       this.solicitudesReserva.cerrarPendientesDelObjeto(id);
     }
     return { exito: true, mensaje: 'Estado actualizado correctamente' };
+  }
+
+  actualizarObjeto(id, datos = {}) {
+    const objeto = this.obtenerObjetoPorId(id);
+    if (!objeto) {
+      return { exito: false, mensaje: 'Objeto no encontrado' };
+    }
+    // Editar datos no es una publicacion nueva: jamas genera avisos.
+    const camposEditables = ['nombre', 'categoria', 'descripcion', 'foto', 'lugarEncontrado'];
+    for (const campo of camposEditables) {
+      if (campo in datos) {
+        objeto[campo] = typeof datos[campo] === 'string' ? datos[campo].trim() : datos[campo];
+      }
+    }
+    return { exito: true, mensaje: 'Objeto actualizado correctamente', objeto };
   }
 
   reservarObjeto(id, datos = {}) {

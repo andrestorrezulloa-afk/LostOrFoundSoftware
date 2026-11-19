@@ -1526,9 +1526,355 @@
     "testId": 81
   },
   {
-    "commitId": "HEAD",
+    "commitId": "884111e2f7dc0ce7c5278b6802ccb96c7d6d3869",
     "commitName": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
     "commitTimestamp": 1795063573776,
     "testId": 81
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795064174962,
+    "success": false,
+    "testId": 82
+  },
+  {
+    "commitId": "b9881a41d182d407a2a5d005bbfbc99a538f0af7",
+    "commitName": "test: exigir suscripcion de estudiante a avisos por categoria en HU-12",
+    "commitTimestamp": 1795064185583,
+    "testId": 82
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 0,
+    "numTotalTests": 78,
+    "timestamp": 1795064365946,
+    "success": true,
+    "testId": 83
+  },
+  {
+    "commitId": "faa9a15a104f2b81395162bb3cdae41896fc989e",
+    "commitName": "feat: activar suscripciones de avisos por categoria para estudiantes",
+    "commitTimestamp": 1795064375290,
+    "testId": 83
+  },
+  {
+    "numPassedTests": 78,
+    "failedTests": 1,
+    "numTotalTests": 79,
+    "timestamp": 1795064421116,
+    "success": false,
+    "testId": 84
+  },
+  {
+    "commitId": "96dc57205a650b1eb9e745baf9e7a3d7508936d1",
+    "commitName": "test: exigir desactivar suscripciones de avisos individualmente en HU-12",
+    "commitTimestamp": 1795064431376,
+    "testId": 84
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 0,
+    "numTotalTests": 79,
+    "timestamp": 1795064517299,
+    "success": true,
+    "testId": 85
+  },
+  {
+    "commitId": "a066fafe3db03b3e832b946ffbd3a88aa42eab30",
+    "commitName": "feat: cancelar suscripciones de avisos por categoria",
+    "commitTimestamp": 1795064527027,
+    "testId": 85
+  },
+  {
+    "numPassedTests": 79,
+    "failedTests": 1,
+    "numTotalTests": 80,
+    "timestamp": 1795064578050,
+    "success": false,
+    "testId": 86
+  },
+  {
+    "commitId": "9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe",
+    "commitName": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
+    "commitTimestamp": 1795064587429,
+    "testId": 86
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 0,
+    "numTotalTests": 80,
+    "timestamp": 1795064693835,
+    "success": true,
+    "testId": 87
+  },
+  {
+    "commitId": "3c5b68c83c886fbf2f97ce8eb6ad7a89ade321c2",
+    "commitName": "feat: conservar las suscripciones entre sesiones del estudiante",
+    "commitTimestamp": 1795064703735,
+    "testId": 87
+  },
+  {
+    "numPassedTests": 80,
+    "failedTests": 1,
+    "numTotalTests": 81,
+    "timestamp": 1795064753603,
+    "success": false,
+    "testId": 88
+  },
+  {
+    "commitId": "85a16f17b233dc0912717948784c606791b72595",
+    "commitName": "test: exigir generar aviso con categoria, objeto y enlace al publicar en HU-12",
+    "commitTimestamp": 1795064763464,
+    "testId": 88
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 0,
+    "numTotalTests": 81,
+    "timestamp": 1795064832573,
+    "success": true,
+    "testId": 89
+  },
+  {
+    "commitId": "e9c7aa2ce31fa36af012879a78a6c006e313a03f",
+    "commitName": "feat: generar avisos al publicar objetos en categorias suscritas",
+    "commitTimestamp": 1795064842456,
+    "testId": 89
+  },
+  {
+    "numPassedTests": 81,
+    "failedTests": 1,
+    "numTotalTests": 82,
+    "timestamp": 1795064952131,
+    "success": false,
+    "testId": 90
+  },
+  {
+    "commitId": "f1b09547a0d0af332b746e5c288d6937747d3615",
+    "commitName": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
+    "commitTimestamp": 1795064962026,
+    "testId": 90
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 0,
+    "numTotalTests": 82,
+    "timestamp": 1795065011087,
+    "success": true,
+    "testId": 91
+  },
+  {
+    "commitId": "5f4ece7020169fd196891ac02c7a79ec6aaf59e9",
+    "commitName": "feat: avisar a los suscriptores cuando Bienestar publica un objeto nuevo",
+    "commitTimestamp": 1795065021714,
+    "testId": 91
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1795065059771,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "commitId": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
+    "commitName": "test: exigir un solo aviso por publicacion y solo para suscriptores en HU-12",
+    "commitTimestamp": 1795065071361,
+    "testId": 92
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1795065106390,
+    "success": false,
+    "testId": 93
+  },
+  {
+    "commitId": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
+    "commitName": "feat: enviar un solo aviso por publicacion y suscriptor",
+    "commitTimestamp": 1795065116884,
+    "testId": 93
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 0,
+    "numTotalTests": 83,
+    "timestamp": 1795065201179,
+    "success": true,
+    "testId": 94
+  },
+  {
+    "commitId": "d840d8c8c2f809779ee92bba1bf254f3ab34ec67",
+    "commitName": "feat: enviar un solo aviso por publicacion y suscriptor",
+    "commitTimestamp": 1795065211033,
+    "testId": 94
+  },
+  {
+    "numPassedTests": 83,
+    "failedTests": 1,
+    "numTotalTests": 84,
+    "timestamp": 1795065312325,
+    "success": false,
+    "testId": 95
+  },
+  {
+    "commitId": "cc4058e721184ed8e9f2e2347be7eafb26ca398d",
+    "commitName": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
+    "commitTimestamp": 1795065323195,
+    "testId": 95
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 0,
+    "numTotalTests": 84,
+    "timestamp": 1795065365114,
+    "success": true,
+    "testId": 96
+  },
+  {
+    "commitId": "3172a299264d30d55092bdb1d3188857e17311d7",
+    "commitName": "feat: actualizar datos de un objeto sin generar aviso de publicacion",
+    "commitTimestamp": 1795065376461,
+    "testId": 96
+  },
+  {
+    "numPassedTests": 84,
+    "failedTests": 1,
+    "numTotalTests": 85,
+    "timestamp": 1795065483546,
+    "success": false,
+    "testId": 97
+  },
+  {
+    "commitId": "61c88ca1e61673d7446eaeb92d345a19555dd0a7",
+    "commitName": "test: exigir registrar el error de envio sin perder la publicacion en HU-12",
+    "commitTimestamp": 1795065492415,
+    "testId": 97
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 0,
+    "numTotalTests": 85,
+    "timestamp": 1795065540850,
+    "success": true,
+    "testId": 98
+  },
+  {
+    "commitId": "4f8ce001f60b988ac519f13b440303df051faf22",
+    "commitName": "feat: registrar errores de envio de avisos sin afectar la publicacion",
+    "commitTimestamp": 1795065549527,
+    "testId": 98
+  },
+  {
+    "numPassedTests": 85,
+    "failedTests": 1,
+    "numTotalTests": 86,
+    "timestamp": 1795065594736,
+    "success": false,
+    "testId": 99
+  },
+  {
+    "commitId": "2e1f51a5840d40308a73af4d11eec104616b1ddc",
+    "commitName": "test: exigir que los avisos no incluyan datos personales en HU-12",
+    "commitTimestamp": 1795065603336,
+    "testId": 99
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 0,
+    "numTotalTests": 86,
+    "timestamp": 1795065678074,
+    "success": true,
+    "testId": 100
+  },
+  {
+    "commitId": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "commitName": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
+    "commitTimestamp": 1795065687025,
+    "testId": 100
+  },
+  {
+    "numPassedTests": 86,
+    "failedTests": 4,
+    "numTotalTests": 90,
+    "timestamp": 1795066091024,
+    "success": false,
+    "testId": 101
+  },
+  {
+    "commitId": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "commitName": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795066100115,
+    "testId": 101
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 2,
+    "numTotalTests": 90,
+    "timestamp": 1795066731763,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 88,
+    "failedTests": 2,
+    "numTotalTests": 90,
+    "timestamp": 1795066849630,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795066981828,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 89,
+    "failedTests": 1,
+    "numTotalTests": 90,
+    "timestamp": 1795067003443,
+    "success": false,
+    "testId": 102
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795067082046,
+    "success": true,
+    "testId": 102
+  },
+  {
+    "commitId": "7a52de190e865b6678104b73946638e82451b5e8",
+    "commitName": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795067135856,
+    "testId": 102
+  },
+  {
+    "commitId": "45495e05d55efa8e5e2cd71bf9a4ffa20a59e7b6",
+    "commitName": "feat: conectar el panel de avisos por categoria en la interfaz de HU-12",
+    "commitTimestamp": 1795067154780,
+    "testId": 103
+  },
+  {
+    "numPassedTests": 90,
+    "failedTests": 0,
+    "numTotalTests": 90,
+    "timestamp": 1795067315135,
+    "success": true,
+    "testId": 104
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "style: agregar estilos del panel de avisos por categoria",
+    "commitTimestamp": 1795067324129,
+    "testId": 104
   }
 ]

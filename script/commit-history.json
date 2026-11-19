@@ -1539,12 +1539,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "884111e2f7dc0ce7c5278b6802ccb96c7d6d3869",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:46:11.000Z",
       "message": "refactor: ajustar el acceso de estudiante a las reglas de lint del proyecto",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/884111e2f7dc0ce7c5278b6802ccb96c7d6d3869"
     },
     "stats": {
       "total": 119,
@@ -1554,6 +1554,443 @@
     },
     "coverage": 91.26,
     "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "b9881a41d182d407a2a5d005bbfbc99a538f0af7",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:56:23.000Z",
+      "message": "test: exigir suscripcion de estudiante a avisos por categoria en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/b9881a41d182d407a2a5d005bbfbc99a538f0af7"
+    },
+    "stats": {
+      "total": 16,
+      "additions": 16,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.26,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "faa9a15a104f2b81395162bb3cdae41896fc989e",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:59:33.000Z",
+      "message": "feat: activar suscripciones de avisos por categoria para estudiantes",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/faa9a15a104f2b81395162bb3cdae41896fc989e"
+    },
+    "stats": {
+      "total": 58,
+      "additions": 58,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.96,
+    "test_count": 78,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "96dc57205a650b1eb9e745baf9e7a3d7508936d1",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:00:29.000Z",
+      "message": "test: exigir desactivar suscripciones de avisos individualmente en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/96dc57205a650b1eb9e745baf9e7a3d7508936d1"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.09,
+    "test_count": 79,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "a066fafe3db03b3e832b946ffbd3a88aa42eab30",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:02:05.000Z",
+      "message": "feat: cancelar suscripciones de avisos por categoria",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/a066fafe3db03b3e832b946ffbd3a88aa42eab30"
+    },
+    "stats": {
+      "total": 17,
+      "additions": 17,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 79,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:03:06.000Z",
+      "message": "test: exigir conservar las suscripciones al reiniciar sesion en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/9c3a7d6bf0e1189cc1b20d826735cce05a9d6ffe"
+    },
+    "stats": {
+      "total": 12,
+      "additions": 12,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 80,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "3c5b68c83c886fbf2f97ce8eb6ad7a89ade321c2",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:05:02.000Z",
+      "message": "feat: conservar las suscripciones entre sesiones del estudiante",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/3c5b68c83c886fbf2f97ce8eb6ad7a89ade321c2"
+    },
+    "stats": {
+      "total": 7,
+      "additions": 3,
+      "deletions": 4,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.15,
+    "test_count": 80,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "85a16f17b233dc0912717948784c606791b72595",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:06:01.000Z",
+      "message": "test: exigir generar aviso con categoria, objeto y enlace al publicar en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/85a16f17b233dc0912717948784c606791b72595"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.15,
+    "test_count": 81,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "e9c7aa2ce31fa36af012879a78a6c006e313a03f",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:07:20.000Z",
+      "message": "feat: generar avisos al publicar objetos en categorias suscritas",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/e9c7aa2ce31fa36af012879a78a6c006e313a03f"
+    },
+    "stats": {
+      "total": 39,
+      "additions": 39,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.1,
+    "test_count": 81,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f1b09547a0d0af332b746e5c288d6937747d3615",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:09:20.000Z",
+      "message": "test: exigir avisos al publicar objetos nuevos desde el inventario en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f1b09547a0d0af332b746e5c288d6937747d3615"
+    },
+    "stats": {
+      "total": 13,
+      "additions": 13,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.1,
+    "test_count": 82,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "5f4ece7020169fd196891ac02c7a79ec6aaf59e9",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:10:20.000Z",
+      "message": "feat: avisar a los suscriptores cuando Bienestar publica un objeto nuevo",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/5f4ece7020169fd196891ac02c7a79ec6aaf59e9"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.13,
+    "test_count": 82,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:11:09.000Z",
+      "message": "test: exigir un solo aviso por publicacion y solo para suscriptores en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/92a51ddc7e0753ca82f71c0e29dd513acdea9a1c"
+    },
+    "stats": {
+      "total": 14,
+      "additions": 14,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.13,
+    "test_count": 83,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "92a51ddc7e0753ca82f71c0e29dd513acdea9a1c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:11:55.000Z",
+      "message": "feat: enviar un solo aviso por publicacion y suscriptor",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/92a51ddc7e0753ca82f71c0e29dd513acdea9a1c"
+    },
+    "stats": {
+      "total": 5,
+      "additions": 4,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 83,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "d840d8c8c2f809779ee92bba1bf254f3ab34ec67",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:13:29.000Z",
+      "message": "feat: enviar un solo aviso por publicacion y suscriptor",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/d840d8c8c2f809779ee92bba1bf254f3ab34ec67"
+    },
+    "stats": {
+      "total": 6,
+      "additions": 5,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 83,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "cc4058e721184ed8e9f2e2347be7eafb26ca398d",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:15:21.000Z",
+      "message": "test: exigir que editar o reabrir una ficha no genere aviso en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/cc4058e721184ed8e9f2e2347be7eafb26ca398d"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.16,
+    "test_count": 84,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "3172a299264d30d55092bdb1d3188857e17311d7",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:16:14.000Z",
+      "message": "feat: actualizar datos de un objeto sin generar aviso de publicacion",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/3172a299264d30d55092bdb1d3188857e17311d7"
+    },
+    "stats": {
+      "total": 15,
+      "additions": 15,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.12,
+    "test_count": 84,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "61c88ca1e61673d7446eaeb92d345a19555dd0a7",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:18:11.000Z",
+      "message": "test: exigir registrar el error de envio sin perder la publicacion en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/61c88ca1e61673d7446eaeb92d345a19555dd0a7"
+    },
+    "stats": {
+      "total": 20,
+      "additions": 20,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.12,
+    "test_count": 85,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "4f8ce001f60b988ac519f13b440303df051faf22",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:19:08.000Z",
+      "message": "feat: registrar errores de envio de avisos sin afectar la publicacion",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/4f8ce001f60b988ac519f13b440303df051faf22"
+    },
+    "stats": {
+      "total": 21,
+      "additions": 21,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 85,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "2e1f51a5840d40308a73af4d11eec104616b1ddc",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:20:02.000Z",
+      "message": "test: exigir que los avisos no incluyan datos personales en HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/2e1f51a5840d40308a73af4d11eec104616b1ddc"
+    },
+    "stats": {
+      "total": 19,
+      "additions": 19,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 86,
+    "failed_tests": 1,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:21:25.000Z",
+      "message": "refactor: limitar el aviso a los datos del objeto sin informacion personal",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f879870c172bc49fbc6978cfd82c258e455f626c"
+    },
+    "stats": {
+      "total": 3,
+      "additions": 2,
+      "deletions": 1,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 86,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "f879870c172bc49fbc6978cfd82c258e455f626c",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:28:18.000Z",
+      "message": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/f879870c172bc49fbc6978cfd82c258e455f626c"
+    },
+    "stats": {
+      "total": 87,
+      "additions": 87,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.2,
+    "test_count": 90,
+    "failed_tests": 4,
+    "conclusion": "failure"
+  },
+  {
+    "sha": "7a52de190e865b6678104b73946638e82451b5e8",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:45:34.000Z",
+      "message": "test: exigir el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/7a52de190e865b6678104b73946638e82451b5e8"
+    },
+    "stats": {
+      "total": 89,
+      "additions": 89,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "45495e05d55efa8e5e2cd71bf9a4ffa20a59e7b6",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:45:53.000Z",
+      "message": "feat: conectar el panel de avisos por categoria en la interfaz de HU-12",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/45495e05d55efa8e5e2cd71bf9a4ffa20a59e7b6"
+    },
+    "stats": {
+      "total": 178,
+      "additions": 176,
+      "deletions": 2,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
+    "failed_tests": 0,
+    "conclusion": "success"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T05:48:42.000Z",
+      "message": "style: agregar estilos del panel de avisos por categoria",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 22,
+      "additions": 22,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 90.77,
+    "test_count": 90,
     "failed_tests": 0,
     "conclusion": "success"
   }

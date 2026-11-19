@@ -4,8 +4,10 @@ import auth from "./auth-presenter.js";
 import conectarCambioEstado from './estado-presenter.js';
 import conectarReservaEstudiante from './reserva-estudiante-presenter.js';
 import conectarReservasBienestar from './reservas-bienestar-presenter.js';
+import sistemaAvisos from './avisos-estado.js';
+import actualizarAvisos from './avisos-presenter.js';
 
-const inventario = new InventarioObjetos();
+const inventario = new InventarioObjetos({ avisos: sistemaAvisos });
 export { inventario };
 
 const formObjeto = document.querySelector("#form-registrar-objeto");
@@ -184,6 +186,7 @@ if (formObjeto) {
       formObjeto.reset();
       mostrarMensajeObjeto(res.mensaje, true);
       renderizarCatalogos();
+      actualizarAvisos();
     } else {
       mostrarMensajeObjeto(res.mensaje, false);
     }
