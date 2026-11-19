@@ -71,4 +71,18 @@ describe('HU-12: Suscribirse a avisos de nuevos objetos por categoria', () => {
     expect(avisos.avisosDe(CORREO).length).toEqual(1);
     expect(avisos.avisosDe(CORREO)[0].objeto.nombre).toEqual('Casio');
   });
+
+  it('no deberia generar avisos para categorias no seleccionadas ni duplicar el aviso de una misma publicacion', () => {
+    const avisos = new SistemaAvisos();
+    avisos.suscribir('suscrito@ucb.edu.bo', 'Electrónicos');
+    const objeto = { id: 9, nombre: 'Tablet', categoria: 'Electrónicos', estado: 'Disponible' };
+
+    avisos.publicarAvisoDeObjeto(objeto);
+    avisos.publicarAvisoDeObjeto(objeto);
+    const otraCategoria = { id: 10, nombre: 'Mochila', categoria: 'Útiles', estado: 'Disponible' };
+    avisos.publicarAvisoDeObjeto(otraCategoria);
+
+    expect(avisos.avisosDe('suscrito@ucb.edu.bo').length).toEqual(1);
+    expect(avisos.avisosDe('sin-suscripcion@ucb.edu.bo').length).toEqual(0);
+  });
 });

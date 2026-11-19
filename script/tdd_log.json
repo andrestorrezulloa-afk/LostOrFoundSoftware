@@ -1666,9 +1666,23 @@
     "testId": 91
   },
   {
-    "commitId": "HEAD",
+    "commitId": "5f4ece7020169fd196891ac02c7a79ec6aaf59e9",
     "commitName": "feat: avisar a los suscriptores cuando Bienestar publica un objeto nuevo",
     "commitTimestamp": 1795065021714,
     "testId": 91
+  },
+  {
+    "numPassedTests": 82,
+    "failedTests": 1,
+    "numTotalTests": 83,
+    "timestamp": 1795065059771,
+    "success": false,
+    "testId": 92
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "test: exigir un solo aviso por publicacion y solo para suscriptores en HU-12",
+    "commitTimestamp": 1795065071361,
+    "testId": 92
   }
 ]
