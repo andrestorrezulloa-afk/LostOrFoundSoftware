@@ -1482,12 +1482,12 @@
     "conclusion": "success"
   },
   {
-    "sha": "HEAD",
+    "sha": "59f76e73dc0c59bd41917f4e28f80a8cbb22e065",
     "author": "SealessPirate",
     "commit": {
       "date": "2026-11-19T04:34:18.000Z",
       "message": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
-      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/59f76e73dc0c59bd41917f4e28f80a8cbb22e065"
     },
     "stats": {
       "total": 56,
@@ -1499,5 +1499,24 @@
     "test_count": 77,
     "failed_tests": 3,
     "conclusion": "failure"
+  },
+  {
+    "sha": "HEAD",
+    "author": "SealessPirate",
+    "commit": {
+      "date": "2026-11-19T04:38:34.000Z",
+      "message": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
+      "url": "https://github.com/andrestorrezulloa-afk/LostOrFoundSoftware/commit/HEAD"
+    },
+    "stats": {
+      "total": 125,
+      "additions": 125,
+      "deletions": 0,
+      "date": "2026-11-19"
+    },
+    "coverage": 91.23,
+    "test_count": 77,
+    "failed_tests": 0,
+    "conclusion": "success"
   }
 ]

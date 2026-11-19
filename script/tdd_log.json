@@ -1460,9 +1460,39 @@
     "testId": 78
   },
   {
-    "commitId": "HEAD",
+    "commitId": "59f76e73dc0c59bd41917f4e28f80a8cbb22e065",
     "commitName": "test: exigir el flujo de inicio de sesion de estudiante en la interfaz de HU-11",
     "commitTimestamp": 1795062860352,
     "testId": 78
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 2,
+    "numTotalTests": 77,
+    "timestamp": 1795062992810,
+    "success": false,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 75,
+    "failedTests": 2,
+    "numTotalTests": 77,
+    "timestamp": 1795063006253,
+    "success": false,
+    "testId": 79
+  },
+  {
+    "numPassedTests": 77,
+    "failedTests": 0,
+    "numTotalTests": 77,
+    "timestamp": 1795063056179,
+    "success": true,
+    "testId": 79
+  },
+  {
+    "commitId": "HEAD",
+    "commitName": "feat: conectar el inicio de sesion de estudiante con cuenta Google institucional en la interfaz",
+    "commitTimestamp": 1795063115914,
+    "testId": 79
   }
 ]
